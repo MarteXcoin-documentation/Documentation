@@ -2,11 +2,11 @@
 
 > 5000 MXT or multiples of 5000 MXT
 
-> Some People claim that to have a good cost benefit without overloading the vps, you must run a maximum of 3 masternodes per VPS.
+  Some People claim that to have a good cost benefit without overloading the vps, you must run a maximum of 3 masternodes per VPS.
 
 > 1GB of RAM/Swap per masternode instance.
 
-> Dedicated IP
+  Dedicated IP
 
 > Port 15315 Available or any another. You must use differents port per masternode instance.
 
@@ -36,20 +36,22 @@
 > ~nano masternode.sh (to use the folder .MXT)
 
 > inside masternode.sh put:
-
-`#!/bin/bash`
-`cd /root/Downloads/martexcore/bin`
-`./martexd --datadir="/root/.MXT" $1 $2 $3 $4`
+ ```
+ #!/bin/bash
+ cd /root/Downloads/martexcore/bin
+ ./martexd --datadir="/root/.MXT" $1 $2 $3 $4
+ ```
 
 > Create a sh file to run the cliente program of masternode instance. For example:
 
 >~nano masternode_cliente.sh
 
 > inside masternode_cliente.sh put:
-
-`#!/bin/bash`
-`cd /root/Downloads/martexcore/bin`
-`./martex-cli --datadir="/root/.MXT" $1 $2 $3 $4`
+ ```
+ #!/bin/bash
+ cd /root/Downloads/martexcore/bin
+ ./martex-cli --datadir="/root/.MXT" $1 $2 $3 $4
+ ```
 
 ### 1) Make sure you know where is your MarteX data folder:
 
@@ -99,6 +101,20 @@ txindex=1
 mnconflock=1
 stake=0
 staking=0
+listen=1
+server=1
+daemon=1
+maxconnections=500
+rpcuser=(put your user here)
+rpcpassword=put_a_long_password_here
+port=51315
+rpcport=51314 
+rpcallowip=127.0.0.1
+addnode=add.other.noder.here.with.port
+addnode=ip_node:port_node
+addnode=seed2.martexcoin.org:51315
+addnode=seed3.martexcoin.org:51315
+addnode=seed4.martexcoin.org:51315
 ```
 ### 8.2) In the masternode.conf file, delete everithing and put this line:
 ```
@@ -117,8 +133,12 @@ INDEX = Second data returned of command in the step 5
 
 #### Do not use { } 
 
-### 10) Now start your wallet and check for the masternode status:
-`masternode status`
+### 10) Now start your wallet, wait synchronize and start the masternode:
+`masternode_cliente.sh masternode start-alias MN_ALIAS`
+
+### 11) Check masternode status:
+
+`masternode_cliente.sh masternode status`
 
 ***
 
