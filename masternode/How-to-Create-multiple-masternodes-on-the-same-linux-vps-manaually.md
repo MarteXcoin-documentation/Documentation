@@ -165,4 +165,4 @@ Tip: Keep eyes on the block winners with this commands:
 
 **How much Masternode receives as reward?**
 
-1.25 MXT
+1.125 MXT
