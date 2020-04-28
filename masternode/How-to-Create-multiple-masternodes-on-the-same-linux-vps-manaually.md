@@ -1,6 +1,6 @@
  ## **Requirements:**
 
-> 5000 MXT or multiples of 5000 MXT
+  5000 MXT or multiples of 5000 MXT
 
   Some People claim that to have a good cost benefit without overloading the vps, you must run a maximum of 3 masternodes per VPS.
 
@@ -8,45 +8,49 @@
 
   Dedicated IP
 
-> Port 15315 Available or any another. You must use differents port per masternode instance.
+  Port 15315 Available or any another. You must use differents port per masternode instance.
 
-> We recommend generating a ssh key for you to connect to the masternode.
+  We recommend generating a ssh key for you to connect to the masternode.
 
-> We recommend follows those steps to protect you VPS:
+  We recommend follows those steps to protect you VPS:
  https://github.com/martexcoin/martexcoin/blob/master/mxt-docs/How-to-protect-your-Masternode-VPS-against-DDoS-attack---Linux.md
 
-> Download your Wallet (QT or Daemon)
+  Download your Wallet (QT or Daemon)
 
 > Wallet synchronized
 
 ## **BEFORE YOU BEGIN**
 
-> Acess your masternode. Create one folder past per masternode instance that you will create.
+  Acess your masternode. Create one folder past per masternode instance that you will create.
 
-> Example: ~mkdir .MXT .MXT1 .MXT3 etc.
+  Example: `~mkdir .MXT` .MXT1 .MXT3 etc.
 
 > Donwload the wallet core:
 
-> Example: ~wget https://martexcoin.org/releases/martexcore-3.0.6-x86_64-linux-gnu.tar.gz
+  Example: `~wget https://martexcoin.org/releases/martexcore-3.0.6-x86_64-linux-gnu.tar.gz`
+  
+  Extract wallet to you local folder
 
-> tar- -vzxf nameoffile.tar.gz
+ `tar- -vzxf nameoffile.tar.gz`
 
-> Create a sh file to run one masternode instance. For example:
+  Create a sh file to run one masternode instance. For example:
 
-> ~nano masternode.sh (to use the folder .MXT)
+ `~nano masternode.sh` (to use the folder .MXT)
 
-> inside masternode.sh put:
+  inside masternode.sh put:
+ 
  ```
  #!/bin/bash
  cd /root/Downloads/martexcore/bin
  ./martexd --datadir="/root/.MXT" $1 $2 $3 $4
  ```
 
-> Create a sh file to run the cliente program of masternode instance. For example:
+  Create a sh file to run the cliente program of masternode instance. For example:
 
->~nano masternode_cliente.sh
+ `~nano masternode_cliente.sh`
 
-> inside masternode_cliente.sh put:
+  inside masternode_cliente.sh put:
+
  ```
  #!/bin/bash
  cd /root/Downloads/martexcore/bin
