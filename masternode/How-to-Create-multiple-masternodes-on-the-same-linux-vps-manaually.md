@@ -4,7 +4,7 @@
 
   Some People claim that to have a good cost benefit without overloading the vps, you must run a maximum of 3 masternodes per VPS.
 
-> 1GB of RAM/Swap per masternode instance.
+  1GB of RAM/Swap per masternode instance.
 
   Dedicated IP
 
