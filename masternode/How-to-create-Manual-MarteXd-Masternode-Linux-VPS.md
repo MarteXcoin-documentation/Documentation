@@ -1,6 +1,6 @@
 ## **Requirements:**
 
-  5000 MXT or multiples of 5000 MXT
+  5000 MXT
 
   1GB of RAM/Swap masternode.
 
