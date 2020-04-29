@@ -54,20 +54,19 @@
  cd /root/Downloads/martexcore/bin
  ./martex-cli --datadir="/root/.MXT" $1 $2 $3 $4
  ```
-
 ### 1) Make sure you know where is your MarteX data folder:
 
-https://github.com/martexcoin/martexcoin/wiki#MarteX-Data-Folder
+https://github.com/martexcoin/martexcoin/blob/master/mxt-docs/Home.md#martex-data-folder
 
 #### In this folder you will find all .conf files required in this guide.
 
-### 2) To generate a new address, **Go to Tools\Console or just the command line of daemon MarteXd** then run:
+### 2) To generate a new address, **type in bash** then run:
 
-`getaccountaddress MN1`
+`sh masternode_cliente.sh getaccountaddress MN1`
 
 After than run
 
-`masternode genkey`
+`sh masternode_cliente.sh masternode genkey`
 
 _The first command returns the address that will receive your earnings as a Masternode_
 
@@ -77,7 +76,7 @@ _The first command returns the address that will receive your earnings as a Mast
 
 ### 5) Inside Console, run a command to generate the masternode outputs:
 
-`masternode outputs`
+`sh masternode_cliente.sh masternode outputs`
 
 
 _Copy all data from step 2 and 5_
@@ -103,6 +102,20 @@ txindex=1
 mnconflock=1
 stake=0
 staking=0
+listen=1
+server=1
+daemon=1
+maxconnections=500
+rpcuser=(put your user here)
+rpcpassword=put_a_long_password_here
+port=51315
+rpcport=51314 
+rpcallowip=127.0.0.1
+addnode=add.other.noder.here.with.port
+addnode=ip_node:port_node
+addnode=seed2.martexcoin.org:51315
+addnode=seed3.martexcoin.org:51315
+addnode=seed4.martexcoin.org:51315
 ```
 ### 8.2) In the masternode.conf file, delete everithing and put this line:
 ```
@@ -121,14 +134,18 @@ INDEX = Second data returned of command in the step 5
 
 #### Do not use { } 
 
-### 10) Now start your wallet and check for the masternode status:
-`masternode status`
+### 10) Now start your wallet, wait synchronize and start the masternode:
+`sh masternode_cliente.sh masternode start-alias MN_ALIAS`
+
+### 11) Check masternode status:
+
+`sh masternode_cliente.sh masternode status`
 
 ***
 
 ## **FAQ**
 
-**For more informations acess: https://forum.martexcoin.org/d/38-configura-o-masternode?**
+**For more informations acess: https://t.me/martexcoin**
 
 **Will I receives every block?**
 
@@ -137,6 +154,12 @@ Tip: Keep eyes on the block winners with this commands:
  
 **masternode winners**
 
+`sh masternode_cliente.sh masternode winners`
+
 **masternode list rank** 
 
+`sh masternode_cliente.sh masternode list`
+
 **How much Masternode receives as reward?**
+
+1.125 MXT
