@@ -19,7 +19,7 @@
 
 ## **BEFORE YOU BEGIN**
 
-  Acess your masternode. Create one folder past per masternode instance that you will create.
+  Acess your masternode. Create one folder to the masternode instance that you will create.
 
   Example: `~mkdir .MXT`
 
@@ -111,7 +111,7 @@ rpcpassword=put_a_long_password_here
 port=51315
 rpcport=51314 
 rpcallowip=127.0.0.1
-addnode=add.other.noder.here.with.port
+addnode=add.other.noder.here.with:port
 addnode=ip_node:port_node
 addnode=seed2.martexcoin.org:51315
 addnode=seed3.martexcoin.org:51315
