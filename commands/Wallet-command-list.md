@@ -3,18 +3,18 @@ Availabe Configuration commands to be set in MarteX.conf or after martexcoin / m
 Category | Command | Description
 -|-|-
 anonsen | anonsend <MarteX> <amount> | Inicia o processo de envio de moedas de maneira anônima. (Observação, uma documentação mais detalhada será feita sobre esta função).
-block | getbestblockhash | Exibe o último hash processado por sua carteira. (Returns the hash of the best (tip) block in the longest block chain.)
-block | getblock <hash> [txinfo] | Mostra todas as informações do blockhash inserido.
-block | getblockbynumber <number> [txinfo] | Mostra todas as informações do número do bloco inserido.
-block | getblockhash <index> | Exibe o bloco do hash informado.
-block | getblocktemplate [params] | Returns data needed to construct a block to work on.
-block | getcheckpoint | Expõe em qual block hash (string and interger) a carteira está sincronizada com os masternode; exibe horário UTC,e o tipo de política.
-block | getdifficulty | Exibe a dificuldade de mineração da moeda na modalidade POS.
-block | getmininginfo | Expõe informações sobre o estado de mineração da moeda. (Returns an object containing mining-related information: * blocks * currentblocksize * currentblocktx * difficulty * errors * generate * genproclimit * hashespersec * pooledtx * testnet)
-block | getrawtransaction <txid> [verbose=0] | Returns raw transaction representation for given transaction id.
-block | gettransaction "txid" ( includeWatchonly ) | Returns an object about the given transaction containing: * "amount" : total amount of the transaction * "confirmations" :  number of confirmations of the transaction * "txid" : the transaction ID * "time" : time associated with the transaction<ref>From block timestamp, unless transaction was already in memory pool then the local time when the client added the transaction to its memory pool</ref>. * "details" - An array of objects containing: ** "account" ** "address" ** "category" ** "amount" ** "fee"
-block | keypoolrefill ( newsize ) | Fills the keypool, requires wallet passphrase to be set.
-block | submitblock <hex data> [optional-params-obj] | Attempts to submit new block to network.
+== Blockchain == | getbestblockhash | Exibe o último hash processado por sua carteira. (Returns the hash of the best (tip) block in the longest block chain.)
+== Blockchain == | getblock <hash> [txinfo] | Mostra todas as informações do blockhash inserido.
+== Blockchain == | getblockbynumber <number> [txinfo] | Mostra todas as informações do número do bloco inserido.
+== Blockchain == | getblockhash <index> | Exibe o bloco do hash informado.
+== Blockchain == | getblocktemplate [params] | Returns data needed to construct a block to work on.
+== Blockchain == | getcheckpoint | Expõe em qual block hash (string and interger) a carteira está sincronizada com os masternode; exibe horário UTC,e o tipo de política.
+== Blockchain == | getdifficulty | Exibe a dificuldade de mineração da moeda na modalidade POS.
+== Blockchain == | getmininginfo | Expõe informações sobre o estado de mineração da moeda. (Returns an object containing mining-related information: * blocks * currentblocksize * currentblocktx * difficulty * errors * generate * genproclimit * hashespersec * pooledtx * testnet)
+== Blockchain == | getrawtransaction <txid> [verbose=0] | Returns raw transaction representation for given transaction id.
+== Blockchain == | gettransaction "txid" ( includeWatchonly ) | Returns an object about the given transaction containing: * "amount" : total amount of the transaction * "confirmations" :  number of confirmations of the transaction * "txid" : the transaction ID * "time" : time associated with the transaction<ref>From block timestamp, unless transaction was already in memory pool then the local time when the client added the transaction to its memory pool</ref>. * "details" - An array of objects containing: ** "account" ** "address" ** "category" ** "amount" ** "fee"
+== Blockchain == | keypoolrefill ( newsize ) | Fills the keypool, requires wallet passphrase to be set.
+== Blockchain == | submitblock <hex data> [optional-params-obj] | Attempts to submit new block to network.
 connection | addnode <node> <add|remove|onetry> | Attempts add or remove <node> from the addnode list or try a connection to <node> once.
 connection | getaddednodeinfo <dns> [node] | Returns information about the given added node, or all added nodes (note that onetry addnodes are not listed here) If dns is false, only a list of added nodes will be provided, otherwise connected information will also be available.
 connection | getblockcount | Exibe a quantidade de blocos existentes na blockchain.
@@ -51,18 +51,18 @@ sms | smsgscanbuckets | ??????
 sms | smsgscanchain | ??????
 sms | smsgsend <addrFrom> <addrTo> <message> | ??????
 sms | smsgsendanon <addrTo> <message> | ??????
-wallet | addmultisigaddress nrequired ["key",...] ( "account" ) | Add a nrequired-to-sign multisignature address to the wallet. Each key is a bitcoin address or hex-encoded public key. If [account] is specified, assign address to [account]. Returns a string containing the address.
-wallet | addredeemscript <redeemScript> [account] | ?????
-wallet | backupwallet "destination" | Faz o backup (cópia) da carteira em um arquivo. Você deve digitar o diretório onde deverá ser gravado o arquivo.
-wallet | checkwallet | Verifica a integridade da carteira.
+== Wallet == | addmultisigaddress nrequired ["key",...] ( "account" ) | Add a nrequired-to-sign multisignature address to the wallet. Each key is a bitcoin address or hex-encoded public key. If [account] is specified, assign address to [account]. Returns a string containing the address.
+== Wallet == | addredeemscript <redeemScript> [account] | ?????
+== Wallet == | backupwallet "destination" | Faz o backup (cópia) da carteira em um arquivo. Você deve digitar o diretório onde deverá ser gravado o arquivo.
+wallet | checkwallet | Checks the integrity of the wallet.
 wallet | createmultisig nrequired ["key",...] | Creates a multi-signature address and returns a json object.
 wallet | createrawtransaction [{"txid":txid,"vout":n},...] {address:amount,...} ( locktime ) | Creates a raw transaction spending given inputs.
 wallet | decoderawtransaction <hex string> | Produces a human-readable JSON object for a raw transaction.
 wallet | decodescript <hex string> | ?????
-wallet | dumpprivkey <MarteX> | Mostra a chave privada do endereço público Martex inserido.
+wallet | dumpprivkey "address" | Shows the private key of the entered Martex public address.
 wallet | dumpwallet <filename> | Exports all wallet private keys to file.
 wallet | encryptwallet "passphrase" | Adiciona uma senha para aumentar a segurança da carteira. (Encrypts the wallet with <passphrase>.)
-wallet | getaccount "MarteX" | Returns the account associated with the given address.
+wallet | getaccount "address" | Returns the account associated with the given address.
 wallet | getaccountaddress "account" | Exibe um endereço endereço Martex público de determinada conta. (Returns the current bitcoin address for receiving payments to this account. If <account> does not exist, it will be created along with an associated new address that will be returned.)
 wallet | getaddressesbyaccount "account" | Returns the list of addresses for the given account.
 wallet | getbalance ( "account" minconf includeWatchonly ) | Exibe o balanço geral de todos os enderoços adicionados na carteira. (If [account] is not specified, returns the server's total available balance.<br/>If [account] is specified, returns the balance in the account.)
@@ -97,11 +97,9 @@ wallet | sendtoaddress "MarteX" amount ( "comment" "comment-to" ) | <amount> is 
 wallet | sendtostealthaddress <stealth_address> <amount> [comment] [comment-to] [narration] | ?????
 wallet | setaccount "MarteX" "account" | Sets the account associated with the given address. Assigning address that is already assigned to the same account will create a new address associated with that account.
 wallet | settxfee amount | <amount> is a real and is rounded to the nearest ??????
-wallet | spork <name> [<value>] | ?????
-wallet | stop | Desligar o MarteX wallet.
-wallet | validateaddress <MarteX> | Valida um endereço MarteX e retorna em boolean (verdadeiro ou falso).
-wallet | validatepubkey <MarteXpubkey> | Valida um endereço MarteX público e retorna em boolean (verdadeiro ou falso).
-wallet | verifymessage <MarteX> <signature> <message> | Verify a signed message.
-wallet | help | Show all commands list. (List commands, or get help for a command.)
-WhatIsThis | cclistcoins | ??????
-WhatIsThis | checkkernel [{"txid":txid,"vout":n},...] [createblocktemplate=false] | ?????
+== Wallet == | spork <name> [<value>] | ?????
+== Wallet == | stop | Desligar o MarteX wallet.
+== Wallet == | validateaddress <MarteX> | Valida um endereço MarteX e retorna em boolean (verdadeiro ou falso).
+== Wallet == | validatepubkey <MarteXpubkey> | Valida um endereço MarteX público e retorna em boolean (verdadeiro ou falso).
+== Wallet == | verifymessage <MarteX> <signature> <message> | Verify a signed message.
+== Wallet == | help | Show all commands list. (List commands, or get help for a command.)
