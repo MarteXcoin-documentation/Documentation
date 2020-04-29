@@ -4,7 +4,7 @@
 
 > Dedicated IP
 
-> Port 15315 Available
+> Port 51315 Available
 
 > Download your Wallet (QT or Daemon)
 
