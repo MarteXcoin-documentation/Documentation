@@ -2,7 +2,7 @@
 
   5000 MXT
 
-  1GB of RAM/Swap masternode.
+  1GB of RAM/Swap only to the masternode.
 
   Dedicated IP
 
