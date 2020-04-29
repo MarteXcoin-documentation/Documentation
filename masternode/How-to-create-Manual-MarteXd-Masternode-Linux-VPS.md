@@ -11,7 +11,7 @@
   We recommend generating a ssh key for you to connect to the masternode.
 
   We recommend follows those steps to protect you VPS:
- https://github.com/martexcoin/martexcoin/blob/master/mxt-docs/How-to-protect-your-Masternode-VPS-against-DDoS-attack---Linux.md
+ https://github.com/MarteXcoin-documentation/MarteXCoin_Documentation_GitHub_format_and_wiki/blob/master/masternode/How-to-protect-your-Masternode-VPS-against-DDoS-attack---Linux.md
 
   Download your Wallet (QT or Daemon)
 
