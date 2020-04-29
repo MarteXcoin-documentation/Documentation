@@ -8,7 +8,7 @@
 
   Dedicated IP
 
-  Port 15315 Available or any another. You must use differents port per masternode instance.
+  Port 51315 Available or any another. You must use differents port per masternode instance.
 
   We recommend generating a ssh key for you to connect to the masternode.
 
@@ -65,11 +65,11 @@ https://github.com/martexcoin/martexcoin/blob/master/mxt-docs/Home.md#martex-dat
 
 ### 2) To generate a new address, **type in bash** then run:
 
-`masternode_cliente.sh getaccountaddress MN1`
+`sh masternode_cliente.sh getaccountaddress MN1`
 
 After than run
 
-`masternode_cliente.sh masternode genkey`
+`sh masternode_cliente.sh masternode genkey`
 
 _The first command returns the address that will receive your earnings as a Masternode_
 
@@ -79,7 +79,7 @@ _The first command returns the address that will receive your earnings as a Mast
 
 ### 5) Inside Console, run a command to generate the masternode outputs:
 
-`masternode_cliente.sh masternode outputs`
+`sh masternode_cliente.sh masternode outputs`
 
 
 _Copy all data from step 2 and 5_
@@ -138,11 +138,11 @@ INDEX = Second data returned of command in the step 5
 #### Do not use { } 
 
 ### 10) Now start your wallet, wait synchronize and start the masternode:
-`masternode_cliente.sh masternode start-alias MN_ALIAS`
+`sh masternode_cliente.sh masternode start-alias MN_ALIAS`
 
 ### 11) Check masternode status:
 
-`masternode_cliente.sh masternode status`
+`sh masternode_cliente.sh masternode status`
 
 ***
 
@@ -157,11 +157,11 @@ Tip: Keep eyes on the block winners with this commands:
  
 **masternode winners**
 
-`masternode_cliente.sh masternode winners`
+`sh masternode_cliente.sh masternode winners`
 
 **masternode list rank** 
 
-
+`sh masternode_cliente.sh masternode list`
 
 **How much Masternode receives as reward?**
 
