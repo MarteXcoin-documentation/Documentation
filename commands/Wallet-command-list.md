@@ -2,8 +2,6 @@ Category | Command | Description
 -|-|-
 == MarteX ==
 MarteX | anonsend "command" | Starts the process of sending coins anonymously. Available commands: start (Start mixing); stop (Stop mixing); reset (Reset mixing).
-
-
 MarteX | getgovernanceinfo | Returns an object containing governance parameters.
 MarteX | getpoolinfo | Returns an object containing mixing pool related information.
 MarteX | getsuperblockbudget index | Returns the absolute maximum sum of superblock payments allowed.
