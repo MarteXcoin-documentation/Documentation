@@ -1,15 +1,8 @@
 Category | Command | Description
 -|-|-
 == MarteX ==
-MarteX | anonsend "command" | Starts the process of sending coins anonymously.     Available commands: <\br>
-        ```
-        start
-            Start mixing
-        stop
-            Stop mixing
-        reset
-            Reset mixing
-       
+MarteX | anonsend "command" | Starts the process of sending coins anonymously. Available commands: start (Start mixing); stop (Stop mixing); reset (Reset mixing).
+
 
 MarteX | getgovernanceinfo | Returns an object containing governance parameters.
 MarteX | getpoolinfo | Returns an object containing mixing pool related information.
