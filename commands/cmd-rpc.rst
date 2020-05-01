@@ -450,7 +450,7 @@ RPC server options:
 
 
 martex-qt
--------
+---------
 
 MarteX Core QT GUI, use same command line options as martexd with additional
 options for UI as described below.
