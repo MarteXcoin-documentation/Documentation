@@ -39,7 +39,7 @@ be appended to the data directory automatically.
 Command line arguments
 ======================
 
-These commands are accurate as of MarteX Core version 3.6.1.0.
+These commands are accurate as of MarteX Core version 3.6.1.1-a4933cd-dirty.
 
 - `martexd`_
 - `martex-qt`_
