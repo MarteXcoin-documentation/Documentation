@@ -1,5 +1,5 @@
 .. meta::
-   :description: MarteX Core wallet startup arguments and RPC command reference
+   :description: Dash Core wallet startup arguments and RPC command reference
    :keywords: dash, core, wallet, arguments, commands, RPC
 
 .. _dashcore-rpc:
@@ -24,22 +24,22 @@ using the -datadir and -conf command-line arguments.
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
 | Platform | Path to data folder            | Typical path to configuration file                                                            |
 +==========+================================+===============================================================================================+
-| Linux    | ~/                             | /home/username/.MXT/dash.conf                                                            |
+| Linux    | ~/                             | /home/username/.dashcore/dash.conf                                                            |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
-| macOS    | ~/Library/Application Support/ | /Users/username/Library/Application Support/MarteXCore/dash.conf                                |
+| macOS    | ~/Library/Application Support/ | /Users/username/Library/Application Support/DashCore/dash.conf                                |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
-| Windows  | %APPDATA%                      | (Vista-10) C:\\Users\\username\\AppData\\Roaming\\MarteXCore\\dash.conf                         |
+| Windows  | %APPDATA%                      | (Vista-10) C:\\Users\\username\\AppData\\Roaming\\DashCore\\dash.conf                         |
 |          |                                |                                                                                               |
-|          |                                | (2000-XP) C:\\Documents and Settings\\username\\Application Data\\MarteXCore\\dash.conf         |
+|          |                                | (2000-XP) C:\\Documents and Settings\\username\\Application Data\\DashCore\\dash.conf         |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
 
-Note: if running MarteX in testnet mode, the sub-folder ``testnet3`` will
+Note: if running Dash in testnet mode, the sub-folder ``testnet3`` will
 be appended to the data directory automatically.
 
 Command line arguments
 ======================
 
-These commands are accurate as of MarteX Core version 0.13.0.0.
+These commands are accurate as of Dash Core version 0.13.0.0.
 
 - `dashd`_
 - `dash-qt`_
@@ -50,14 +50,14 @@ These commands are accurate as of MarteX Core version 0.13.0.0.
 dashd
 -----
 
-MarteX Core Daemon
+Dash Core Daemon
 
 
 Usage
 ^^^^^
 
 dashd [options]
-  Start MarteX Core Daemon
+  Start Dash Core Daemon
 
 
 Options
@@ -194,7 +194,7 @@ Chain selection options
 
 --testnet                              Use the test chain
 --devnet=<name>                        Use devnet chain with provided name
---litemode=<n>                         Disable all MarteX specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: 0)
+--litemode=<n>                         Disable all Dash specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: 0)
 --sporkaddr=<hex>                      Override spork address. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.
 --minsporkkeys=<n>                     Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.
 
@@ -261,7 +261,7 @@ RPC server options
 dash-qt
 -------
 
-MarteX Core QT GUI, use same command line options as dashd with additional
+Dash Core QT GUI, use same command line options as dashd with additional
 options for UI as described below.
 
 
@@ -269,7 +269,7 @@ Usage
 ^^^^^
 
 dash-qt [command-line options]
-  Start MarteX Core QT GUI
+  Start Dash Core QT GUI
 
 
 Wallet options
@@ -298,14 +298,14 @@ UI options
 dash-cli
 --------
 
-MarteX Core RPC client
+Dash Core RPC client
 
 
 Usage
 ^^^^^
 
 dash-cli [options] <command> [params]  
-  Send command to MarteX Core
+  Send command to Dash Core
 dash-cli [options] help                
   List commands
 dash-cli [options] help <command>      
@@ -339,7 +339,7 @@ Chain selection options
 dash-tx
 -------
 
-MarteX Core dash-tx utility
+Dash Core dash-tx utility
 
 
 Usage
@@ -407,7 +407,7 @@ set=NAME:JSON-STRING
 RPC commands
 ============
 
-This documentation lists all available RPC commands as of MarteX version
+This documentation lists all available RPC commands as of Dash version
 0.13.0.0, and limited documentation on what each command does. For full
 documentation of arguments, results and examples, type help ( "command"
 ) to view full details at the console. You can enter commands either
@@ -493,10 +493,10 @@ getmemoryinfo
 help ( "command" ) ("subCommand")
   List all commands, or get help for a specified comm
 stop
-  Stop MarteX Core server.
+  Stop Dash Core server.
 
 
-MarteX
+Dash
 ----
 
 getgovernanceinfo
@@ -728,7 +728,7 @@ Wallet
 abandontransaction "txid"
   Mark in-wallet transaction <txid> as abandoned. This will mark this transaction and all its in-wallet descendants as abandoned which will allow for their inputs to be respent.
 addmultisigaddress nrequired ["key",...] ( "account" )
-  Add a nrequired-to-sign multisignature address to the wallet. Each key is a MarteX address or hex-encoded public key. If 'account' is specified (DEPRECATED), assign address to that account.
+  Add a nrequired-to-sign multisignature address to the wallet. Each key is a Dash address or hex-encoded public key. If 'account' is specified (DEPRECATED), assign address to that account.
 backupwallet "destination"
   Safely copies current wallet file to destination, which can be a directory or a path with filename.
 dumphdinfo
@@ -740,15 +740,15 @@ dumpwallet "filename"
 getaccount "address"
   DEPRECATED. Returns the account associated with the given address.
 getaccountaddress "account"
-  DEPRECATED. Returns the current MarteX address for receiving payments to this account.
+  DEPRECATED. Returns the current Dash address for receiving payments to this account.
 getaddressesbyaccount "account"
   DEPRECATED. Returns the list of addresses for the given account.
 getbalance ( "account" minconf addlocked include_watchonly )
   If account is not specified, returns the server's total available balance. If account is specified (DEPRECATED), returns the balance in the account. Note that the account "" is not the same as leaving the parameter out. The server total may be different to the balance in the default "" account.
 getnewaddress ( "account" )
-  Returns a new MarteX address for receiving payments. If 'account' is specified (DEPRECATED), it is added to the address book  so payments received with the address will be credited to 'account'.
+  Returns a new Dash address for receiving payments. If 'account' is specified (DEPRECATED), it is added to the address book  so payments received with the address will be credited to 'account'.
 getrawchangeaddress
-  Returns a new MarteX address, for receiving change. This is for use with raw transactions, NOT normal use.
+  Returns a new Dash address, for receiving change. This is for use with raw transactions, NOT normal use.
 getreceivedbyaccount "account" ( minconf addlocked )
   DEPRECATED. Returns the total amount received by addresses with <account> in transactions with specified minimum number of confirmations.
 getreceivedbyaddress "address" ( minconf addlocked )
