@@ -60,7 +60,7 @@ martexd [options]
   Start MarteX Core Daemon
 
 
-Options:
+Options
 ^^^^^^^^
 
 -help                              Print this help message and exit
