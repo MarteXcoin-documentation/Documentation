@@ -24,13 +24,13 @@ using the -datadir and -conf command-line arguments.
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
 | Platform | Path to data folder            | Typical path to configuration file                                                            |
 +==========+================================+===============================================================================================+
-| Linux    | ~/                             | /home/username/.MXT/MarteX.conf                                                            |
+| Linux    | ~/                             | /home/username/.MXT/MarteX.conf                                                              |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
 | macOS    | ~/Library/Application Support/ | /Users/username/Library/Application Support/MXT/MarteX.conf                                |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
-| Windows  | %APPDATA%                      | (Vista-10) C:\\Users\\username\\AppData\\Roaming\\MXT\\MarteX.conf                         |
+| Windows  | %APPDATA%                      | (Vista-10) C:\\Users\\username\\AppData\\Roaming\\MXT\\MarteX.conf                        |
 |          |                                |                                                                                               |
-|          |                                | (2000-XP) C:\\Documents and Settings\\username\\Appdata\\MXT\\MarteX.conf                                                   |
+|          |                                | (2000-XP) C:\\Documents and Settings\\username\\Appdata\\MXT\\MarteX.conf          |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
 
 Note: if running MarteX in testnet mode, the sub-folder ``testnet3`` will
