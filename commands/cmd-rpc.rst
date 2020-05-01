@@ -258,18 +258,18 @@ RPC server options
 --rpcthreads=<n>                       Set the number of threads to service RPC calls (default: 4)
 
 
-dash-qt
+martex-qt
 -------
 
-Dash Core QT GUI, use same command line options as dashd with additional
+MarteX Core QT GUI, use same command line options as martexd with additional
 options for UI as described below.
 
 
 Usage
 ^^^^^
 
-dash-qt [command-line options]
-  Start Dash Core QT GUI
+martex-qt [command-line options]
+  Start MarteX Core QT GUI
 
 
 Wallet options
@@ -295,20 +295,20 @@ UI options
 --resetguisettings                     Reset all settings changed in the GUI
 
 
-dash-cli
+martex-cli
 --------
 
-Dash Core RPC client
+MarteX Core RPC client
 
 
 Usage
 ^^^^^
 
-dash-cli [options] <command> [params]  
+martex-cli [options] <command> [params]  
   Send command to Dash Core
-dash-cli [options] help                
+martex-cli [options] help                
   List commands
-dash-cli [options] help <command>      
+martex-cli [options] help <command>      
   Get help for a command
 
 
@@ -336,7 +336,7 @@ Chain selection options
 --stdin                                Read extra arguments from standard input, one per line until EOF/Ctrl-D (recommended for sensitive information such as passphrases)
 
 
-dash-tx
+martex-tx
 -------
 
 Dash Core dash-tx utility
