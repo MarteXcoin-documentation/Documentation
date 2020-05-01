@@ -63,21 +63,20 @@ martexd [options]
 Options:
 ^^^^^^^^
 
--help                              Print this help message and exit
--version                           Print version and exit
--alerts                            Receive and display P2P network alerts (default: 1)
---alertnotify=<cmd>                Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)
+--help                              Print this help message and exit
+--version                           Print version and exit
+--alerts                            Receive and display P2P network alerts (default: 1)
 --alertnotify=<cmd>                 Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)
--blocknotify=<cmd>                 Execute command when the best block changes (%s in cmd is replaced by block hash)
--assumevalid=<hex>                 If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: 00299e02c3418ef5afadf1c1d6b0e529f4d169428d9cf6cbbbb8baaa388963b4, testnet:8ad40d557632ce92ac361c5c8407a2364431c94167e52e9f4f23d09b0161e379)
--conf=<file>                       Specify configuration file (default: MarteX.conf)
--daemon                            Run in the background as a daemon and accept commands
--datadir=<dir>                     Specify data directory
--dbcache=<n>                       Set database cache size in megabytes (4 to 16384, default: 300)
--loadblock=<file>                  Imports blocks from external blk000??.dat file on startup
--maxorphantx=<n>                   Keep at most <n> unconnectable transactions in memory (default: 100)
--maxmempool=<n>                    Keep the transaction memory pool below <n> megabytes (default: 300)
--mempoolexpiry=<n>                 Do not keep transactions in the mempool longer than <n> hours (default: 75)
+--blocknotify=<cmd>                 Execute command when the best block changes (%s in cmd is replaced by block hash)
+--assumevalid=<hex>                 If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: 00299e02c3418ef5afadf1c1d6b0e529f4d169428d9cf6cbbbb8baaa388963b4, testnet:8ad40d557632ce92ac361c5c8407a2364431c94167e52e9f4f23d09b0161e379)
+--conf=<file>                       Specify configuration file (default: MarteX.conf)
+--daemon                            Run in the background as a daemon and accept commands
+--datadir=<dir>                     Specify data directory
+--dbcache=<n>                       Set database cache size in megabytes (4 to 16384, default: 300)
+--loadblock=<file>                  Imports blocks from external blk000??.dat file on startup
+--maxorphantx=<n>                   Keep at most <n> unconnectable transactions in memory (default: 100)
+--maxmempool=<n>                    Keep the transaction memory pool below <n> megabytes (default: 300)
+--mempoolexpiry=<n>                 Do not keep transactions in the mempool longer than <n> hours (default: 75)
 -blockreconstructionextratxn=<n>   Extra transactions to keep in memory for compact block reconstructions (default: 100)
 -par=<n>                           Set the number of script verification threads (-3 to 16, 0 = auto, <0 = leave that many cores free, default: 0)
 -pid=<file>                        Specify pid file (default: martexd.pid)
