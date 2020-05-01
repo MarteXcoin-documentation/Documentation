@@ -77,36 +77,34 @@ Options:
 --maxorphantx=<n>                   Keep at most <n> unconnectable transactions in memory (default: 100)
 --maxmempool=<n>                    Keep the transaction memory pool below <n> megabytes (default: 300)
 --mempoolexpiry=<n>                 Do not keep transactions in the mempool longer than <n> hours (default: 75)
--blockreconstructionextratxn=<n>   Extra transactions to keep in memory for compact block reconstructions (default: 100)
--par=<n>                           Set the number of script verification threads (-3 to 16, 0 = auto, <0 = leave that many cores free, default: 0)
--pid=<file>                        Specify pid file (default: martexd.pid)
--prune=<n>                         Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, >945 = automatically prune block files to stay under the specified target size in MiB)
--reindex-chainstate                Rebuild chain state from the currently indexed blocks
--reindex                           Rebuild chain state and block index from the blk*.dat files on disk
--sysperms                          Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)
--txindex                           Maintain a full transaction index, used by the getrawtransaction rpc call (default: 1)
--addressindex                      Maintain a full address index, used to query for the balance, txids and unspent outputs for addresses (default: 0)
--timestampindex                    Maintain a timestamp index for block hashes, used to query blocks hashes by a range of timestamps (default: 0)
--spentindex                        Maintain a full spent index, used to query the spending txid and input index for an outpoint (default: 0)
+--blockreconstructionextratxn=<n>   Extra transactions to keep in memory for compact block reconstructions (default: 100)
+--par=<n>                           Set the number of script verification threads (-3 to 16, 0 = auto, <0 = leave that many cores free, default: 0)
+--pid=<file>                        Specify pid file (default: martexd.pid)
+--prune=<n>                         Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, >945 = automatically prune block files to stay under the specified target size in MiB)
+--reindex-chainstate                Rebuild chain state from the currently indexed blocks
+--reindex                           Rebuild chain state and block index from the blk*.dat files on disk
+--sysperms                          Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)
+--txindex                           Maintain a full transaction index, used by the getrawtransaction rpc call (default: 1)
+--addressindex                      Maintain a full address index, used to query for the balance, txids and unspent outputs for addresses (default: 0)
+--timestampindex                    Maintain a timestamp index for block hashes, used to query blocks hashes by a range of timestamps (default: 0)
+--spentindex                        Maintain a full spent index, used to query the spending txid and input index for an outpoint (default: 0)
 
 
 Connection options:
 ^^^^^^^^^^^^^^^^^^^
 
--addnode=<ip>                         Add a node to connect to and attempt to keep the connection open
--allowprivatenet                      Allow RFC1918 addresses to be relayed and connected to (default: 0)
--banscore=<n>                         Threshold for disconnecting misbehaving peers (default: 100)
--bantime=<n>                          Number of seconds to keep misbehaving peers from reconnecting (default: 86400)
--bind=<addr>                          Bind to given address and always listen on it. Use [host]:port notation for IPv6
--connect=<ip>                         Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections
--discover                             Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)
--dns                                  Allow DNS lookups for -addnode, -seednode and -connect (default: 1)
--dnsseed                              Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)
+--addnode=<ip>                         Add a node to connect to and attempt to keep the connection open
+--allowprivatenet                      Allow RFC1918 addresses to be relayed and connected to (default: 0)
+--banscore=<n>                         Threshold for disconnecting misbehaving peers (default: 100)
+--bantime=<n>                          Number of seconds to keep misbehaving peers from reconnecting (default: 86400)
+--bind=<addr>                          Bind to given address and always listen on it. Use [host]:port notation for IPv6
+--connect=<ip>                         Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections
+--discover                             Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)
+--dns                                  Allow DNS lookups for -addnode, -seednode and -connect (default: 1)
+--dnsseed                              Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless --connect/-noconnect)
 
-  -externalip=<ip>
-       Specify your own public address
-
-  -forcednsseed
+--externalip=<ip>                      Specify your own public address
+--forcednsseed
        Always query for peer addresses via DNS lookup (default: 0)
 
   -listen
