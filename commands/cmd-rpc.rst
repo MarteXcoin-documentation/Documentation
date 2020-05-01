@@ -120,9 +120,7 @@ Connection options:
 --seednode=<ip>                        Connect to a node to retrieve peer addresses, and disconnect
 --timeout=<n>                          Specify connection timeout in milliseconds (minimum: 1, default: 5000)
 --torcontrol=<ip>:<port>               Tor control port to use if onion listening enabled (default: 127.0.0.1:9051)
-
-  -torpassword=<pass>
-       Tor control port password (default: empty)
+--torpassword=<pass>                   Tor control port password (default: empty)
 
   -upnp
        Use UPnP to map the listening port (default: 0)
