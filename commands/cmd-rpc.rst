@@ -61,10 +61,10 @@ martexd [options]
 Options:
 ^^^^^^^^
 
-  -?                                 Print this help message and exit
-  -version                           Print version and exit
-  -alerts                            Receive and display P2P network alerts (default: 1)
-  -alertnotify=<cmd>                 Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)
+-?                                 Print this help message and exit
+-version                           Print version and exit
+-alerts                            Receive and display P2P network alerts (default: 1)
+-alertnotify=<cmd>                 Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)
   -blocknotify=<cmd>                 Execute command when the best block changes (%s in cmd is replaced by block hash)
   -assumevalid=<hex>                 If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: 00299e02c3418ef5afadf1c1d6b0e529f4d169428d9cf6cbbbb8baaa388963b4, testnet:8ad40d557632ce92ac361c5c8407a2364431c94167e52e9f4f23d09b0161e379)
   -conf=<file>                       Specify configuration file (default: MarteX.conf)
