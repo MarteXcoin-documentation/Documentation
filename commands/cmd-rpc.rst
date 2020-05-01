@@ -1,8 +1,8 @@
 .. meta::
-   :description: Dash Core wallet startup arguments and RPC command reference
-   :keywords: dash, core, wallet, arguments, commands, RPC
+   :description: MarteX Core wallet startup arguments and RPC command reference
+   :keywords: martex, core, wallet, arguments, commands, RPC
 
-.. _dashcore-rpc:
+.. _martexcore-rpc:
 
 ======================
 Arguments and commands
@@ -16,24 +16,24 @@ of ``setting=value`` pairs, one per line, with optional comments
 starting with the ``#`` character.
 
 The configuration file is not automatically created; you can create it
-using your favorite plain-text editor. By default, dash-qt (or dashd)
-will look for a file named ``dash.conf`` in the dash data directory, but
+using your favorite plain-text editor. By default, martex-qt (or martexd)
+will look for a file named ``MarteX.conf`` in the martex data directory, but
 both the data directory and the configuration file path may be changed
 using the -datadir and -conf command-line arguments.
 
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
 | Platform | Path to data folder            | Typical path to configuration file                                                            |
 +==========+================================+===============================================================================================+
-| Linux    | ~/                             | /home/username/.dashcore/dash.conf                                                            |
+| Linux    | ~/                             | /home/username/.MXT/MarteX.conf                                                            |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
-| macOS    | ~/Library/Application Support/ | /Users/username/Library/Application Support/DashCore/dash.conf                                |
+| macOS    | ~/Library/Application Support/ | /Users/username/Library/Application Support/MXT/MarteX.conf                                |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
-| Windows  | %APPDATA%                      | (Vista-10) C:\\Users\\username\\AppData\\Roaming\\DashCore\\dash.conf                         |
+| Windows  | %APPDATA%                      | (Vista-10) C:\\Users\\username\\AppData\\Roaming\\MXT\\MarteX.conf                         |
 |          |                                |                                                                                               |
-|          |                                | (2000-XP) C:\\Documents and Settings\\username\\Application Data\\DashCore\\dash.conf         |
+|          |                                | (2000-XP) C:\\Documents and Settings\\username\\Appdata\\MXT\\MarteX.conf         
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
 
-Note: if running Dash in testnet mode, the sub-folder ``testnet3`` will
+Note: if running MarteX in testnet mode, the sub-folder ``testnet3`` will
 be appended to the data directory automatically.
 
 Command line arguments
@@ -41,23 +41,23 @@ Command line arguments
 
 These commands are accurate as of Dash Core version 0.13.0.0.
 
-- `dashd`_
-- `dash-qt`_
-- `dash-cli`_
-- `dash-tx`_
+- `martexd`_
+- `martex-qt`_
+- `martex-cli`_
+- `martex-tx`_
 
 
-dashd
+martexd
 -----
 
-Dash Core Daemon
+MarteX Core Daemon
 
 
 Usage
 ^^^^^
 
-dashd [options]
-  Start Dash Core Daemon
+martexd [options]
+  Start MarteX Core Daemon
 
 
 Options
