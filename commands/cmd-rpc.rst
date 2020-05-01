@@ -102,66 +102,24 @@ Connection options:
 --discover                             Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)
 --dns                                  Allow DNS lookups for -addnode, -seednode and -connect (default: 1)
 --dnsseed                              Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless --connect/-noconnect)
-
 --externalip=<ip>                      Specify your own public address
---forcednsseed
-       Always query for peer addresses via DNS lookup (default: 0)
-
-  -listen
-       Accept connections from outside (default: 1 if no -proxy or
-       -connect/-noconnect)
-
-  -listenonion
-       Automatically create Tor hidden service (default: 1)
-
-  -maxconnections=<n>
-       Maintain at most <n> connections to peers (temporary service connections
-       excluded) (default: 125)
-
-  -maxreceivebuffer=<n>
-       Maximum per-connection receive buffer, <n>*1000 bytes (default: 5000)
-
-  -maxsendbuffer=<n>
-       Maximum per-connection send buffer, <n>*1000 bytes (default: 1000)
-
-  -maxtimeadjustment
-       Maximum allowed median peer time offset adjustment. Local perspective of
-       time may be influenced by peers forward or backward by this
-       amount. (default: 4200 seconds)
-
-  -onion=<ip:port>
-       Use separate SOCKS5 proxy to reach peers via Tor hidden services
-       (default: -proxy)
-
-  -onlynet=<net>
-       Only connect to nodes in network <net> (ipv4, ipv6 or onion)
-
-  -permitbaremultisig
-       Relay non-P2SH multisig (default: 1)
-
-  -peerbloomfilters
-       Support filtering of blocks and transaction with bloom filters (default:
-       1)
-
-  -port=<port>
-       Listen for connections on <port> (default: 51315 or testnet: 41315)
-
-  -proxy=<ip:port>
-       Connect through SOCKS5 proxy
-
-  -proxyrandomize
-       Randomize credentials for every proxy connection. This enables Tor
-       stream isolation (default: 1)
-
-  -seednode=<ip>
-       Connect to a node to retrieve peer addresses, and disconnect
-
-  -timeout=<n>
-       Specify connection timeout in milliseconds (minimum: 1, default: 5000)
-
-  -torcontrol=<ip>:<port>
-       Tor control port to use if onion listening enabled (default:
-       127.0.0.1:9051)
+--forcednsseed                         Always query for peer addresses via DNS lookup (default: 0)
+--listen                               Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)
+--listenonion                          Automatically create Tor hidden service (default: 1)
+--maxconnections=<n>                   Maintain at most <n> connections to peers (temporary service connections excluded) (default: 125)
+--maxreceivebuffer=<n>                 Maximum per-connection receive buffer, <n>*1000 bytes (default: 5000)
+--maxsendbuffer=<n>                    Maximum per-connection send buffer, <n>*1000 bytes (default: 1000)
+--maxtimeadjustment                    Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: 4200 seconds)
+--onion=<ip:port>                      Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)
+--onlynet=<net>                        Only connect to nodes in network <net> (ipv4, ipv6 or onion)
+--permitbaremultisig                   Relay non-P2SH multisig (default: 1)
+--peerbloomfilters                     Support filtering of blocks and transaction with bloom filters (default: 1)
+--port=<port>                          Listen for connections on <port> (default: 51315 or testnet: 41315)
+--proxy=<ip:port>                      Connect through SOCKS5 proxy
+--proxyrandomize                       Randomize credentials for every proxy connection. This enables Tor stream isolation (default: 1)
+--seednode=<ip>                        Connect to a node to retrieve peer addresses, and disconnect
+--timeout=<n>                          Specify connection timeout in milliseconds (minimum: 1, default: 5000)
+--torcontrol=<ip>:<port>               Tor control port to use if onion listening enabled (default: 127.0.0.1:9051)
 
   -torpassword=<pass>
        Tor control port password (default: empty)
