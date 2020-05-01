@@ -61,116 +61,38 @@ martexd [options]
 Options:
 ^^^^^^^^
 
-  -?
-       Print this help message and exit
-
-  -version
-       Print version and exit
-
-  -alerts
-       Receive and display P2P network alerts (default: 1)
-
-  -alertnotify=<cmd>
-       Execute command when a relevant alert is received or we see a really
-       long fork (%s in cmd is replaced by message)
-
-  -blocknotify=<cmd>
-       Execute command when the best block changes (%s in cmd is replaced by
-       block hash)
-
-  -assumevalid=<hex>
-       If this block is in the chain assume that it and its ancestors are valid
-       and potentially skip their script verification (0 to verify all,
-       default:
-       00299e02c3418ef5afadf1c1d6b0e529f4d169428d9cf6cbbbb8baaa388963b4,
-       testnet:
-       8ad40d557632ce92ac361c5c8407a2364431c94167e52e9f4f23d09b0161e379)
-
-  -conf=<file>
-       Specify configuration file (default: MarteX.conf)
-
-  -daemon
-       Run in the background as a daemon and accept commands
-
-  -datadir=<dir>
-       Specify data directory
-
-  -dbcache=<n>
-       Set database cache size in megabytes (4 to 16384, default: 300)
-
-  -loadblock=<file>
-       Imports blocks from external blk000??.dat file on startup
-
-  -maxorphantx=<n>
-       Keep at most <n> unconnectable transactions in memory (default: 100)
-
-  -maxmempool=<n>
-       Keep the transaction memory pool below <n> megabytes (default: 300)
-
-  -mempoolexpiry=<n>
-       Do not keep transactions in the mempool longer than <n> hours (default:
-       75)
-
-  -blockreconstructionextratxn=<n>
-       Extra transactions to keep in memory for compact block reconstructions
-       (default: 100)
-
-  -par=<n>
-       Set the number of script verification threads (-3 to 16, 0 = auto, <0 =
-       leave that many cores free, default: 0)
-
-  -pid=<file>
-       Specify pid file (default: martexd.pid)
-
-  -prune=<n>
-       Reduce storage requirements by enabling pruning (deleting) of old
-       blocks. This allows the pruneblockchain RPC to be called to
-       delete specific blocks, and enables automatic pruning of old
-       blocks if a target size in MiB is provided. This mode is
-       incompatible with -txindex and -rescan. Warning: Reverting this
-       setting requires re-downloading the entire blockchain. (default:
-       0 = disable pruning blocks, 1 = allow manual pruning via RPC,
-       >945 = automatically prune block files to stay under the
-       specified target size in MiB)
-
-  -reindex-chainstate
-       Rebuild chain state from the currently indexed blocks
-
-  -reindex
-       Rebuild chain state and block index from the blk*.dat files on disk
-
-  -sysperms
-       Create new files with system default permissions, instead of umask 077
-       (only effective with disabled wallet functionality)
-
-  -txindex
-       Maintain a full transaction index, used by the getrawtransaction rpc
-       call (default: 1)
-
-  -addressindex
-       Maintain a full address index, used to query for the balance, txids and
-       unspent outputs for addresses (default: 0)
-
-  -timestampindex
-       Maintain a timestamp index for block hashes, used to query blocks hashes
-       by a range of timestamps (default: 0)
-
-  -spentindex
-       Maintain a full spent index, used to query the spending txid and input
-       index for an outpoint (default: 0)
+  -?                                 Print this help message and exit
+  -version                           Print version and exit
+  -alerts                            Receive and display P2P network alerts (default: 1)
+  -alertnotify=<cmd>                 Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)
+  -blocknotify=<cmd>                 Execute command when the best block changes (%s in cmd is replaced by block hash)
+  -assumevalid=<hex>                 If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: 00299e02c3418ef5afadf1c1d6b0e529f4d169428d9cf6cbbbb8baaa388963b4, testnet:8ad40d557632ce92ac361c5c8407a2364431c94167e52e9f4f23d09b0161e379)
+  -conf=<file>                       Specify configuration file (default: MarteX.conf)
+  -daemon                            Run in the background as a daemon and accept commands
+  -datadir=<dir>                     Specify data directory
+  -dbcache=<n>                       Set database cache size in megabytes (4 to 16384, default: 300)
+  -loadblock=<file>                  Imports blocks from external blk000??.dat file on startup
+  -maxorphantx=<n>                   Keep at most <n> unconnectable transactions in memory (default: 100)
+  -maxmempool=<n>                    Keep the transaction memory pool below <n> megabytes (default: 300)
+  -mempoolexpiry=<n>                 Do not keep transactions in the mempool longer than <n> hours (default: 75)
+  -blockreconstructionextratxn=<n>   Extra transactions to keep in memory for compact block reconstructions (default: 100)
+  -par=<n>                           Set the number of script verification threads (-3 to 16, 0 = auto, <0 = leave that many cores free, default: 0)
+  -pid=<file>                        Specify pid file (default: martexd.pid)
+  -prune=<n>                         Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, >945 = automatically prune block files to stay under the specified target size in MiB)
+  -reindex-chainstate                Rebuild chain state from the currently indexed blocks
+  -reindex                           Rebuild chain state and block index from the blk*.dat files on disk
+  -sysperms                          Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)
+  -txindex                           Maintain a full transaction index, used by the getrawtransaction rpc call (default: 1)
+  -addressindex                      Maintain a full address index, used to query for the balance, txids and unspent outputs for addresses (default: 0)
+  -timestampindex                    Maintain a timestamp index for block hashes, used to query blocks hashes by a range of timestamps (default: 0)
+  -spentindex                        Maintain a full spent index, used to query the spending txid and input index for an outpoint (default: 0)
 
 Connection options:
 ^^^^^^^^^^^^^^^^^^^
 
-  -addnode=<ip>
-       Add a node to connect to and attempt to keep the connection open
-
-  -allowprivatenet
-       Allow RFC1918 addresses to be relayed and connected to (default: 0)
-
-  -banscore=<n>
-       Threshold for disconnecting misbehaving peers (default: 100)
-
+  -addnode=<ip>                         Add a node to connect to and attempt to keep the connection open
+  -allowprivatenet                      Allow RFC1918 addresses to be relayed and connected to (default: 0)
+  -banscore=<n>                         Threshold for disconnecting misbehaving peers (default: 100)
   -bantime=<n>
        Number of seconds to keep misbehaving peers from reconnecting (default:
        86400)
