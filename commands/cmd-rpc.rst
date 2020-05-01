@@ -52,11 +52,13 @@ martexd
 
 MarteX Core Daemon version v3.0.6.1-a4933cd-dirty
 
+
 Usage:
 ^^^^^^
 
 martexd [options]
   Start MarteX Core Daemon
+
 
 Options:
 ^^^^^^^^
@@ -86,6 +88,7 @@ Options:
 -addressindex                      Maintain a full address index, used to query for the balance, txids and unspent outputs for addresses (default: 0)
 -timestampindex                    Maintain a timestamp index for block hashes, used to query blocks hashes by a range of timestamps (default: 0)
 -spentindex                        Maintain a full spent index, used to query the spending txid and input index for an outpoint (default: 0)
+
 
 Connection options:
 ^^^^^^^^^^^^^^^^^^^
