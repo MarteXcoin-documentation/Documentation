@@ -39,7 +39,7 @@ be appended to the data directory automatically.
 Command line arguments
 ======================
 
-These commands are accurate as of Dash Core version 0.13.0.0.
+These commands are accurate as of MarteX Core version 3.6.1.0.
 
 - `martexd`_
 - `martex-qt`_
