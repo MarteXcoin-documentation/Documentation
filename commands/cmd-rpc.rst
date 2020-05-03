@@ -390,11 +390,10 @@ sign=SIGHASH-FLAGS
 Register Commands
 ^^^^^^^^^^^^^^^^^
 
-  load=NAME:FILENAME
-       Load JSON file FILENAME into register NAME
-
-  set=NAME:JSON-STRING
-       Set register NAME to given JSON-STRING
+load=NAME:FILENAME
+  Load JSON file FILENAME into register NAME
+set=NAME:JSON-STRING
+  Set register NAME to given JSON-STRING
 
 
 RPC commands
