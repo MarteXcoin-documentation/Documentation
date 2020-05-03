@@ -271,27 +271,28 @@ Wallet options
 ^^^^^^^^^^^^^^
 
 --windowtitle=<name>                   Wallet window title
- 
+--par=<n>                              Set the number of script verification threads (-3 to 16, 0 = auto, <0 = leave that many cores free, default: 0)
+
 
 Debugging/Testing options
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
---debug=<category>                     Output debugging information (default: 0, supplying <category> is optional). If <category> is not supplied or if <category> = 1, output all debugging information.<category> can be: addrman, alert, bench, cmpctblock, coindb, db, http, leveldb, libevent, lock, mempool, mempoolrej, net, proxy, prune, rand, reindex, rpc, selectcoins, tor, zmq, dash (or specifically: gobject, instantsend, keepass, masternode, mnpayments, mnsync, privatesend, spork), qt.
+--debug=<category>                     Output debugging information (default: 0, supplying <category> is optional). If <category> is not supplied or if <category> = 1, output all debugging information.<category> can be: addrman, alert, bench, cmpctblock, coindb, db, http, leveldb, libevent, lock, mempool, mempoolrej, net, proxy, prune, rand, reindex, rpc, selectcoins, tor, zmq, martex (or specifically: gobject, fastsend, keepass, masternode, mnpayments, mnsync, anonsend, spork), qt.
 
  
 UI options
 ^^^^^^^^^^
 
---choosedatadir                        Choose data directory on startup (default: 0) 
---lang=<lang>                          Set language, for example "de_DE" (default: system locale) 
---min                                  Start minimized 
---rootcertificates=<file>              Set SSL root certificates for payment request (default: -system-) 
---splash                               Show splash screen on startup (default: 1) 
+--choosedatadir                        Choose data directory on startup (default: 0)
+--lang=<lang>                          Set language, for example "de_DE" (default: system locale)
+--min                                  Start minimized
+--rootcertificates=<file>              Set SSL root certificates for payment request (default: -system-)
+--splash                               Show splash screen on startup (default: 1)
 --resetguisettings                     Reset all settings changed in the GUI
 
 
 martex-cli
---------
+----------
 
 MarteX Core RPC client
 
@@ -299,19 +300,17 @@ MarteX Core RPC client
 Usage
 ^^^^^
 
-martex-cli [options] <command> [params]  
-  Send command to Dash Core
-martex-cli [options] help                
-  List commands
-martex-cli [options] help <command>      
-  Get help for a command
+martex-cli [options] <command> [params]  Send command to MarteX Core
+martex-cli [options] -named <command> [name=value] ... Send command to MarteX Core (with named arguments)
+martex-cli [options] help                List commands
+martex-cli [options] help <command>      Get help for a command
 
 
 Options
 ^^^^^^^
 
 --help                                 This help message
---conf=<file>                          Specify configuration file (default: dash.conf)
+--conf=<file>                          Specify configuration file (default: MarteX.conf)
 --datadir=<dir>                        Specify data directory
 
 
@@ -323,7 +322,7 @@ Chain selection options
 --regtest                              Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.
 --named                                Pass named instead of positional arguments (default: false)
 --rpcconnect=<ip>                      Send commands to node running on <ip> (default: 127.0.0.1)
---rpcport=<port>                       Connect to JSON-RPC on <port> (default: 9998 or testnet: 19998)
+--rpcport=<port>                       Connect to JSON-RPC on <port> (default: 51314 or testnet: 41314)
 --rpcwait                              Wait for RPC server to start
 --rpcuser=<user>                       Username for JSON-RPC connections
 --rpcpassword=<pw>                     Password for JSON-RPC connections
@@ -332,18 +331,16 @@ Chain selection options
 
 
 martex-tx
--------
+---------
 
-Dash Core dash-tx utility
+MarteX Core martex-tx utility
 
 
 Usage
 ^^^^^
 
-dash-tx [options] <hex-tx> [commands]
-  Update hex-encoded dash transaction
-dash-tx [options] -create [commands]
-  Create hex-encoded dash transaction
+martex-tx [options] <hex-tx> [commands]  Update hex-encoded martex transaction
+martex-tx [options] -create [commands]   Create hex-encoded martex transaction
 
 
 Options
@@ -370,7 +367,7 @@ delin=N
   Delete input N from TX
 delout=N
   Delete output N from TX
-in=TXID:VOUT
+in=TXID:VOUT(:SEQUENCE_NUMBER)
   Add input to TX
 locktime=N
   Set TX lock time to N
@@ -393,10 +390,11 @@ sign=SIGHASH-FLAGS
 Register Commands
 ^^^^^^^^^^^^^^^^^
 
-load=NAME:FILENAME
-  Load JSON file FILENAME into register NAME
-set=NAME:JSON-STRING
-  Set register NAME to given JSON-STRING
+  load=NAME:FILENAME
+       Load JSON file FILENAME into register NAME
+
+  set=NAME:JSON-STRING
+       Set register NAME to given JSON-STRING
 
 
 RPC commands
