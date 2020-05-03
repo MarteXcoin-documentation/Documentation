@@ -694,6 +694,8 @@ addmultisigaddress nrequired ["key",...] ( "account" )
   Add a nrequired-to-sign multisignature address to the wallet. Each key is a Dash address or hex-encoded public key. If 'account' is specified (DEPRECATED), assign address to that account.
 backupwallet "destination"
   Safely copies current wallet file to destination, which can be a directory or a path with filename.
+checkwallet
+  Check Wallet integrity.
 dumphdinfo
   Returns an object containing sensitive private info about this HD wallet.
 dumpprivkey "address"
