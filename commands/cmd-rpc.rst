@@ -399,12 +399,12 @@ set=NAME:JSON-STRING
 RPC commands
 ============
 
-This documentation lists all available RPC commands as of Dash version
-0.13.0.0, and limited documentation on what each command does. For full
-documentation of arguments, results and examples, type help ( "command"
+This documentation lists all available RPC commands as of MarteX version
+3.0.6.1-a4933cd-dirty, and limited documentation on what each command does.
+For full documentation of arguments, results and examples, type help ( "command"
 ) to view full details at the console. You can enter commands either
-from **Tools > Debug** console in the QT wallet, or using *dash-cli* for
-headless wallets and *dashd*.
+from **Tools > Debug** console in the QT wallet, or using *martex-cli* for
+headless wallets and *martexd*.
 
 
 Addressindex
@@ -427,7 +427,7 @@ Blockchain
 
 getbestblockhash
   Returns the hash of the best (tip) block in the longest blockchain.
-getblock "blockhash" ( verbosity )
+getblock "blockhash" ( verbose )
   If verbosity is 0, returns a string that is serialized, hex-encoded data for block 'hash'. If verbosity is 1, returns an Object with information about block <hash>. If verbosity is 2, returns an Object with information about block <hash> and information about each transaction.
 getblockchaininfo
   Returns an object containing various state info regarding blockchain processing.
@@ -476,7 +476,7 @@ verifytxoutproof "proof"
 Control
 -------
 
-debug ( 0 | 1 | addrman | alert | bench | coindb | db | lock | rand | rpc | selectcoins | mempool | mempoolrej | net | proxy | prune | http | libevent | tor | zmq | dash | privatesend | instantsend | masternode | spork | keepass | mnpayments | gobject )
+debug ( 0 | 1 | addrman | alert | bench | coindb | db | lock | rand | rpc | selectcoins | mempool | mempoolrej | net | proxy | prune | http | libevent | tor | zmq | martex | anonsend | fasttsend | masternode | spork | keepass | mnpayments | gobject )
   Change debug category on the fly. Specify single category or use '+' to specify many.
 getinfo
   DEPRECATED. Returns an object containing various state info.
@@ -485,7 +485,7 @@ getmemoryinfo
 help ( "command" ) ("subCommand")
   List all commands, or get help for a specified comm
 stop
-  Stop Dash Core server.
+  Stop MarteX Core server.
 
 
 Dash
