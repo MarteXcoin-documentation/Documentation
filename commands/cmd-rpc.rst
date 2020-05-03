@@ -488,9 +488,27 @@ stop
   Stop MarteX Core server.
 
 
-Dash
-----
+Generating
+----------
 
+generate nblocks ( maxtries )
+  Mine up to nblocks blocks immediately (before the RPC call returns)
+generatetoaddress nblocks address (maxtries)
+  Mine blocks immediately to a specified address (before the RPC call returns)
+
+
+MarteX
+------
+
+anonsend "command"
+  Available commands:
+
+    start
+      Start mixing
+    stop
+      Stop mixing
+    reset
+      Reset mixing
 getgovernanceinfo
   Returns an object containing governance parameters.
 getpoolinfo
@@ -523,7 +541,7 @@ gobject "command"...
     vote-alias
       Vote on a governance object by masternode alias (using masternode.conf setup)
     vote-conf
-      Vote on a governance object by masternode configured in dash.conf
+      Vote on a governance object by masternode configured in MarteX.conf
     vote-many
       Vote on a governance object by all masternodes (using masternode.conf setup)
 masternode "command"...
@@ -568,15 +586,6 @@ masternode list ( "mode" "filter" )
   Get a list of masternodes in different modes. This call is identical to masternodelist call.
 mnsync [status | next | reset]
   Returns the sync status, updates to the next step or resets it entirely.
-privatesend "command"
-  Available commands:
-
-    start
-      Start mixing
-    stop
-      Stop mixing
-    reset
-      Reset mixing
 sentinelping version
   Sentinel ping.
 spork "command"
@@ -589,46 +598,6 @@ spork "command"
 voteraw <masternode-tx-hash> <masternode-tx-index> <governance-hash> <vote-signal> [yes | no | abstain] <time> <vote-sig>
   Compile and relay a governance vote with provided external signature instead of signing vote internally
 
-Evo
----
-
-bls "command" ...
-  Set of commands to execute BLS related actions. Available commands:
-  
-    generate
-      Create a BLS secret/public key pair
-protx "command" ...
-  Set of commands to execute ProTx related actions. Available commands:
-  
-    register
-      Create and send ProTx to network
-    register_fund
-      Fund, create and send ProTx to network
-    register_prepare
-      Create an unsigned ProTx
-    register_submit
-      Sign and submit a ProTx
-    list
-      List ProTxs
-    info
-      Return information about a ProTx
-    update_service
-      Create and send ProUpServTx to network
-    update_registrar
-      Create and send ProUpRegTx to network
-    revoke
-      Create and send ProUpRevTx to network
-    diff
-      Calculate a diff and a proof between two masternode lists
-
-
-Generating
-----------
-
-generate nblocks ( maxtries )
-  Mine up to nblocks blocks immediately (before the RPC call returns)
-generatetoaddress nblocks address (maxtries)
-  Mine blocks immediately to a specified address (before the RPC call returns)
 
 Mining
 ------
@@ -639,6 +608,8 @@ getmininginfo
   Returns a json object containing mining-related information.
 getnetworkhashps ( nblocks height )
   Returns the estimated network hashes per second based on the last n blocks. Pass in [blocks] to override # of blocks, -1 specifies since last difficulty change. Pass in [height] to estimate the network speed at the time when a certain block was found.
+getstakinginfo
+  Returns an object containing staking-related information.
 prioritisetransaction <txid> <priority delta> <fee delta>
   Accepts the transaction into mined blocks at a higher (or lower) priority
 submitblock "hexdata" ( "jsonparametersobject" )
