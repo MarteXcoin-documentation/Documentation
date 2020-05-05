@@ -406,7 +406,7 @@ For full documentation of arguments, results and examples, type help ( "command"
 from **Tools > Debug** console in the QT wallet, or using *martex-cli* for
 headless wallets and *martexd*.
 
-`RPC commands <commands/rpccommandslist.txt>`_
+`RPC commands </rpccommandslist.txt>`_
 
 
 Addressindex
