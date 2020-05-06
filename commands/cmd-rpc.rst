@@ -406,9 +406,6 @@ For full documentation of arguments, results and examples, type help ( "command"
 from **Tools > Debug** console in the QT wallet, or using *martex-cli* for
 headless wallets and *martexd*.
 
-`RPC commands </rpccommandslist.txt>`_
-
-
 Addressindex
 ------------
 
@@ -430,7 +427,7 @@ Blockchain
 getbestblockhash
   Returns the hash of the best (tip) block in the longest blockchain.
 getblock "blockhash" ( verbose )
-  If verbosity is 0, returns a string that is serialized, hex-encoded data for block 'hash'. If verbosity is 1, returns an Object with information about block <hash>. If verbosity is 2, returns an Object with information about block <hash> and information about each transaction.
+  If verbose is false, returns a string that is serialized, hex-encoded data for block 'hash'. If verbose is true, returns an Object with information about block <hash>.
 getblockchaininfo
   Returns an object containing various state info regarding blockchain processing.
 getblockcount
@@ -452,7 +449,7 @@ getmempoolancestors txid (verbose)
 getmempooldescendants txid (verbose)
   If txid is in the mempool, returns all in-mempool descendants.
 getmempoolentry txid
-  Returns mempool data for given transaction.
+  Returns mempool data for given transaction
 getmempoolinfo
   Returns details on the active state of the TX memory pool.
 getrawmempool ( verbose )
@@ -462,33 +459,33 @@ getspentinfo
 gettxout "txid" n ( include_mempool )
   Returns details about an unspent transaction output.
 gettxoutproof ["txid",...] ( blockhash )
-  Returns a hex-encoded proof that "txid" was included in a block.
+  Returns a hex-encoded proof that "txid" was included in a block. NOTE: By default this function only works sometimes. This is when there is an unspent output in the utxo for this transaction. To make it always work, you need to maintain a transaction index, using the -txindex command line option or specify the block in which the transaction is included manually (by blockhash).
 gettxoutsetinfo
   Returns statistics about the unspent transaction output set. Note this call may take some time.
+
 preciousblock "blockhash"
   Treats a block as if it were received before others with the same work. A later preciousblock call can override the effect of an earlier one. The effects of preciousblock are not retained across restarts.
 pruneblockchain
-  Prune blockchain up to specified height or unix timestamp.
+  Arguments: 1. "height"       (numeric, required) The block height to prune up to. May be set to a discrete height, or a unix timestamp to prune blocks whose block time is at least 2 hours older than the provided timestamp.
 verifychain ( checklevel nblocks )
   Verifies blockchain database.
 verifytxoutproof "proof"
-  Verifies that a proof points to a transaction in a block, returning the transaction it commits to and throwing an RPC error if the block is not in our best chain.
+  Verifies that a proof points to a transaction in a block, returning the transaction it commits to and throwing an RPC error if the block is not in our best chain
 
 
 Control
 -------
 
-debug ( 0 | 1 | addrman | alert | bench | coindb | db | lock | rand | rpc | selectcoins | mempool | mempoolrej | net | proxy | prune | http | libevent | tor | zmq | martex | anonsend | fasttsend | masternode | spork | keepass | mnpayments | gobject )
+debug ( 0|1|addrman|alert|bench|coindb|db|lock|rand|rpc|selectcoins|mempool|mempoolrej|net|proxy|prune|http|libevent|tor|zmq|martex|anonsend|fastsend|masternode|spork|keepass|mnpayments|gobject )
   Change debug category on the fly. Specify single category or use '+' to specify many.
 getinfo
   DEPRECATED. Returns an object containing various state info.
 getmemoryinfo
-  Returns an object containing information about memory usage
-help ( "command" ) ("subCommand")
-  List all commands, or get help for a specified comm
+  Returns an object containing information about memory usage.
+help ( "command" )
+  List all commands, or get help for a specified command.
 stop
   Stop MarteX Core server.
-
 
 Generating
 ----------
@@ -502,15 +499,13 @@ generatetoaddress nblocks address (maxtries)
 MarteX
 ------
 
-anonsend "command"
-  Available commands:
-
-    start
-      Start mixing
-    stop
-      Stop mixing
-    reset
-      Reset mixing
+anonsend "command" Available commands:
+  start
+    Start mixing
+  stop
+    Stop mixing
+  reset       
+    Reset mixing
 getgovernanceinfo
   Returns an object containing governance parameters.
 getpoolinfo
@@ -518,9 +513,8 @@ getpoolinfo
 getsuperblockbudget index
   Returns the absolute maximum sum of superblock payments allowed.
 gobject "command"...
-  Manage governance objects. Available commands:
-
-    check 
+  Manage governance objects Available commands:
+    check              
       Validate governance object data (proposal only)
     prepare
       Prepare governance object by signing and creating tx
@@ -528,65 +522,62 @@ gobject "command"...
       Submit governance object to network
     deserialize
       Deserialize governance object from hex string to JSON
-    count
+    count 
       Count governance objects and votes (additional param: 'json' or 'all', default: 'json')
     get
       Get governance object by hash
-    getvotes
+    getvotes           
       Get all votes for a governance object hash (including old votes)
-    getcurrentvotes
+    getcurrentvotes    
       Get only current (tallying) votes for a governance object hash (does not include old votes)
     list
       List governance objects (can be filtered by signal and/or object type)
-    diff
+    diff              
       List differences since last diff
-    vote-alias
+    vote-alias        
       Vote on a governance object by masternode alias (using masternode.conf setup)
-    vote-conf
+    vote-conf          
       Vote on a governance object by masternode configured in MarteX.conf
-    vote-many
+    vote-many          
       Vote on a governance object by all masternodes (using masternode.conf setup)
 masternode "command"...
-  Set of commands to execute masternode related actions. Available commands:
-
-    check
-      Force check all masternodes and remove invalid ones
-    count
+  Set of commands to execute masternode related actions Available commands:
+    count        
       Get information about number of masternodes (DEPRECATED options: 'total', 'ps', 'enabled', 'qualify', 'all')
-    current
+    current      
       Print info on current masternode winner to be paid the next block (calculated locally)
-    genkey
-      Generate new masternodeprivkey, optional param: 'compressed' (boolean, optional, default=false) generate compressed privkey
-    outputs
+    genkey       
+      Generate new masternodeprivkey
+    outputs      
       Print masternode compatible outputs
-    start-alias
+    start-alias  
       Start single remote masternode by assigned alias configured in masternode.conf
-    start-<mode>
+    start-<mode> 
       Start remote masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')
-    status
+    status       
       Print masternode status information
-    list
+    list         
       Print list of all known masternodes (see masternodelist for more info)
-    list-conf
+    list-conf    
       Print masternode.conf in JSON format
-    winner
+    winner       
       Print info on next masternode winner to vote for
-    winners
+    winners      
       Print list of masternode winners
 masternodebroadcast "command"...
-  Set of commands to create and relay masternode broadcast messages. Available commands:
+  Set of commands to create and relay masternode broadcast messages Available commands:
 
-    create-alias
-      Create single remote masternode broadcast message by assigned alias configured in masternode.conf
-    create-all
-      Create remote masternode broadcast messages for all masternodes configured in masternode.conf
-    decode
-      Decode masternode broadcast message
-    relay
-      Relay masternode broadcast message to the network
-masternode list ( "mode" "filter" )
-  Get a list of masternodes in different modes. This call is identical to masternodelist call.
-mnsync [status | next | reset]
+   create-alias
+     Create single remote masternode broadcast message by assigned alias configured in masternode.conf
+   create-all
+     Create remote masternode broadcast messages for all masternodes configured in masternode.conf
+   decode        
+     Decode masternode broadcast message
+   relay         
+     Relay masternode broadcast message to the network
+masternodelist ( "mode" "filter" )
+  Get a list of masternodes in different modes
+mnsync [status|next|reset]
   Returns the sync status, updates to the next step or resets it entirely.
 sentinelping version
   Sentinel ping.
@@ -597,7 +588,7 @@ spork "command"
       Show all current spork values
     active
       Show which sporks are active
-voteraw <masternode-tx-hash> <masternode-tx-index> <governance-hash> <vote-signal> [yes | no | abstain] <time> <vote-sig>
+voteraw <masternode-tx-hash> <masternode-tx-index> <governance-hash> <vote-signal> [yes|no|abstain] <time> <vote-sig>
   Compile and relay a governance vote with provided external signature instead of signing vote internally
 
 
@@ -605,7 +596,7 @@ Mining
 ------
 
 getblocktemplate ( TemplateRequest )
-  If the request parameters include a 'mode' key, that is used to explicitly select between the default 'template' request or a 'proposal'. It returns data needed to construct a block to work on.
+  If the request parameters include a 'mode' key, that is used to explicitly select between the default 'template' request or a 'proposal'. It returns data needed to construct a block to work on. For full specification, see BIPs 22, 23, and 9: https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki https://github.com/bitcoin/bips/blob/master/bip-0023.mediawiki https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki#getblocktemplate_changes
 getmininginfo
   Returns a json object containing mining-related information.
 getnetworkhashps ( nblocks height )
@@ -621,7 +612,7 @@ submitblock "hexdata" ( "jsonparametersobject" )
 Network
 -------
 
-addnode "node" "add | remove | onetry"
+addnode "node" "add|remove|onetry"
   Attempts add or remove a node from the addnode list. Or try a connection to a node once.
 clearbanned
   Clear all banned IPs.
@@ -641,9 +632,9 @@ listbanned
   List all banned IPs/Subnets.
 ping
   Requests that a ping be sent to all other nodes, to measure ping time. Results provided in getpeerinfo, pingtime and pingwait fields are decimal seconds. Ping command is handled in queue with all other commands, so it measures processing backlog, not just network ping.
-setban "subnet" "add | remove" (bantime) (absolute)
+setban "subnet" "add|remove" (bantime) (absolute)
   Attempts add or remove a IP/Subnet from the banned list.
-setnetworkactive true | false
+setnetworkactive true|false
   Disable/enable all p2p network activity.
 
 
@@ -657,13 +648,13 @@ decoderawtransaction "hexstring"
 decodescript "hexstring"
   Decode a hex-encoded script.
 fundrawtransaction "hexstring" ( options )
-  Add inputs to a transaction until it has enough in value to meet its out value. This will not modify existing inputs, and will add at most one change output to the outputs.
+  Add inputs to a transaction until it has enough in value to meet its out value. This will not modify existing inputs, and will add at most one change output to the outputs. No existing outputs will be modified unless "subtractFeeFromOutputs" is specified. Note that inputs which were signed may need to be resigned after completion since in/outputs have been added. The inputs added will not be signed, use signrawtransaction for that. Note that all existing inputs must have their previous output transaction be in the wallet. Note that all inputs selected must be of standard form and P2SH scripts must be in the wallet using importaddress or addmultisigaddress (to calculate fees). You can see whether this is the case by checking the "solvable" field in the listunspent output. Only pay-to-pubkey, multisig, and P2SH versions thereof are currently supported for watch-only
 getrawtransaction "txid" ( verbose )
-  Return the raw transaction data. If verbose is 'true', returns an Object with information about 'txid'. If verbose is 'false' or omitted, returns a string that is serialized, hex-encoded data for 'txid'.
-sendrawtransaction "hexstring" ( allowhighfees instantsend bypasslimits)
+  NOTE: By default this function only works for mempool transactions. If the -txindex option is enabled, it also works for blockchain transactions. DEPRECATED: for now, it also works for transactions with unspent outputs. Return the raw transaction data. If verbose is 'true', returns an Object with information about 'txid'. If verbose is 'false' or omitted, returns a string that is serialized, hex-encoded data for 'txid'.
+sendrawtransaction "hexstring" ( allowhighfees fastsend bypasslimits)
   Submits raw transaction (serialized, hex-encoded) to local node and network. Also see createrawtransaction and signrawtransaction calls.
 signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )
-  Sign inputs for raw transaction (serialized, hex-encoded). The second optional argument (may be null) is an array of previous transaction outputs that this transaction depends on but may not yet be in the block chain. The third optional argument (may be null) is an array of base58-encoded private keys that, if given, will be the only keys used to sign the transaction.
+  Sign inputs for raw transaction (serialized, hex-encoded). The second optional argument (may be null) is an array of previous transaction outputs that this transaction depends on but may not yet be in the block chain. The third optional argument (may be null) is an array of base58-encoded private keys that, if given, will be the only keys used to sign the transaction. Requires wallet passphrase to be set with walletpassphrase call.
 
 
 Util
@@ -680,9 +671,9 @@ estimatesmartfee nblocks
 estimatesmartpriority nblocks
   DEPRECATED. WARNING: This interface is unstable and may disappear or change! Estimates the approximate priority a zero-fee transaction needs to begin confirmation within nblocks blocks if possible and return the number of blocks for which the estimate is valid.
 signmessagewithprivkey "privkey" "message"
-  Sign a message with the private key of an address
+  signmessagewithprivkey "privkey" "message" Sign a message with the private key of an address
 validateaddress "address"
-  Return information about the given dash address.
+  Return information about the given MarteX address.
 verifymessage "address" "signature" "message"
   Verify a signed message
 
@@ -691,37 +682,37 @@ Wallet
 ------
 
 abandontransaction "txid"
-  Mark in-wallet transaction <txid> as abandoned. This will mark this transaction and all its in-wallet descendants as abandoned which will allow for their inputs to be respent.
+  Mark in-wallet transaction <txid> as abandoned This will mark this transaction and all its in-wallet descendants as abandoned which will allow for their inputs to be respent.  It can be used to replace "stuck" or evicted transactions. It only works on transactions which are not included in a block and are not currently in the mempool. It has no effect on transactions which are already conflicted or abandoned.
 addmultisigaddress nrequired ["key",...] ( "account" )
-  Add a nrequired-to-sign multisignature address to the wallet. Each key is a Dash address or hex-encoded public key. If 'account' is specified (DEPRECATED), assign address to that account.
+  Add a nrequired-to-sign multisignature address to the wallet. Each key is a MarteX address or hex-encoded public key. If 'account' is specified (DEPRECATED), assign address to that account.
 backupwallet "destination"
   Safely copies current wallet file to destination, which can be a directory or a path with filename.
 checkwallet
-  Check Wallet integrity.
+  Wallet integrity check.
 dumphdinfo
   Returns an object containing sensitive private info about this HD wallet.
 dumpprivkey "address"
   Reveals the private key corresponding to 'address'. Then the importprivkey can be used with this output
 dumpwallet "filename"
   Dumps all wallet keys in a human-readable format.
+fastsendtoaddress "address" amount ( "comment" "comment-to" subtractfeefromamount )
+  Send an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001
 getaccount "address"
   DEPRECATED. Returns the account associated with the given address.
 getaccountaddress "account"
-  DEPRECATED. Returns the current Dash address for receiving payments to this account.
+  DEPRECATED. Returns the current MarteX address for receiving payments to this account.
 getaddressesbyaccount "account"
   DEPRECATED. Returns the list of addresses for the given account.
-getbalance ( "account" minconf addlocked include_watchonly )
+getbalance ( "account" minconf addlockconf include_watchonly )
   If account is not specified, returns the server's total available balance. If account is specified (DEPRECATED), returns the balance in the account. Note that the account "" is not the same as leaving the parameter out. The server total may be different to the balance in the default "" account.
 getnewaddress ( "account" )
-  Returns a new Dash address for receiving payments. If 'account' is specified (DEPRECATED), it is added to the address book  so payments received with the address will be credited to 'account'.
+  Returns a new MarteX address for receiving payments. If 'account' is specified (DEPRECATED), it is added to the address book so payments received with the address will be credited to 'account'.
 getrawchangeaddress
-  Returns a new Dash address, for receiving change. This is for use with raw transactions, NOT normal use.
-getreceivedbyaccount "account" ( minconf addlocked )
+  Returns a new MarteX address, for receiving change. This is for use with raw transactions, NOT normal use.
+getreceivedbyaccount "account" ( minconf addlockconf )
   DEPRECATED. Returns the total amount received by addresses with <account> in transactions with specified minimum number of confirmations.
-getreceivedbyaddress "address" ( minconf addlocked )
+getreceivedbyaddress "address" ( minconf addlockconf )
   Returns the total amount received by the given address in transactions with at least minconf confirmations.
-getspecialtxes "blockhash" ( type count skip verbosity ) 
-  Returns an array of special transactions found in the specified block
 gettransaction "txid" ( include_watchonly )
   Get detailed information about in-wallet transaction <txid>
 getunconfirmedbalance
@@ -734,7 +725,7 @@ importelectrumwallet "filename" index
   Imports keys from an Electrum wallet export file (.csv or .json)
 importmulti "requests" "options"
   Import addresses/scripts (with private or public keys, redeem script (P2SH)), rescanning all addresses in one-shot-only (rescan can be disabled via options).
-importprivkey "dashprivkey" ( "label" ) ( rescan )
+importprivkey "martexprivkey" ( "label" ) ( rescan )
   Adds a private key (as returned by dumpprivkey) to your wallet.
 importprunedfunds
   Imports funds without rescan. Corresponding address or script must previously be included in wallet. Aimed towards pruned wallets. The end-user is responsible to import additional transactions that subsequently spend the imported outputs or rescan after the point in the blockchain the transaction is included.
@@ -742,13 +733,11 @@ importpubkey "pubkey" ( "label" rescan )
   Adds a public key (in hex) that can be watched as if it were in your wallet but cannot be used to spend.
 importwallet "filename"
   Imports keys from a wallet dump file (see dumpwallet).
-instantsendtoaddress "address" amount ( "comment" "comment-to" subtractfeefromamount )
-  Send an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001
-keepass <genkey | init | setpassphrase>
-  Keepass settings.
+keepass <genkey|init|setpassphrase>
+  keepass <genkey|init|setpassphrase>
 keypoolrefill ( newsize )
   Fills the keypool. Requires wallet passphrase to be set with walletpassphrase call.
-listaccounts ( minconf addlocked include_watchonly)
+listaccounts ( minconf addlockconf include_watchonly)
   DEPRECATED. Returns Object that has account names as keys, account balances as values.
 listaddressbalances ( minamount )
   Lists addresses of this wallet and their balances
@@ -756,9 +745,9 @@ listaddressgroupings
   Lists groups of addresses which have had their common ownership made public by common use as inputs or as the resulting change in past transactions
 listlockunspent
   Returns list of temporarily unspendable outputs. See the lockunspent call to lock and unlock transactions for spending.
-listreceivedbyaccount ( minconf addlocked include_empty include_watchonly)
+listreceivedbyaccount ( minconf addlockconf include_empty include_watchonly)
   DEPRECATED. List incoming payments grouped by account.
-listreceivedbyaddress ( minconf addlocked include_empty include_watchonly)
+listreceivedbyaddress ( minconf addlockconf include_empty include_watchonly)
   List incoming payments grouped by receiving address.
 listsinceblock ( "blockhash" target_confirmations include_watchonly)
   Get all transactions in blocks since block [blockhash], or all transactions if omitted
@@ -767,23 +756,21 @@ listtransactions ( "account" count skip include_watchonly)
 listunspent ( minconf maxconf  ["addresses",...] [include_unsafe] )
   Returns array of unspent transaction outputs with between minconf and maxconf (inclusive) confirmations. Optionally filter to only include txouts paid to specified addresses.
 lockunspent unlock ([{"txid":"txid","vout":n},...])
-  Updates list of temporarily unspendable outputs. Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.
+  Updates list of temporarily unspendable outputs. Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs. If no transaction outputs are specified when unlocking then all current locked transaction outputs are unlocked. A locked transaction output will not be chosen by automatic coin selection, when spending martexs. Locks are stored in memory only. Nodes start with zero locked outputs, and the locked output list is always cleared (by virtue of process exit) when a node stops or fails. Also see the listunspent call
 move "fromaccount" "toaccount" amount ( minconf "comment" )
   DEPRECATED. Move a specified amount from one account in your wallet to another.
 removeprunedfunds "txid"
   Deletes the specified transaction from the wallet. Meant for use with pruned wallets and as a companion to importprunedfunds. This will effect wallet balances.
-sendfrom "fromaccount" "toaddress" amount ( minconf addlocked "comment" "comment_to" )
-  DEPRECATED (use sendtoaddress). Sent an amount from an account to a dash address. Requires wallet passphrase to be set with walletpassphrase call.
-sendmany "fromaccount" {"address":amount,...} ( minconf addlocked "comment" ["address",...] subtractfeefromamount use_is use_ps )
+repairwallet
+  Wallet repair if any mismatches found.
+sendfrom "fromaccount" "toaddress" amount ( minconf addlockconf "comment" "comment_to" )
+  DEPRECATED (use sendtoaddress). Sent an amount from an account to a MarteX address. Requires wallet passphrase to be set with walletpassphrase call.
+sendmany "fromaccount" {"address":amount,...} ( minconf addlockconf "comment" ["address",...] subtractfeefromamount use_is use_ps )
   Send multiple times. Amounts are double-precision floating point numbers. Requires wallet passphrase to be set with walletpassphrase call.
 sendtoaddress "address" amount ( "comment" "comment_to" subtractfeefromamount use_is use_ps )
   Send an amount to a given address.
 setaccount "address" "account"
   DEPRECATED. Sets the account associated with the given address.
-setprivatesendamount amount
-  Set the goal amount in DASH for PrivateSend mixing.
-setprivatesendrounds rounds
-  Set the number of rounds for PrivateSend mixing.
 settxfee amount
   Set the transaction fee per kB. Overwrites the paytxfee parameter.
 signmessage "address" "message"
@@ -791,6 +778,6 @@ signmessage "address" "message"
 walletlock
   Removes the wallet encryption key from memory, locking the wallet. After calling this method, you will need to call walletpassphrase again before being able to call any methods which require the wallet to be unlocked.
 walletpassphrase "passphrase" timeout ( mixingonly )
-  Stores the wallet decryption key in memory for 'timeout' seconds. This is needed prior to performing transactions related to private keys such as sending dashs
+  Stores the wallet decryption key in memory for 'timeout' seconds. This is needed prior to performing transactions related to private keys such as sending martexs
 walletpassphrasechange "oldpassphrase" "newpassphrase"
   Changes the wallet passphrase from 'oldpassphrase' to 'newpassphrase'.
