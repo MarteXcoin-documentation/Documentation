@@ -161,7 +161,6 @@ Examples:
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "spork", "params": ["show"] }' -H 'content-type: text/plain;' http://127.0.0.1:51314/
 
 	voteraw <masternode-tx-hash> <masternode-tx-index> <governance-hash> <vote-signal> [yes|no|abstain] <time> <vote-sig>
-voteraw <masternode-tx-hash> <masternode-tx-index> <governance-hash> <vote-signal> [yes|no|abstain] <time> <vote-sig>
 Compile and relay a governance vote with provided external signature instead of signing vote internally
 
 == Addressindex ==
@@ -1774,8 +1773,6 @@ Example:
 > martex-cli estimatesmartpriority 6
 
 	signmessagewithprivkey "privkey" "message"
-
-18:10:30
 ￼
 signmessagewithprivkey "privkey" "message"
 
