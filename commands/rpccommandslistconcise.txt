@@ -98,7 +98,6 @@ anonsend "command" Available commands:
     Stop mixing
   reset       
     Reset mixing
-
 getgovernanceinfo
   Returns an object containing governance parameters.
 getpoolinfo
