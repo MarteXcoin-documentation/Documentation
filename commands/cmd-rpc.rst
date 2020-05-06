@@ -404,7 +404,7 @@ This documentation lists all available RPC commands as of MarteX version
 For full documentation of arguments, results and examples, type help ( "command"
 ) to view full details at the console. You can enter commands either
 from **Tools > Debug** console in the QT wallet, or using *martex-cli* for
-headless wallets and *martexd*.
+headless wallets and *martexd* or go to this link `RPC Commands complete <./rpccommandslistcomplete.txt>`_.
 
 Addressindex
 ------------
