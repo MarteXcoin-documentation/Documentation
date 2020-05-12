@@ -17,4 +17,3 @@ Edit your masternode.conf located at the following link [data folder](https://gi
 >*MN_ALIAS REMOTE_MN_IP:51315 MASTERNODE_PRIVKEY TRANSACTION_HASH INDEX*
 
 After that, reopen your wallet and active Masternode Tab in Setting> Options> Wallet
-
