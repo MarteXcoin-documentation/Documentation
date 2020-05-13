@@ -44,8 +44,6 @@ For every Masternode you want to create:
    
    [Sample masternode.conf](./mxt-mn/blob/master/masternode.conf)
 ## Step 2: Deploy to VPS
-The procedure has been tested on Ubuntu +16.04
-1. Access your VPS and issue the following command to proceed as root: <br>`sudo -i`
-2. Fetch the script and execute it: <br> `cd /opt && git clone https://github.com/martexcoin/mxt-mn.git  && cd mxt-mn && chmod +x MXT_deploy_mn.sh && ./MXT_deploy_mn.sh`
+
 
 ## To report issues or for support : <br> [MarteXcoin Telegram @martexcoin](https://t.me/martexcoin)
