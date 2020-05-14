@@ -12,7 +12,7 @@
 
 ### 1) Make sure you know where is your MarteX data folder:
 
-https://github.com/martexcoin/martexcoin/wiki#MarteX-Data-Folder
+https://github.com/MarteXcoin-documentation/Documentation/blob/master/commands/cmd-rpc.rst#arguments-and-commands
 
 #### In this folder you will find all .conf files required in this guide.
 
