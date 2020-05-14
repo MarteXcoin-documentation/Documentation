@@ -45,5 +45,134 @@ For every Masternode you want to create:
    [Sample masternode.conf](./mxt-mn/blob/master/masternode.conf)
 ## Step 2: Deploy to VPS
 
+## **Requirements:**
+
+  5000 MXT
+
+  1GB of RAM/Swap only to the masternode.
+
+  Dedicated IP
+
+  Port 51315 Available.
+
+  We recommend generating a ssh key for you to connect to the masternode.
+
+  We recommend follows those steps to protect you VPS:
+ https://github.com/MarteXcoin-documentation/MarteXCoin_Documentation_GitHub_format_and_wiki/blob/master/masternode/How-to-protect-your-Masternode-VPS-against-DDoS-attack---Linux.md
+
+  Download your Wallet (QT or Daemon)
+
+> Wallet synchronized
+
+## **BEFORE YOU BEGIN**
+
+  Acess your masternode. Create one folder to the masternode instance that you will create.
+
+  Example: `~mkdir .MXT`
+
+> Donwload the wallet core:
+
+  Example: `~wget https://martexcoin.org/releases/martexcore-3.0.6-x86_64-linux-gnu.tar.gz`
+  
+  Extract wallet to you local folder
+
+ `tar- -vzxf nameoffile.tar.gz`
+
+  Create a sh file to run one masternode instance. For example:
+
+ `~nano masternode.sh` (to use the folder .MXT)
+
+  inside masternode.sh put:
+ 
+ ```
+ #!/bin/bash
+ cd /root/Downloads/martexcore/bin
+ ./martexd --datadir="/root/.MXT" $1 $2 $3 $4
+ ```
+
+  Create a sh file to run the cliente program of masternode instance. For example:
+
+ `~nano masternode_cliente.sh`
+
+  inside masternode_cliente.sh put:
+
+ ```
+ #!/bin/bash
+ cd /root/Downloads/martexcore/bin
+ ./martex-cli --datadir="/root/.MXT" $1 $2 $3 $4
+ ```
+### 1) Make sure you know where is your MarteX data folder:
+
+https://github.com/martexcoin/martexcoin/blob/master/mxt-docs/Home.md#martex-data-folder
+
+#### In this folder you will find all .conf files required in this guide.
+
+### In the folder of the step above, edit the file or open it, with the name: MarteX.conf
+
+### In the MarteX.conf file, change this lines:
+
+```
+#rpcconnect=127.0.0.1
+```
+### In the MarteX.conf file, change or put this lines:
+
+```
+masternode=1
+masternodeaddr=ExternalIPDedicated:51315
+masternodeprivkey=ReturnOfMasternodeGenkey
+externalip=ExternalIPDedicated
+nlogtimestamps=1
+txindex=1
+mnconflock=1
+stake=0
+staking=0
+listen=1
+server=1
+daemon=1
+maxconnections=500
+rpcuser=(put your user here)
+rpcpassword=put_a_long_password_here
+port=51315
+rpcport=51314 
+rpcallowip=127.0.0.1
+addnode=add.other.noder.here.with:port
+addnode=ip_node:port_node
+addnode=seed2.martexcoin.org:51315
+addnode=seed3.martexcoin.org:51315
+addnode=seed4.martexcoin.org:51315
+```
+
+#### Do not use { } 
+
+### Now start your VPS wallet, wait synchronize and start the masternode remotely:
+
+In you local wallet, in the tab masternodes; remote start your masternode.
+
+### Check masternode status:
+
+`sh masternode_cliente.sh masternode status`
+
+***
+
+## **FAQ**
+
+**For more informations acess: https://t.me/martexcoin**
+
+**Will I receives every block?**
+
+A. No, there's a line to be followed here, so you will have to wait your turn.
+Tip: Keep eyes on the block winners with this commands:
+ 
+**masternode winners**
+
+`sh masternode_cliente.sh masternode winners`
+
+**masternode list rank** 
+
+`sh masternode_cliente.sh masternode list`
+
+**How much Masternode receives as reward?**
+
+1.125 MXT
 
 ## To report issues or for support : <br> [MarteXcoin Telegram @martexcoin](https://t.me/martexcoin)
