@@ -1,10 +1,10 @@
-#Masternode
+# Masternode
 
 In this folder you you will find different manuals for creating and configuring your masternode.
 
  1. [How To Create Manual Remote Masternode](https://github.com/MarteXcoin-documentation/Documentation/blob/master/masternode/How-To-Create-Manual-Remote-Masternode.md)
  
- 2. [How To Make Your Existing Masternode Remote] (https://github.com/MarteXcoin-documentation/Documentation/blob/master/masternode/How-To-Make-Your-Existing-Masternode-Remote.md)
+ 2. [How To Make Your Existing Masternode Remote](https://github.com/MarteXcoin-documentation/Documentation/blob/master/masternode/How-To-Make-Your-Existing-Masternode-Remote.md)
  
  3. [How to Create MarteXd Manual Masternode in Windows VPS](https://github.com/MarteXcoin-documentation/Documentation/blob/master/masternode/How-to-Create-MarteXd-Manual-Masternode-in-Windows-VPS.md)
 
