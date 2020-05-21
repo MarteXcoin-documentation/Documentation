@@ -14,7 +14,7 @@ process of searching for solutions to cryptographically difficult
 problems as a method of securing blocks on the blockchain. The process
 of mining creates new currency tokens as a reward to the miner. Mining
 is possible on a range of hardware. MarteX implements an algorithm known
-as [X13 Hash](https://github.com/martexcoin/coinhash), which the miner must solve in order to earn rewards.
+as `X13 <https://github.com/martexcoin/coinhash>`_, which the miner must solve in order to earn rewards.
 
 The simplest and most general hardware available for mining is the
 general purpose CPU present in every computer. 
