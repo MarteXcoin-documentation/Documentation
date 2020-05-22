@@ -1,6 +1,6 @@
 .. meta::
-   :description: Explanation of how Dash masternodes work in theory and practice to support InstantSend, PrivateSend and governance
-   :keywords: dash, masternodes, hosting, linux, payment, instantsend, privatesend, governance, quorum, evolution, bls, 
+   :description: Explanation of how Dash masternodes work in theory and practice to support FastSend, AnonSend and governance
+   :keywords: martex, masternodes, hosting, linux, payment, fastsend, anonsend, governance, quorum, evolution, bls, 
 
 .. _understanding_masternodes:
 
@@ -8,46 +8,40 @@
 Understanding Masternodes
 =========================
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 1em; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/4GRrLiTCq5M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
 
 Masternodes, once unique to the Dash network, are now becoming popular
 as the technology is forked into other blockchains. This section of the
 documentation describes the principles and mechanisms of masternodes and
-the services they provide to the Dash network specifically.
+the services they provide to the MarteX network specifically.
 
-Simply put, a masternode is a server with a full copy of the Dash
+Simply put, a masternode is a server with a full copy of the MarteX
 blockchain, which guarantees a certain minimum level of performance and
 functionality to perform certain tasks related to block validation, as
-well as PrivateSend and InstantSend, as the privacy and instant
-transaction features in Dash are called. The masternodes are paid for
+well as AnonSend and FastSend, as the privacy and instant
+transaction features in MarteX are called. The masternodes are paid for
 this service, using a concept known as Proof of Service. This is in
-addition to the Proof of Work done by miners to secure the blockchain.
-Masternodes are also allowed to vote on :ref:`governance and funding
-proposals <governance>`, with each masternode receiving one vote
+addition to the Proof of Stake done by miners to secure the blockchain.
+Masternodes are also allowed to vote on `governance and funding proposals <./governance_proposal>`_, with each masternode receiving one vote
 (yes/no/abstain) on each proposal submitted to the system.
 
 Anyone can run a masternode. The objective is to have enough
 decentralization to ensure that no single person controls a significant
 fraction of the masternodes. However, to avoid bloating the network with
 unnecessary masternodes or encouraging reckless operators, there is one
-condition that needs to be fulfilled: proof of ownership of 1000 Dash.
+condition that needs to be fulfilled: proof of ownership of 5000 MarteX.
 The coins don't need to be in the masternode, but they need to be kept
 in a certain way that is transparent to the entire network. If the owner
 moves or spends those coins, the masternode stops working and payment
 ceases.
 
-Masternodes are paid by the network for the PrivateSend, InstantSend and
+Masternodes are paid by the network for the AnonSend, FastSend and
 governance services they provide. 45% of the block reward is paid out to
 the masternodes, 45% to miners and 10% to the budget. In practice, half
 of the reward from a normal block goes to the miner and half to the
-masternode. Then, every 16,616 blocks (approximately 30.29 days), a
+masternode. Then, every 21800 blocks , a
 superblock is created that contains the entire 10% payout to the budget
 proposal winners. Masternodes are selected for payment in each block
-(approximately every 2.6 minutes) from a deterministic masternode list,
+ from a deterministic masternode list,
 and moved to the back of the list after payment. As more masternodes are
 created, the duration between payments increases. If the collateral
 behind a masternode is spent, or if a masternode stops providing
@@ -59,11 +53,11 @@ Having so many servers holding a full copy of the blockchain and working
 for the coin can be extremely useful. Thanks to the reward system, there
 is no risk of not having enough masternodes, and the developers can rely
 on them quickly deploying any new decentralized feature they want to
-implement. This is where the true strength of Dash lies - an
+implement. This is where the true strength of MarteX lies - an
 incentivized system of thousands of distributed servers working 24x7
-means that Dash can scale more efficiently and deploy services more
+means that MarteX can scale more efficiently and deploy services more
 quickly than a blockchain run entirely by unpaid volunteers. The more
-masternodes, the better and safer the Dash network.
+masternodes, the better and safer the MarteX network.
 
 As of November 2018, the Dash network has `over 5000 masternodes located
 <http://178.254.23.111/~pub/masternode_count.png>`_ in over `45
