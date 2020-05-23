@@ -1,1 +1,1 @@
-# Informations about how to my MarteXcoins.
+# Informations about how to mine MarteXcoins.
