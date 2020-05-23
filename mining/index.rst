@@ -70,179 +70,30 @@ spent, the associated masternode will go offline and stop receiving
 rewards.
 
 
-CPU Mining
+POS Mining
 ==========
 
-This documentation describes how to mine Dash under the Windows
-operating system using just the CPU in your computer. Please note that
-the prevalence of GPU and ASIC miners mean that unless you have free
-electricity, this is highly unlikely to be profitable! Since this is the
-case, the software in this guide has not been updated in several years,
-and is intended for experimental purposes and testnet only.
-
-This is a fairly simple procedure and examples will be given in order to
-achieve the fastest possible hash rate for your CPU, but remember that
-more optimized miners do exist, so we advise you to keep an eye out on
-mining sites such as these in order to keep up with the latest
-information and releases.
-
-- `Crypto Mining Blog <http://cryptomining-blog.com/>`_
-- `Dash Forum Mining Discussions <https://www.dash.org/forum/topic/mining.3/>`_
-- `Bitcoin Talk Altcoin Mining Discussions <https://bitcointalk.org/index.php?board=160.0>`_
+This documentation describes how to mine MarteX under the Windows
+operating system using just your computer. Please note that
+the you will need a unlock wallet with minimum of 5 MXT running 24 h.
 
 Mining software
 ---------------
 
-The first step is to download appropriate mining software. A good basic
-miner for modern CPUs can be found here:
-
+The first step is to download the MarteXcore because all mine process occurs there.
 
 
 Configuration
 -------------
 
-Begin by selecting a mining pool and generating a Dash address as
-described in the :ref:`Mining Pools <mining-pools>` section above. Keep
-all your mining files in a single folder. In this example we will work
-from the Desktop. The node selected for this example is from the
-p2poolming.us list and is located in China::
-
-  http://118.184.180.43:7903/static/
-
-Next, open **Notepad** and type in on one line the command we will use
-to start the miner, followed by pause on the second line. The general
-format is as follows::
-
-  <minerd> -a <algorithm> -o <url> -u <username> -p <password> -t <threads>
-  pause
-
-Where:
-
-- minerd = the executable miner daemon file you choose to use
-- a = algorithm, which is X11 for Dash
-- o = URL of your mining pool, including the protocol and port
-- u = username, usually the Dash receiving address of your wallet or worker
-- p = password, can often be set to x
-- t = number of threads used
-- pause = keeps the window open in the case of errors
-
-For the CPU in the example above, the command may be::
-
-  minerd-avx-aes-sse2-sss3.exe -a X11 -o stratum+tcp://118.184.180.43:7903 -u XwZRjo1f6gmq3LCv7X1Hi5h3NkvDMHvu8G -p x -t 8
-  pause
-
-.. figure:: img/notepad.png
-   :width: 400px
-
-   Notepad file showing an example command to start a CPU miner
-
-Click **File**, then **Save As**. Change **Save as type** to **All
-Files**, then type the file name as *startminer.bat* and save it in the
-same folder as the unzipped *minerd* files.
+You need a
 
 Testing
 -------
 
 
 
-GPU Mining
-==========
+Masternode Mining
+=================
 
-
-
-Mining software
----------------
-
-As for CPU mining, a range of mining software is available for GPU
-mining. Most of it based on sgminer compiled with different
-optimizations specific to different hardware. A good approach is to
-identify your graphics hardware, then choose an appropriate build of
-sgminer. You can use `GPU-Z <https://www.techpowerup.com/gpuz/>`_ to
-identify your GPU hardware:
-
-.. figure:: img/gpu-z.png
-   :width: 400px
-
-   GPU-Z showing details for AMD Radeon Turks and NVIDIA Quadro GK104
-   class GPUs
-
-Next, download the mining software. Most of these are based on the
-original `sgminer <https://github.com/sgminer-dev/sgminer>`_, but this
-is not suitable for the X11 algorithm, offers no compiled binaries and
-hasn't been updated in years. We will describe using pre-compiled binary
-software maintained by newer developers only.
-
-**AMD**
-
-- https://github.com/nicehash/sgminer/releases
-
-**NVIDIA**
-
-- https://github.com/tpruvot/ccminer/releases (focus on core 
-  application)
-- https://github.com/sp-hash/ccminer/releases (sp-mod, optimized CUDA
-  kernels for Windows)
-- https://github.com/KlausT/ccminer/releases (similar to SP version,
-  more clean)
-
-Download your chosen release and extract the zip file to a known
-location. The folder should look something like this:
-
-.. figure:: img/gpu-miner-files.png
-   :width: 400px
-
-   Executable GPU miners for Dash
-
-The sgminer file is the executable file, while the various files with
-.cl extensions define the various algorithms supported by sgminer. In
-this case, we are interested in the darkcoin.cl and darkcoin-mod.cl
-implementations of X11. Note that the name of the executable file may be
-different for miners with different optimizations, for example ccminer
-for NVIDIA cards.
-
-Configuration
--------------
-
-Begin by selecting a mining pool and generating a Dash address as
-described in the :ref:`Mining Pools <mining-pools>` section above. Keep
-all your mining files in a single folder. In this example we will work
-from the Desktop. The node selected for this example is from the
-p2poolming.us list and is located in China::
-
-  http://118.184.180.43:7903/static/
-
-Next, open **Notepad** and create the basic configuration. The general
-format is as follows::
-
-  {
-    "pools" : [
-      {
-        "url" : "stratum+tcp://pooladdress:7903",
-        "user" : "walletaddress",
-        "pass" : "x",
-        "algorithm":"darkcoin"
-      }
-    ]
-  }
-
-Where:
-
-- pools = defines a list of pools (in this case, only one) towards which
-  the hashing power is directed
-- url = URL of your mining pool, including the protocol and port
-- user = username, usually the Dash receiving address of your wallet or
-  worker
-- pass = password, can often be set to x
-- algorithm = hashing algorithm to use, in this case darkcoin (for
-  historic reasons) or darkcoin-mod
-
-For the pool above, the configuration may be:
-
-.. figure:: img/gpu-config.png
-   :width: 400px
-
-   Configuration file for a Dash GPU miner
-
-Click **File**, then **Save As**. Change **Save as type** to **All
-Files**, then type the file name as *sgminer.conf* and save it in the
-same folder as the unzipped *sgminer* files.
+You need to create a `masternode <~/masternode>`_ to mine.
