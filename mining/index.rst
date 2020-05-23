@@ -10,21 +10,26 @@ Mining
 ======
 
 Mining in the context of cryptocurrency such as MarteX refers to the
-process of searching for solutions to cryptographically difficult
-problems as a method of securing blocks on the blockchain. The process
+process of . The process
 of mining creates new currency tokens as a reward to the miner. Mining
-is possible on a range of hardware. MarteX implements an algorithm known
+is possible on any hardware running MarteXcore. MarteX implements an algorithm known
 as `X13 <https://github.com/martexcoin/coinhash>`_, which the miner must solve in order to earn rewards.
 
-The simplest and most general hardware available for mining is the
-general purpose CPU present in every computer. 
-uneconomic due to the increased difficulty of hashing arising from the
-rapidly increasing hash rate. The result is a currency which is more
-secure against brute force attacks on the Dash blockchain.
+The simplest and most general hardware available for mining is the minimum hardware requirements listed bellow:
 
-The profitability of mining is determined by the hashrate of your mining
-device, the current network difficulty and the costs of your hardware
-and electricity. The following links provide up to date information:
+- 1 CPU.
+- 1024 MB of free RAM.
+- 4 GB of free storage (The more the blockchain grows, the more storage is needed).
+- A good internet connection (The more transactions are made, the more connection is needed).
+
+The result is a currency which is more
+secure against brute force attacks on the MarteX blockchain.
+
+The profitability of mining is determined by the current network difficulty 
+and the costs of your hardware and electricity.
+The following link provide up to date information:
+`GetDIfiiculty <https://be.martexcoin.org/api/getdifficulty>`_
+
 
 
 Masternodes vs. Mining
