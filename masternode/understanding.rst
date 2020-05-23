@@ -59,20 +59,11 @@ means that MarteX can scale more efficiently and deploy services more
 quickly than a blockchain run entirely by unpaid volunteers. The more
 masternodes, the better and safer the MarteX network.
 
-As of November 2018, the Dash network has `over 5000 masternodes located
-<http://178.254.23.111/~pub/masternode_count.png>`_ in over `45
-countries <https://chainz.cryptoid.info/dash/masternodes.dws>`_ and
-hosted on `over 140 ISPs
-<http://178.254.23.111/~pub/Dash/masternode_ISPs.html>`_. The block
-reward is approximately 3.34 Dash, so the selected masternode receives
-1.67 Dash per payment or approximately 6 Dash per month. The block
-reward decreases by 7.14% approximately once per year, so the annual
-earnings for a masternode owner is approximately 7% of the collateral, 
-and will decrease over time `as calculated here
-<https://docs.google.com/spreadsheets/d/1HqgEkyfZDAA6pIZ3df2PwFE8Z430SVIzQ-mCQ6wGCh4/edit#gid=523620673>`_. 
-See `this tool <https://dash- news.de/dashtv/#value=1000>`_ to calculate
-real-time payment rates, and `this site
-<http://178.254.23.111/~pub/Dash/Dash_Info.html>`_ for various real-time
+As of April 2020, the MarteX network has over 120 masternodes.
+The block reward is approximately 2,5 MMarteX, so the selected masternode receives
+1.125 MarteX per payment.
+See `this site <https://masternodes.online/currencies/MXT/>`_ to know masternodes ROI, and `this site
+<https://mnrank.com/coin/MXT/>`_ for various real-time
 statistics on the masternode network.
 
 
@@ -162,20 +153,20 @@ transaction fee.
 Masternodes vs. mining
 ======================
 
-Dash, like Bitcoin and most other cryptocurrencies, is based on a
+MarteX, like Bitcoin and most other cryptocurrencies, is based on a
 decentralized ledger of all transactions, known as a blockchain. This
-blockchain is secured through a consensus mechanism; in the case of both
-Dash and Bitcoin, the consensus mechanism is Proof of Work (PoW).
-:ref:`Miners <mining>` attempt to solve difficult problems with
-specialized computers, and when they solve the problem, they receive the
+blockchain is secured through a consensus mechanism; in the case of 
+Bitcoin, the consensus mechanism is Proof of Work (PoW).
+In MarteXcoin `Miners <~/mining>` attempt to solve difficult problems with
+using Proof of Stake (PoS), and when they solve the problem, they receive the
 right to add a new block to the blockchain. If all the other people
 running the software agree that the problem was solved correctly, the
 block is added to the blockchain and the miner is rewarded.
 
-Dash works a little differently from Bitcoin, however, because it has a
+MarteX works a differently from Bitcoin because it has a
 two-tier network. The second tier is powered by masternodes (Full
-Nodes), which enable financial privacy (PrivateSend), instant
-transactions (InstantSend), and the decentralized governance and budget
+Nodes), which enable financial privacy (AnonSend), instant
+transactions (FastSend), and the decentralized governance and budget
 system. Because this second tier is so important, masternodes are also
 rewarded when miners discover new blocks. The breakdown is as follows:
 45% of the block reward goes to the miner, 45% goes to masternodes, and
@@ -187,17 +178,17 @@ the masternodes provide crucial services to the network. In fact, the
 entire network is overseen by the masternodes, which have the power to
 reject improperly formed blocks from miners. If a miner tried to take
 the entire block reward for themselves or tried to run an old version of
-the Dash software, the masternode network would orphan that block, and
+the MarteX software, the masternode network would orphan that block, and
 it would not be added to the blockchain.
 
 In short, miners power the first tier, which is the basic sending and
 receiving of funds and prevention of doublespending. Masternodes power
-the second tier, which provide the added features that make Dash
+the second tier, which provide the added features that make MarteX
 different from other cryptocurrencies. Masternodes do not mine, and
 mining computers cannot serve as masternodes. Additionally, each
-masternode is “secured” by 1000 DASH. Those DASH remain under the sole
+masternode is “secured” by 5000 MARTEX. Those MARTEX remain under the sole
 control of their owner at all times, and can still be freely spent. The
-funds are not locked in any way. However, if the funds are moved or
+funds are locked if the masternode is runnig. However, if the funds are moved or
 spent, the associated masternode will go offline and stop receiving
 rewards.
 
@@ -207,13 +198,8 @@ rewards.
 Payment logic
 =============
 
-Masternode payments in Dash version 0.13.0 are entirely deterministic
-and based on a simple list sort algorithm. For documentation of version
-0.12.0 payment logic, see the `legacy masternode payment documentation
-<https://docs.dash.org/en/0.12.3/masternodes/understanding.html#payment-logic>`_. 
-Dash version 0.13.0 implements `DIP003
-<https://github.com/dashpay/dips/blob/master/dip-0003.md>`_ and defines
-two sets of masternodes.
+Masternode payments in MarteX version v3.0.6.1-a4933cd-dirty are entirely deterministic
+and based on a simple list sort algorithm.
 
 1. The full set, which contains all registered masternodes that have not
    spent their collateral funding transactions.
