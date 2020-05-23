@@ -1,7 +1,7 @@
 
 .. meta::
    :description: Information and guides on how to mine the MarteX cryptocurrency
-   :keywords: martex, mining, X13, masternode, software, hardware
+   :keywords: martex, mining, X13, masternode, software, hardware, Proof of Stake (PoS)
 
 .. _mining:
 
@@ -10,10 +10,10 @@ Mining
 ======
 
 Mining in the context of cryptocurrency such as MarteX refers to the
-process of . The process
-of mining creates new currency tokens as a reward to the miner. Mining
-is possible on any hardware running MarteXcore. MarteX implements an algorithm known
-as `X13 <https://github.com/martexcoin/coinhash>`_, which the miner must solve in order to earn rewards.
+process of placing your coin as collateral - if you're trying to promote invalid
+transactions when it's your turn to validate the next block, you will lose a portion of your stake. The process of mining creates new currency tokens as a reward to the miner. Mining is possible on any hardware running MarteXcore. MarteX implements an algorithm known as `X13 <https://github.com/martexcoin/coinhash>`_, which gives more security to the network in case of attack.
+The result is a currency which is more
+secure against brute force attacks on the MarteX blockchain.
 
 The simplest and most general hardware available for mining is the minimum hardware requirements listed bellow:
 
@@ -22,11 +22,10 @@ The simplest and most general hardware available for mining is the minimum hardw
 - 4 GB of free storage (The more the blockchain grows, the more storage is needed).
 - A good internet connection (The more transactions are made, the more connection is needed).
 
-The result is a currency which is more
-secure against brute force attacks on the MarteX blockchain.
 
-The profitability of mining is determined by the current network difficulty 
-and the costs of your hardware and electricity.
+The profitability of mining is determined by the current network difficulty,
+the costs of your hardware, electricity, how many coin do you have, how many time
+you  is running your wallet.
 The following link provide up to date information:
 `GetDIfiiculty <https://be.martexcoin.org/api/getdifficulty>`_
 
@@ -40,7 +39,10 @@ decentralized ledger of all transactions, known as a blockchain. This
 blockchain is secured through a consensus mechanism; in the case of 
 Bitcoin, the consensus mechanism is Proof of Work (PoW). 
 The consensus mechanism of MarteX is Proof of Stake (PoS). 
-Miners attempt to solve difficult problems with how many coins he had in a  computers, and when
+Miners attempt to have a consensus
+
+
+solve difficult problems with how many coins he had in a  computers, and when
 they solve the problem, they receive the right to add a new block to the
 blockchain. If all the other people running the software agree that the
 problem was solved correctly, the block is added to the blockchain and
@@ -85,18 +87,21 @@ the you will need a unlock wallet with minimum of 5 MXT running 24 h.
 Mining software
 ---------------
 
-The first step is to download the MarteXcore because all mine process occurs there.
+- The first step is to download the MarteXcore because all mine process occurs there.
+- Wait MarteXcore to fully sync.
+- Send the minimum of 5 MXT to a wallet in your MarteXcore.
+- Unlock your wallet (if it was locked) and leave your computer running 24h with an adequate internet connection. 
 
 
 Configuration
 -------------
 
-You need a
+You do not need to configure your wallet.
 
 Testing
 -------
 
-
+You can test it using the test network.
 
 Masternode Mining
 =================
