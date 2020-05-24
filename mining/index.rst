@@ -12,6 +12,7 @@ Mining
 Mining in the context of cryptocurrency such as MarteX refers to the
 process of placing your coin as collateral - if you're trying to promote invalid
 transactions when it's your turn to validate the next block, you will lose a portion of your stake. The process of mining creates new currency tokens as a reward to the miner. Mining is possible on any hardware running MarteXcore. MarteX implements an algorithm known as `X13 <https://github.com/martexcoin/coinhash>`_, which gives more security to the network in case of attack.
+
 The result is a currency which is more
 secure against brute force attacks on the MarteX blockchain.
 
@@ -22,10 +23,8 @@ The simplest and most general hardware available for mining is the minimum hardw
 - 4 GB of free storage (The more the blockchain grows, the more storage is needed).
 - A good internet connection (The more transactions are made, the more connection is needed).
 
-
 The profitability of mining is determined by the current network difficulty,
-the costs of your hardware, electricity, how many coin do you have, how many time
-you  is running your wallet.
+the costs of your hardware, electricity, how many coin do you have, how long is your MarteXcore online.
 The following link provide up to date information:
 `GetDIfiiculty <https://be.martexcoin.org/api/getdifficulty>`_
 
@@ -38,24 +37,17 @@ MarteX, like Bitcoin and most other cryptocurrencies, is based on a
 decentralized ledger of all transactions, known as a blockchain. This
 blockchain is secured through a consensus mechanism; in the case of 
 Bitcoin, the consensus mechanism is Proof of Work (PoW). 
-The consensus mechanism of MarteX is Proof of Stake (PoS). 
-Miners attempt to have a consensus
+In the other hand, the consensus mechanism of MarteX is Proof of Stake (PoS). 
+Where consensus is achieved by requiring users to stake an amount of their tokens so as to have a chance of being selected to validate blocks of transactions, and get rewarded for doing so.
 
-
-solve difficult problems with how many coins he had in a  computers, and when
-they solve the problem, they receive the right to add a new block to the
-blockchain. If all the other people running the software agree that the
-problem was solved correctly, the block is added to the blockchain and
-the miner is rewarded.
-
-But MarteX works a little differently from Bitcoin, however, because it has a
-two-tier network. The second tier is powered by [Masternodes](~/masternode) (Full Nodes), which enable financial privacy
-(AnonSend), instant transactions (FastSend), and the decentralized
+Moreover, MarteX works a little differently from Bitcoin, however, because it has a
+two-tier network. The second tier is powered by [Masternodes](/masternode) (Full Nodes), which enable financial privacy (AnonSend), 
+instant transactions (FastSend), and the decentralized
 governance and budget system. Because this second tier is so important,
 masternodes are also rewarded when miners discover new blocks. The
 breakdown is as follows: 45% of the block reward goes to the miner, 45%
 goes to masternodes, and 10% is reserved for the budget system (created
-by superblocks every month).
+by `superblocks <https://martexcoin.org/governance/>`_).
 
 The masternode system is referred to as Proof of Service (PoSe), since
 the masternodes provide crucial services to the network. In fact, the
@@ -87,7 +79,7 @@ the you will need a unlock wallet with minimum of 5 MXT running 24 h.
 Mining software
 ---------------
 
-- The first step is to download the MarteXcore because all mine process occurs there.
+- The first step is to download the MarteXcore because all mining process occurs there.
 - Wait MarteXcore to fully sync.
 - Send the minimum of 5 MXT to a wallet in your MarteXcore.
 - Unlock your wallet (if it was locked) and leave your computer running 24h with an adequate internet connection. 
@@ -101,9 +93,9 @@ You do not need to configure your wallet.
 Testing
 -------
 
-You can test it using the test network.
+You can test it using the `test network </testing>`_.
 
 Masternode Mining
 =================
 
-You need to create a `masternode <~/masternode>`_ to mine.
+You need to create a `masternode </masternode>`_ to mine.
