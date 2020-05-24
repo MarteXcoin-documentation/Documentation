@@ -37,7 +37,8 @@ MarteX, like Bitcoin and most other cryptocurrencies, is based on a
 decentralized ledger of all transactions, known as a blockchain. This
 blockchain is secured through a consensus mechanism; in the case of 
 Bitcoin, the consensus mechanism is Proof of Work (PoW). 
-In the other hand, the consensus mechanism of MarteX is Proof of Stake (PoS). 
+In the other hand, the consensus mechanism of MarteX is Proof of Stake `(PoS) <https://en.bitcoinwiki.org/wiki/Proof-of-stake>`_
+. 
 Where consensus is achieved by requiring users to stake an amount of their tokens so as to have a chance of being selected to validate blocks of transactions, and get rewarded for doing so.
 
 Moreover, MarteX works a little differently from Bitcoin, however, because it has a
