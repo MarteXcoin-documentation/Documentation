@@ -41,7 +41,7 @@ In the other hand, the consensus mechanism of MarteX is Proof of Stake (PoS).
 Where consensus is achieved by requiring users to stake an amount of their tokens so as to have a chance of being selected to validate blocks of transactions, and get rewarded for doing so.
 
 Moreover, MarteX works a little differently from Bitcoin, however, because it has a
-two-tier network. The second tier is powered by [Masternodes](/masternode) (Full Nodes), which enable financial privacy (AnonSend), 
+two-tier network. The second tier is powered by `Masternode </masternode>`_ (Full Nodes), which enable financial privacy (AnonSend), 
 instant transactions (FastSend), and the decentralized
 governance and budget system. Because this second tier is so important,
 masternodes are also rewarded when miners discover new blocks. The
