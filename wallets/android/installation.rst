@@ -1,8 +1,8 @@
 .. meta::
-   :description: How to install the Dash wallet on your Android device
-   :keywords: dash, mobile, wallet, android, installation, compile
+   :description: How to install the MarteX wallet on your Android device
+   :keywords: martex, mobile, wallet, android, installation, compile
 
-.. _dash-android-installation:
+.. _martex-android-installation:
 
 Installation
 ============
@@ -13,9 +13,9 @@ Google Play
 The easiest way to install the Dash Wallet for Android is from the
 Google Play Store. 
 
-.. image:: img/google-play-badge.png
+.. image:: imgages/google-play-badge.png
     :width: 250 px
-    :target: https://play.google.com/store/apps/details?id=hashengineering.darkcoin.wallet
+    :target: https://play.google.com/store/apps/details?id=com.martexcoin.wallet
 
 From APK
 --------
@@ -28,7 +28,7 @@ installing an APK file. Follow these instructions:
 
 #. Ensure your Android version is at least 4.0.3 by going to **Settings
    → About phone** and checking the version number.
-#. Enable Unknown sources by going to **Settings → Security → Unknown
+#. Enable Unknown sources by going to **Settings → Security → Unknown
    sources**. Read and accept the warning.
 #. Using your phone, download the latest version of the APK from `this
    link <https://github.com/HashEngineering/dash-wallet/releases/latest>`_.
@@ -45,13 +45,13 @@ Android Debug Bridge (ADB). Follow these instructions:
    Android `SDK Platform Tools
    <https://developer.android.com/studio/releases/platform-tools.html>`_
    for Mac, Windows or Linux.
-#. Enable Unknown sources by going to **Settings → Security → Unknown
+#. Enable Unknown sources by going to **Settings → Security → Unknown
    sources**. Read and accept the warning.
-#. Enable USB debugging by going to **Settings → Developer options → USB
+#. Enable USB debugging by going to **Settings → Developer options → USB
    debugging**. If **Developer options** is not available, go to **About
    phone** instead, scroll down, and tap on the **Build number** seven
    times.
-#. Using your PC, download the latest version of the APK from `this link
+#. Using your PC, download the latest version of the APK from `this link
    <https://github.com/HashEngineering/dash-wallet/releases/latest>`_.
 #. Connect your phone to the PC, open a terminal/command prompt window
    and type::
