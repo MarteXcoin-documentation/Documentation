@@ -13,7 +13,7 @@ Google Play
 The easiest way to install the Dash Wallet for Android is from the
 Google Play Store. 
 
-.. image:: imgages/google-play-badge.png
+.. image:: images/google-play-badge.png
     :width: 250 px
     :target: https://play.google.com/store/apps/details?id=com.martexcoin.wallet
 
