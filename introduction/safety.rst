@@ -1,6 +1,6 @@
 .. meta::
-   :description: Safety and security when buying, holding and spending Dash
-   :keywords: dash, cryptocurrency, safety, security, hardware, trezor, scam, ponzi, fake
+   :description: Safety and security when buying, holding and spending MarteX
+   :keywords: martex, cryptocurrency, safety, security, scam, ponzi, fake
 
 .. _safety:
 
@@ -17,22 +17,19 @@ card company to reverse a transaction if your funds are stolen or lost.
 If you forget or lose your wallet file, recovery phrase or PIN, you will
 permanently and irrevocably lose access to your funds.
 
-Dash is designed from the ground up to be fast, secure, fungible and
+MarteX is designed from the ground up to be fast, secure, fungible and
 private. In this sense, it is similar to cash or gold, but
 cryptocurrency can be spent locally and internationally with equal ease,
 if you are confident you are sending funds to the right destination. For
-these reasons, the Dash documentation has a strong focus on safety and
-understanding the concepts and features that drive the Dash ecosystem.
+these reasons, the MarteX documentation has a strong focus on safety and
+understanding the concepts and features that drive the MarteX ecosystem.
 
 A few general safety guidelines:
 
 - Do not trust any online service or person because they sound or look
   reputable. Always use an escrow service if you are buying peer-to-
   peer.
-- Store your Dash on a :ref:`hardware wallet <dash-hardware-wallet>` if 
-  possible. If not, then store your coins in the official 
-  :ref:`Dash Core Wallet <dash-core-wallet>` or the official 
-  :ref:`Dash Electrum Wallet <dash-electrum-wallet>`.
+- Store your MarteX on a : `Official Paper Walllet <https://martexcoin.org/paperwallet/>`_, if not possible, store your founds in `MarteXcore </wallets/MarteXcore/>`_.
 - Do not use exchanges as wallets. Exchanges are for trading, not for
   savings.
 - Mobile wallets should be used for day-to-day purchases, but do not
@@ -47,54 +44,29 @@ Impersonation
 
 Scammers may attempt to impersonate well-known community members and
 manipulate you into granting them access to your system or wallets. This
-is usually done via private messages on the forum, Discord or email. The
+is usually done via private messages on forumz, Discord or email. The
 attacks are often targeted against masternode owners. If you require
 technical assistance, it is best to ask in a public channel/forum or go
-to https://support.dash.org and open a ticket. If you engage in personal
-chat with a well-known community member, verify their identity by their
-chat history or through their publicly available cryptographic keys. All
-community members and `Dash Core Group staff <https://dash.org/team>`__
-will be able to verify their identity using signed PGP messages.
-Identities can also be verified on Keybase:
-
-- `moocowmoo <https://keybase.io/moocowmoo>`__
-- `strophy <https://keybase.io/strophy>`__
-- `tungfa <https://keybase.io/tungfa>`__
-- `codablock <https://keybase.io/codablock>`__
-- `UdjinM6 <https://keybase.io/udjinm6>`__
-- `Ryan Taylor <https://keybase.io/ryanptaylor>`__
-- `splawik21 <https://keybase.io/splawik21>`_
-- `Bertrand256 <https://keybase.io/bertrand256>`__
-- `akhavr <https://keybase.io/akhavr>`__
+to your official `telegram group <http://t.me/martexcoin>`_.
 
 
 Scams
 =====
 
-There are many "fake" Dash/Darkcoin pages on the internet attempting to
-trick users into sending Dash or other cryptocurrencies or "open a
-wallet". Other scams include selling fake mining hardware, fake Dash or
+There are many "fake" MarteX/MarteXcoin pages on the internet attempting to
+trick users into sending MarteX or other cryptocurrencies or "open a
+wallet". Other scams include selling fake MarteX or
 altcoins with a similar name, and Ponzi schemes (see below). Please be
 careful and do NOT trust any third parties listed here!!
 
-List of known Dash-related scams:
+List of known MarteX-related scams:
 
-- **dash-wallet dot com** is a known scam!
-- **electrumdash dot org** is a fake clone of the official site!
-- **dashcoinmining dot com** is not affiliated with Dash!
-- **dashcrypto dot info** is not affiliated with Dash!
-- **onclooud dot com** is not affiliated with Dash!
-- **as-shop dot su** is selling fake Baikal miners!
-- **minershop dot biz** is selling fake Baikal miners!
-- **dashcoinclub dot com** is a Ponzi scheme not affiliated with Dash!
-- **dash-coin dot net** is a fake web wallet, do not send them money!
-- **coinvert dot io** is a fake exchange!
-- **dashcash dot io** is not affiliated with Dash and may be 
-  distributing a compromised wallet!
-- **dashdaowallet dot com** is a mydashwallet clone and confirmed scam
 
-Beware of fake Twitter accounts impersonating Dash! The official Twitter
-account is: https://twitter.com/Dashpay
+- **www dot yobit dot net** is a scam exchange!
+
+
+Beware of fake Twitter accounts impersonating MarteX! The official Twitter
+account is: https://twitter.com/martexcoin
 
 Please report these and any others scams you encounter as follows:
 
@@ -127,11 +99,7 @@ losing money to the originators of the scheme.
 - `How to spot a Ponzi Scheme <https://www.which.co.uk/consumer-rights/advice/how-to-spot-a-pyramid-scheme>`_
 - `BehindMLM - News and blog about Ponzi schemes <http://behindmlm.com>`_
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 1em; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/y9rJZX72oIw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
+- `Ponzi vs. Pyramid <http://www.youtube.com/embed/y9rJZX72oIw>`_
 
 If you encounter a Ponzi scheme, follow the same reporting steps as
 above for scam websites!
