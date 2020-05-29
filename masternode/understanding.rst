@@ -67,89 +67,6 @@ See `this site <https://masternodes.online/currencies/MXT/>`_ to know masternode
 statistics on the masternode network.
 
 
-.. _dip3-changes:
-
-DIP003 Masternode Changes
-=========================
-
-Dash 0.13.0 implements DIP003, which introduces several changes to how a
-Dash masternode is set up and operated. A list of available
-documentation appears below:
-
-- `DIP003 Deterministic Masternode Lists <https://github.com/dashpay/dips/blob/master/dip-0003.md>`__
-- :ref:`dip3-changes` (you are here)
-- `Dash 0.13 Upgrade Procedure for Masternodes (legacy documentation) <https://docs.dash.org/en/0.13.0/masternodes/dip3-upgrade.html>`__
-- :ref:`Full masternode setup guide <masternode-setup>`
-- :ref:`Information for users of hosted masternodes <hosted-setup>`
-- :ref:`Information for operators of hosted masternodes <operator-transactions>`
-
-Important concepts and changes:
-
-- It is possible to upgrade an existing masternode in-place without 
-  starting a new server and without moving your 1000 DASH collateral.
-- A masternode was previously "started" using the ``masternode start-alias`` 
-  command based on a ``masternode.conf`` file. Under DIP003, this file 
-  is no longer used, and masternodes are "registered" instead of 
-  "started". Masternodes begin offering services when a `ProRegTx <https://github.com/dashpay/dips/blob/master/dip-0003.md#registering-a-masternode-proregtx>`_ 
-  `special transaction <https://github.com/dashpay/dips/blob/master/dip-0002.md>`_ 
-  containing a particular key is written to the blockchain.
-- As before in ``masternode.conf``, the ProRegTx references the
-  transaction id (txid) and index holding the collateral. The IP address
-  and port of the masternode are also defined in this transaction.
-- The ProRegTx contains 2 Dash addresses (also called public keys) and
-  one BLS public key, which represent 3 different roles in the
-  masternode and define update and voting rights. The keys are:
-  
-  1. ``ownerKeyAddr``: This is a Dash address (public key) controlled by
-     the masternode owner. It is different from the address used for the
-     collateral. Because the owner uses the private key associated with
-     this address to issue :ref:`ProUpRegTx <update-dip3-config>`
-     transactions, it must be unique for each masternode.
-  2. ``operatorPubKey``: This is the BLS public key of the masternode
-     operator. Only the operator is allowed to issue :ref:`ProUpServTx
-     <update-dip3-config>` transactions. Because the operator key is 
-     used during live masternode operation to sign masternode-related 
-     P2P messages, quorum-related messages and governance trigger votes,
-     the BLS key must be unique for each masternode.
-  3. ``votingKeyAddr``: This is a Dash address (public key) used for
-     proposal voting. Votes signed with the corresponding private key 
-     are valid while the masternode is in the registered set.
-
-- Masternode payments were previously sent to the address holding the
-  collateral. Under DIP003, the owner should specify a different address 
-  to receive payments in the ProRegTx. The owner may optionally specify 
-  a non-zero percentage as payment to a separate masternode operator, if
-  applicable.
-- The masternode configuration can later be updated using ProUpServTx,
-  ProUpRegTx and ProUpRevTx transactions. See `Updating Masternode
-  Information <https://github.com/dashpay/dips/blob/master/dip-0003.md#updating-masternode-information>`_ 
-  in DIP003 and :ref:`update-dip3-config` in this documentation for more
-  details.
-- All functions related to DIP003 will only take effect once Spork 15 is
-  enabled on the network. Until then, it is necessary to set up the
-  masternode following the `old process <https://docs.dash.org/en/0.12.3/masternodes/setup.html>`_ 
-  and then work through the `upgrade procedure <https://docs.dash.org/en/0.13.0/masternodes/dip3-upgrade.html>`__. 
-  In this state, the masternode will continue to function in
-  compatibility mode, and all DIP003 related functions, such as payments
-  to a separate address or percentage payments to operators, will not
-  yet have any effect. The ``ownerKeyAddr`` and ``votingKeyAddr`` must
-  also be  identical until Spork 15 is enabled.
-
-The process of setting up or upgrading a masternode is as follows:
-
-1. Set up your server and operating system
-2. Install the Dash software and synchronize the blockchain
-3. Generate a BLS key pair and enter the private key on the masternode
-4. Prepare a ProRegTx transaction
-5. Sign the ProRegTx transaction
-6. Submit the signed ProRegTx transaction
-
-Step 1 can be omitted if you have an existing server. Steps 2 and 3
-require direct access to the masternode. Steps 3 and 4 require access to
-a Dash Wallet (or DMT). Step 5 requires access to the wallet actually
-holding the collateral. Step 6 requires a Dash balance to pay the
-transaction fee.
-
 Masternodes vs. mining
 ======================
 
@@ -257,7 +174,7 @@ Masternode requirements
   to average specifications will do, although performance requirements
   will increase according to updates in MarteXcoin.
 - A dedicated IP address: These usually come with the VPS/server.
-- A little time and (heart): Masternodes used to require complex setup,
+- A little time and (heart): Masternodes used to require `complex setup </Documentation/masternode>`_,
   but tools such as `MXT-MN </Documentation/masternode/mxt-mn/>`_ now greatly simplify the process.
 
 In addition to the 5000 Dash held in collateral, masternodes also have
@@ -275,5 +192,3 @@ requirements are as follows:
 +---------+------------------+------------------+
 | Network | 4   GB/mth       | 1 TB/mth         |
 +---------+------------------+------------------+
-
-
