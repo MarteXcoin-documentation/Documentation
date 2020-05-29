@@ -1,6 +1,6 @@
 .. meta::
-   :description: Explanation of how Dash masternodes work in theory and practice to support FastSend, AnonSend and governance
-   :keywords: martex, masternodes, hosting, linux, payment, fastsend, anonsend, governance, quorum, evolution, bls, 
+   :description: Explanation of how MarteX masternodes work in theory and practice to support FastSend, AnonSend and governance
+   :keywords: martex, masternodes, hosting, linux, payment, fastsend, anonsend, governance, quorum, bls, 
 
 .. _understanding_masternodes:
 
@@ -59,8 +59,8 @@ means that MarteX can scale more efficiently and deploy services more
 quickly than a blockchain run entirely by unpaid volunteers. The more
 masternodes, the better and safer the MarteX network.
 
-As of April 2020, the MarteX network has over 120 masternodes.
-The block reward is approximately 2,5 MMarteX, so the selected masternode receives
+As of April 2020, the MarteX network has over 112 masternodes.
+The block reward is approximately 2,5 MarteX, so the selected masternode receives
 1.125 MarteX per payment.
 See `this site <https://masternodes.online/currencies/MXT/>`_ to know masternodes ROI, and `this site
 <https://mnrank.com/coin/MXT/>`_ for various real-time
@@ -157,13 +157,13 @@ MarteX, like Bitcoin and most other cryptocurrencies, is based on a
 decentralized ledger of all transactions, known as a blockchain. This
 blockchain is secured through a consensus mechanism; in the case of 
 Bitcoin, the consensus mechanism is Proof of Work (PoW).
-In MarteXcoin `Miners <~/mining>` attempt to solve difficult problems with
-using Proof of Stake (PoS), and when they solve the problem, they receive the
-right to add a new block to the blockchain. If all the other people
-running the software agree that the problem was solved correctly, the
-block is added to the blockchain and the miner is rewarded.
+In MarteXcoin `Miners <~/mining>` attempt to make a consensus, the consensus mechanism of is Proof of Stake `(PoS) <https://en.bitcoinwiki.org/wiki/Proof-of-stake>`_.
+The consensus is achieved by requiring users to stake an amount of their tokens
+ so as to have a chance of being selected to validate blocks of
+ transactions, and get rewarded for doing so.
+If all the other people running the software agree that the consensus was made correctly, the block is added to the blockchain and the miner (know as validator) is rewarded.
 
-MarteX works a differently from Bitcoin because it has a
+MarteX works a little differently from Bitcoin because it has a
 two-tier network. The second tier is powered by masternodes (Full
 Nodes), which enable financial privacy (AnonSend), instant
 transactions (FastSend), and the decentralized governance and budget
@@ -230,47 +230,38 @@ Each failure to provide service results in an increase in the PoSe score
 relative to the maximum score, which is equal to the number of
 registered masternodes. If the score reaches the number of registered
 masternodes, a PoSe ban is enacted and the masternode must be repaired
-to ensure it provides reliable service and registered in the list again
-using a :ref:`ProUpServTx <dip3-update-service>`. The current scoring
-rules as of Dash 0.14 are:
-
-- Failure to participate in `DKG <https://github.com/dashpay/dips/blob/master/dip-0006.md#llmq-dkg-network-protocol>`__\ = 66% punishment
-- Each subsequent block reduces PoSe score by 1
+to ensure it provides reliable service and registered in the list again.
 
 Quorum selection
 ================
-
-In past versions of Dash, quorums of 10 masternodes were formed
-spontaneously to lock InstantSend transactions. As of Dash 0.14, quorums
+As of MarteX 3.6, quorums
 are deterministically formed, contain more masternodes and remain alive
 for a longer period of time. While they remain responsible for
-InstantSend transactions, the locking mechanism has changed to
+FastSend transactions, the locking mechanism has changed to
 automatically attempt locks on most network transactions according to
-the requirements described :ref:`here <is-broadcast>`. Masternodes are
+the requirements described `Broadcast <http://>`_. Masternodes are
 now also responsible for more network consensus functions, such as
-:ref:`ChainLocks <chainlocks>`. Masternode quorums are formed through a
-process of `distributed key generation <https://github.com/dashpay/dips/blob/master/dip-0006.md>`__.  
-Failure to participate in DKG will eventually result in a PoSe ban as
-described above.
+`Chainlocks <http://>`_. Masternode quorums are formed through a
+process of distributed key generation.
+Failure to participate in DKG will eventually result in a PoSe ban.
 
 
 Masternode requirements
 =======================
 
-- 1000 Dash: Arguably the hardest part. Dash can be obtained from
-  exchanges such as Poloniex, Bittrex, Kraken and LiveCoin. Shapeshift's
-  service is also an excellent way.
+- 5000 MarteX: Arguably the hardest part. MarteX can be obtained from
+  exchanges such as CreX24, decentralized markets and exchanges.
 - A server or VPS running Linux: Most recent guides use Ubuntu 18.04
   LTS. We recommend VPS services such as Vultr and DigitalOcean,
   although any decent provider will do. Generally an instance with low
   to average specifications will do, although performance requirements
-  will increase according to this roadmap.
+  will increase according to updates in MarteXcoin.
 - A dedicated IP address: These usually come with the VPS/server.
 - A little time and (heart): Masternodes used to require complex setup,
-  but tools such as dashman now greatly simplify the process.
+  but tools such as `MXT-MN </Documentation/masternode/mxt-mn/>`_ now greatly simplify the process.
 
-In addition to the 1000 Dash held in collateral, masternodes also have
-minimum hardware requirements. For Dash versions 0.14 and higher, these
+In addition to the 5000 Dash held in collateral, masternodes also have
+minimum hardware requirements. For MarteX versions 3.6 and higher, these
 requirements are as follows:
 
 +---------+------------------+------------------+
@@ -278,23 +269,11 @@ requirements are as follows:
 +=========+==================+==================+
 | CPU     | 1x 1 GHz         | 1x 2 GHz         |
 +---------+------------------+------------------+
-| RAM     | 2 GB + 2 GB swap | 4 GB + 2 GB swap |
+| RAM     | 1 GB + 1,5GB swap| 4 GB + 2 GB swap |
 +---------+------------------+------------------+
-| Disk    | 40 GB            | 60 GB            |
+| Disk    | 10 GB            | 20 GB            |
 +---------+------------------+------------------+
-| Network | 400 GB/mth       | 1 TB/mth         |
+| Network | 4   GB/mth       | 1 TB/mth         |
 +---------+------------------+------------------+
 
-Masternode bandwidth use ranges between 300-500 GB per month and will
-grow as the network does.
 
-Dash Evolution
---------------
-
-The exact hardware requirements for Dash Evolution masternodes have yet
-to be determined, although some pointers can be taken from the `roadmap
-<https://www.dash.org/roadmap>`_ and this `blog post
-<https://medium.com/@eduffield222/how-to-enabling-on-chain-scaling-2ffab5997f8b>`_.
-It should be possible to run Dash masternodes on normal VPS servers
-until the block size reaches approximately 20 MB, after which custom
-hardware such as GPUs and eventually ASICs may be required.
