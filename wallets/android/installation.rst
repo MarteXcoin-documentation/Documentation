@@ -10,7 +10,7 @@ Installation
 Google Play
 -----------
 
-The easiest way to install the Dash Wallet for Android is from the
+The easiest way to install the MarteX Wallet for Android is from the
 Google Play Store. 
 
 .. image:: images/google-play-badge.png
@@ -64,4 +64,4 @@ Android Debug Bridge (ADB). Follow these instructions:
 From source
 -----------
 
-In the future we will publish the source code of wallet android.
+In the future we will publish the source code of android wallet.
