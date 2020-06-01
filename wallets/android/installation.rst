@@ -31,7 +31,8 @@ installing an APK file. Follow these instructions:
 #. Enable Unknown sources by going to **Settings → Security → Unknown
    sources**. Read and accept the warning.
 #. Using your phone, download the latest version of the APK from `this
-   link <https://github.com/HashEngineering/dash-wallet/releases/latest>`_.
+   link <https://play.google.com/store/apps/details?id=com.martexcoin.wallet>`_
+   using a web site that `download apk files from google play <https://www.google.com/search?hl=en&q=download%20apk%20from%20google%20play>`_.
 #. If you cannot use your phone to go online, download the APK using
    your PC instead and copy it to your phone using a cable or Bluetooth.
    You may need a file browser to find the copied file.
@@ -51,8 +52,9 @@ Android Debug Bridge (ADB). Follow these instructions:
    debugging**. If **Developer options** is not available, go to **About
    phone** instead, scroll down, and tap on the **Build number** seven
    times.
-#. Using your PC, download the latest version of the APK from `this link
-   <https://github.com/HashEngineering/dash-wallet/releases/latest>`_.
+#. Using your PC, download the latest version of the APK from `this
+   link <https://play.google.com/store/apps/details?id=com.martexcoin.wallet>`_
+   using a web site that `download apk files from google play <https://www.google.com/search?hl=en&q=download%20apk%20from%20google%20play>`_.
 #. Connect your phone to the PC, open a terminal/command prompt window
    and type::
 
