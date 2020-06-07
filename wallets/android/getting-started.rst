@@ -22,13 +22,13 @@ also lose access to your funds forever. If you prefer, you can also back
 up a password protected wallet file by selecting **Safety** > **Back up
 wallet**.
 
-.. image:: img/android-setup1.png
+.. image:: images/8.png
     :width: 160 px
-.. image:: img/android-setup2.png
+.. image:: images/12.png
     :width: 160 px
-.. image:: img/android-setup3.png
+.. image:: images/5.jpg
     :width: 160 px
-.. image:: img/android-setup4.png
+.. image:: images/18.png
     :width: 160 px
 
 *Viewing the recovery phrase for a new wallet in MarteX Wallet for
@@ -40,7 +40,7 @@ Restoring from backup
 
 If you already have an existing MarteX Wallet for Android, you can restore
 it at this point by tapping the menu button in the top left corner and
-selecting **Safety** > **Restore from recovery phrase**. Carefully enter
+selecting **Configurations** > **Restore from recovery phrase**. Carefully enter
 your recovery phrase and tap **Restore**. Your wallet may restart, and
 it will take some time for any past transactions and balances to appear.
 
@@ -60,19 +60,18 @@ Android*
 Receiving
 ---------
 
-Tap the **Request coins** button at the bottom left of the screen to
+Tap the **Recive** word at the left of the screen to
 receive MarteX. The wallet will generate and display a QR code for the
-other device to scan, and you can optionally enter the martex or dollar
+other device to scan, and you can optionally enter the martex 
 value of the transaction to save the payer time. You can tap the menu
 button in the top right corner and select **Copy address** to copy and
 paste it in another app to send it to a person paying you remotely. You
 will receive a notification when the transfer occurs, and you can view
 the confirmation status on the main screen and the balance in the top
 right corner. MarteX Wallet for Android considers a transaction spendable
-after 1 block confirmations has taken place (approx. 2.5 minutes), or 6
-block confirmations if you want to generate FastSend transactions.
+after 1 block confirmations has taken place (approx. 1 minute), Martexcoin android wallet always uses FastSend transactions.
 
-.. image:: img/android-receive1.png
+.. image:: images/8.png
     :width: 160 px
 .. image:: img/android-receive2.png
     :width: 160 px
