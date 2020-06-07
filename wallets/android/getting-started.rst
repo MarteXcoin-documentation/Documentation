@@ -39,7 +39,7 @@ Restoring from backup
 ---------------------
 
 If you already have an existing MarteX Wallet for Android, you can restore
-it at this point by tapping the menu button in the top left corner and
+it at this point by tapping the menu button in the top right corner and
 selecting **Configurations** > **Restore from recovery phrase**. Carefully enter
 your recovery phrase and tap **Restore**. Your wallet may restart, and
 it will take some time for any past transactions and balances to appear.
@@ -87,10 +87,10 @@ for Android*
 Sending
 -------
 
-Tap the **Send coins** button at the bottom right of the screen to send
+Tap the **Send coins** word in the middle of the screen to send
 MarteX. You will be prompted to type, paste or scan (by tapping the round
 QR button) a MarteX address, the amount to pay and whether to use
-InstantSend. Note that this information may already be included if you
+FastSend. Note that this information may already be included if you
 are scanning a QR code. The automatically determined network fee is
 displayed. Tap **Send** to complete the transaction.
 
