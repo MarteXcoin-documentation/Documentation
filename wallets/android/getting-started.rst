@@ -32,11 +32,7 @@ Android*
 Restoring from backup
 ---------------------
 
-If you already have an existing MarteX Wallet for Android, you can restore
-it at this point by tapping the menu button in the top right corner and
-selecting **Configurations** > **Restore from recovery phrase**. Carefully enter
-your recovery phrase and tap **Restore**. Your wallet may restart, and
-it will take some time for any past transactions and balances to appear.
+If you have an existing MarteX for android wallet, you can restore it and you can restore it at this time by tapping the menu button in the upper right corner and selecting Settings> Restore from recovery phrase. One will appear with two options, Create a new portfolio or Restore an existing portfolio, select the second one. Then, carefully enter the recovery phrase and tap Restore. Your wallet may restart and it will take some time for previous transactions and balances to appear.
 
 .. image:: img/android-restore1.png
     :width: 160 px
