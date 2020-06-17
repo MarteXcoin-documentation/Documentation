@@ -10,7 +10,7 @@ Getting started
 Creating a new wallet
 ---------------------
 
-When you initialize the official MarteX wallet for android, you need to click on create a new wallet, after that, it will show you the recovery phrase and ask if you have already backed it up. You should keep it in the keepass for example. Then it will display a screen for you to enter your recovery phrase in order to confirm it, you can ignore the process, however, it is recommended to perform it to inhibit possible spelling errors.
+When you first start the official MarteX wallet for android, you need to click on create a new wallet, after that it will show you the recovery phrase and ask if you have already backed it up. You should keep it in the keepass for example. Then it will display a screen for you to enter your recovery phrase in order to confirm it, you can ignore the process, however, it is recommended to perform it to inhibit possible spelling errors.
 Then, you will be asked to create a password to access the wallet so that third parties do not use your cell phone. This step is optional, however, it is safer to implement the password.
 After that, you must select MarteXcoin as the currency to be used.
 Then the terms of service will be displayed in which you must read and agree to use the wallet.
