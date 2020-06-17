@@ -10,17 +10,11 @@ Getting started
 Creating a new wallet
 ---------------------
 
-When you first start your MarteX Wallet, it will automatically generate a
-new wallet for you. It will then ask you to enter a PIN to protect
-spending from the wallet. The first thing you should do after setting a
-PIN is back up the wallet by tapping the menu button in the top left
-corner and selecting **Safety** > **View recovery phrase**. You will
-need this phrase to recover the funds later if you lose or damage your
-phone or need to transfer the account to another device. Write the
-phrase down and store it in a safe place - if you lose this, you will
-also lose access to your funds forever. If you prefer, you can also back
-up a password protected wallet file by selecting **Safety** > **Back up
-wallet**.
+When you initialize the official MarteX wallet for android, you need to click on create a new wallet, after that, it will show you the recovery phrase and ask if you have already backed it up. You should keep it in the keepass for example. Then it will display a screen for you to enter your recovery phrase in order to confirm it, you can ignore the process, however, it is recommended to perform it to inhibit possible spelling errors.
+Then, you will be asked to create a password to access the wallet so that third parties do not use your cell phone. This step is optional, however, it is safer to implement the password.
+After that, you must select MarteXcoin as the currency to be used.
+Then the terms of service will be displayed in which you must read and agree to use the wallet.
+It is then released for use.
 
 .. image:: images/8.png
     :width: 160 px
