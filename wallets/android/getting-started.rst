@@ -50,16 +50,7 @@ Android*
 Receiving
 ---------
 
-Tap the **Recive** word at the left of the screen to
-receive MarteX. The wallet will generate and display a QR code for the
-other device to scan, and you can optionally enter the martex 
-value of the transaction to save the payer time. You can tap the menu
-button in the top right corner and select **Copy address** to copy and
-paste it in another app to send it to a person paying you remotely. You
-will receive a notification when the transfer occurs, and you can view
-the confirmation status on the main screen and the balance in the top
-right corner. MarteX Wallet for Android considers a transaction spendable
-after 1 block confirmations has taken place (approx. 1 minute), Martexcoin android wallet always uses FastSend transactions.
+Tap the Recive word at the left of the screen to receive MarteX coins. The wallet will generate and display a QR code for the other device to scan, and you can optionally enter the martex coins value of the transaction to save the payer time. You can tap the menu button in the top right corner and select Copy address to copy and paste it in another app to send it to a person paying you remotely. You will receive a notification when the transfer occurs, and you can view the confirmation status on the main screen and the balance in tapping the word balance. MarteX Wallet for Android considers a transaction spendable after 6 block confirmations has taken place (approx. 1 minute), Martexcoin android wallet always uses FastSend transactions.
 
 .. image:: images/8.png
     :width: 160 px
