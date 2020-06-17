@@ -69,9 +69,8 @@ Sending
 -------
 
 Tap the **Send coins** word in the middle of the screen to send
-MarteX. You will be prompted to type, paste or scan (by tapping the round
-QR button) a MarteX address, the amount to pay and whether to use
-FastSend. Note that this information may already be included if you
+MarteX coins. You will be prompted to type, paste or scan (by tapping the round
+QR button) a MarteX address, the amount to pay. Note that this information may already be included if you
 are scanning a QR code. The automatically determined network fee is
 displayed. Tap **Send** to complete the transaction.
 
@@ -84,5 +83,5 @@ displayed. Tap **Send** to complete the transaction.
 .. image:: img/android-send4.png
     :width: 160 px
 
-*Sending MarteX and viewing your transactions and balance in Dash Wallet
+*Sending MarteX and viewing your transactions and balance in MarteX Wallet
 for Android*
