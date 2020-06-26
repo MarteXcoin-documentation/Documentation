@@ -1,14 +1,14 @@
 .. meta::
-   :description: Practical guide to using the Dash governance system and treasury
-   :keywords: dash, dgbb, governance, funding, voting, proposals, masternodes
+   :description: Practical guide to using the MarteX governance system and treasury
+   :keywords: martex, dgbb, governance, funding, voting, proposals, masternodes
 
 .. _using-governance:
 
 =====================
-Using Dash Governance
+Using MarteX Governance
 =====================
 
-Dash's Decentralized Governance by Blockchain (DGBB) is a novel voting
+MarteX's Decentralized Governance by Blockchain (DGBB) is a novel voting
 and funding platform. This documentation introduces and details the
 theory and practice to use the system.
 
@@ -28,7 +28,7 @@ Proposals
 ---------
 
 - Proposals are a request to receive funds
-- Proposals can be submitted by anyone for a fee of 5 Dash. The proposal
+- Proposals can be submitted by anyone for a fee of 5 MarteX. The proposal
   fee is irreversibly destroyed on submission.
 - Proposals cannot be altered once submitted
 
@@ -50,7 +50,7 @@ Budgets
   fall below the approval threshold
 - Budgets are processed (paid) in order of yes minus no votes. More
   popular budgets get payment priority. 
-- Approximately 6176 dash (in 2018) are available for each budget cycle,
+- Approximately 6176 martex (in 2018) are available for each budget cycle,
   decreasing by 7.14% every 210240 blocks (approx. 383.25 days).
 
 Object structure
@@ -58,13 +58,13 @@ Object structure
 
 The following information is required to create a proposal:
 
-- proposal-name: a unique label, 20 characters or less
-- url: a proposer-created webpage or forum post containing detailed
-  proposal information
-- payment-count: how many cycles the proposal is requesting payment
-- block-start: the requested start of proposal payments
-- dash-address: the address to receive proposal payments
-- monthly-payment-dash: the requested payment amount
+- end_epoch: TIMESTAMP UTC / MAXIMUM PROJECT DATE (numeric)
+- name: "lowercase project name (up to 20 characters)" (string)
+- payment_address: "WALLET ADDRESS" (string)
+- payment_amount: QTY OF MXT TO BE COLLECTED (numeric)
+- start_epoch: TIMESTAMP UTC / CURRENT DATE OR NEXT SUPERBLOCK (numeric)
+- type: 1 (always)
+- url: "PROJECT SITE / DOCUMENT" (string)
 
 Persistence
 -----------
@@ -78,21 +78,16 @@ Persistence
   the total available votes.
 - The total available votes is the count of online and responding
   masternodes and can be seen by running the command 
-  ``masternode count`` in the Dash Core wallet debug window. A graph of
-  the total masternode count can be found `here 
-  <http://178.254.23.111/~pub/masternode_count.png>`__
+  ``masternode count`` in the MarteX Core wallet debug window.
 
 Templates
 ---------
 
-The following two Microsoft Word templates are available from Dash Core
+The following one Microsoft Word template are available from MarteX Core
 Group to help facilitate standardized proposal submission and updates.
 Usage is recommended, but not required.
 
-- `Project Proposal Template <https://github.com/dashpay/docs/raw/master/binary/Dash%20Project%20Proposal%20Template%20v2.0.docx>`_
-- `Project Status Update Template <https://github.com/dashpay/docs/raw/master/binary/Dash%20Project%20Status%20Update%20Template%20v2.0.docx>`_
-
-.. _budget-cycles:
+- `Project Proposal Template <https://github.com/martexcoin/proposal>`_
 
 Budget cycles
 =============
@@ -101,39 +96,8 @@ When preparing a proposal, be aware of when the next cycle will occur
 and plan accordingly. It is recommended to choose your proposal payment
 start block at least one cycle in the future to allow time for
 discussion and gathering support and votes. Note that votes will no
-longer be tallied 1662 blocks (approximately 3 days) prior to the
+longer be tallied 1662 blocks (approximately 32 minutes) prior to the
 superblock.
-
-+--------------+------------------------------+
-| Block height | Approximate date             |
-+==============+==============================+
-| 1212968      | Thu Jan 30 02:38:52 UTC 2020 |
-+--------------+------------------------------+
-| 1229584      | Sat Feb 29 09:43:54 UTC 2020 |
-+--------------+------------------------------+
-| 1246200      | Mon Mar 30 16:48:56 UTC 2020 |
-+--------------+------------------------------+
-| 1262816      | Wed Apr 29 23:53:58 UTC 2020 |
-+--------------+------------------------------+
-| 1279432      | Sat May 30 06:59:00 UTC 2020 |
-+--------------+------------------------------+
-| 1296048      | Mon Jun 29 14:04:02 UTC 2020 |
-+--------------+------------------------------+
-| 1312664      | Wed Jul 29 21:09:04 UTC 2020 |
-+--------------+------------------------------+
-| 1329280      | Sat Aug 29 04:14:06 UTC 2020 |
-+--------------+------------------------------+
-| 1345896      | Mon Sep 28 11:19:08 UTC 2020 |
-+--------------+------------------------------+
-| 1362512      | Wed Oct 28 18:24:10 UTC 2020 |
-+--------------+------------------------------+
-| 1379128      | Sat Nov 28 01:29:12 UTC 2020 |
-+--------------+------------------------------+
-| 1395744      | Mon Dec 28 08:34:14 UTC 2020 |
-+--------------+------------------------------+
-
-You can view the source code for this calculation at this
-`GitHub gist <https://gist.github.com/strophy/9eb743f7bc717c17a2e776e461f24c49>`_
 
 .. _creating-proposals:
 
@@ -142,92 +106,10 @@ Creating proposals
 
 Once you have prepared the text of your proposal and set up a website or
 forum post, it is time to submit your proposal to the blockchain for
-voting. While all tasks involved with creating a budget proposal can be
-executed from the Dash Core wallet console, several tools providing a
-user interface have been developed to simplify this procedure.
+voting. All tasks involved with creating a budget proposal can be
+executed from the MarteX Core wallet console.
 
-Dash Budget Proposal Generator
-------------------------------
-
-- https://proposal.dash.org
-
-The `Dash Budget Proposal Generator <https://proposal.dash.org>`__
-supports creating budget proposals on both mainnet and testnet. In the
-first step, you must enter a short, clear and unique name for the
-proposal as it will appear on the blockchain. Proposal names are limited
-to 40 characters. You can then provide a link to the forum or
-DashCentral where your proposal is described in more detail (use a `URL
-shortening service <https://goo.gl>`_ if necessary), as well as select
-the amount of payment you are requesting, how often the payment should
-occur, and the superblock date on which you are requesting payment. This
-allows you to control in which budget period your proposal will appear,
-and gives you enough time to build support for your proposal by
-familiarising voters with your project. Note that the payment amount is
-fixed and cannot be modified after it has been submitted to the
-blockchain.
-
-.. image:: img/proposal-create.png
-   :width: 300px
-
-.. figure:: img/proposal-burn-prepare.png
-   :width: 300px
-
-   Steps 1 & 2: Creating your proposal and preparing the command
-
-Next, the proposal generator will provide you with a command to run from
-the console of your Dash Core wallet to prepare your budget proposal
-governance object. Running this command will cost you 5 DASH, which will
-be "burnt" or permanently removed from circulation. This one-time fee
-protects the governance system from becoming overwhelmed by spam, poorly
-thought out proposals or users not acting in good faith. A small
-transaction fee is charged as well, so make sure slightly more than 5
-DASH is available in your wallet. Many budget proposals request
-reimbursement of the 5 DASH fee.
-
-First unlock your wallet by clicking **Settings > Unlock wallet**, then
-open the console by clicking **Tools > Debug console** and paste the
-generated command. The transaction ID will appear. Copy and paste this
-into the proposal generator response window. As soon as you do this, the
-system will show a progress bar as it waits for 6 confirmations as
-follows:
-
-.. image:: img/proposal-burn-console.png
-   :width: 300px
-
-.. figure:: img/proposal-burn-confirming.png
-   :width: 250px
-
-   Step 3: Creating the proposal transaction and waiting for 6 
-   confirmations of the transaction ID
-
-Once 6 block confirmations exist, another command will appear to submit
-the prepared governance object to the network for voting. Copy and paste
-this command, and your governance object ID will appear as follows:
-
-.. image:: img/proposal-submit.png
-   :width: 300px
-
-.. figure:: img/proposal-submit-console.png
-   :width: 250px
-
-   Step 4: Submitting the governance object to the network
-
-You can use this ID to track voting on the proposal until the budget
-closes and you receive your payout. You can also submit the ID to
-DashCentral to claim your proposal and enable simplified voting for
-masternodes using DashCentral voting services.
-
-DashCentral Proposal Generator
-------------------------------
-
-- https://www.dashcentral.org/budget/create
-
-DashCentral also includes a tool to create budget proposals, or claim
-existing proposals so you can add a description on DashCentral and begin
-discussion with the community. The steps to be taken are almost
-identical to the procedure described above, and documentation is
-available `here <https://www.dashcentral.org/about/contact>`_.
-
+- `All the steps to generate a proposal can be found here. <https://github.com/martexcoin/proposal>`_
 
 Voting on proposals
 ===================
