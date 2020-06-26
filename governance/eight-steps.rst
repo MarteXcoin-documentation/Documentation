@@ -1,6 +1,6 @@
 .. meta::
-   :description: How to prepare and submit a successful proposal for the Dash treasury system
-   :keywords: dash, treasury, proposal, recommendations, communication, escrow
+   :description: How to prepare and submit a successful proposal for the MarteX treasury system
+   :keywords: martex, treasury, proposal, recommendations, communication, escrow
 
 .. _eight-steps:
 
@@ -8,7 +8,7 @@
 8 Steps to a Successful Proposal
 ================================
 
-Proposals in the Dash governance system are subject to voting by
+Proposals in the MarteX governance system are subject to voting by
 masternodes. So, like any voting, you need to convince the voters that
 your proposal should pass. Here are some key points to consider in every
 proposal:
@@ -16,7 +16,7 @@ proposal:
 Keep your proposal clear
   Your proposal should have a clear title, followed by a short and
   simple description of the objectives. Explain early in your proposal
-  exactly how it will benefit the Dash network, how much Dash you are
+  exactly how it will benefit the MarteX network, how much MarteX you are
   requesting, how you arrived at this value, and finally who you are and
   how you plan to do the work. Masternodes should be able to immediately
   get an idea of what you are proposing from the first few lines of your
@@ -36,7 +36,7 @@ Run a pre-proposal discussion
   including community feedback in your work.
 
 Manage your identity and reputation
-  The Dash community is one of the network's strongest features, and
+  The MarteX community is one of the network's strongest features, and
   newcomers are always welcome. However, because of the way proposals
   work, there needs to be reasonable trust that the work promised in the
   proposal will be completed if it passes. If you are new, consider
@@ -57,16 +57,16 @@ Run an enthusiastic campaign for your proposal
   <https://www.dashcentral.org/budget>`_, become a regular on Discord
   or run a webinar to explain the proposal and answer questions. Put
   some work in before you ask for funding to demonstrate your
-  involvement with Dash - but don't be annoying and spam many channels
+  involvement with MarteX - but don't be annoying and spam many channels
   asking for votes.
 
 Demonstrate your commitment to the network
   If you are asking for significant funding to start up or expand a
-  for-profit business built on Dash, you need to explain why and for how
+  for-profit business built on MarteX, you need to explain why and for how
   long this funding is required, and what you are offering in return. It
   can be very helpful to show you have skin in the game by matching the
-  contribution provided in Dash with funds from your own business or
-  investors. Equity or exclusivity agreements can be reached with `Dash
+  contribution provided in MarteX with funds from your own business or
+  investors. Equity or exclusivity agreements can be reached with `MarteX
   Core Group, Inc. <bradley.zastrow@dash.org>`_, but must be clarified
   in writing before the proposal is posted.
 
@@ -76,7 +76,7 @@ Post your proposal early and make yourself available for questions
   discuss and vote on your proposal, you must post it well in advance of
   the voting deadline - it's better to wait for the next superblock than
   to rush! Most masternodes will see your proposal for the first time
-  once it appears on the blockchain or when you claim it on DashCentral.
+  once it appears on the blockchain or when you claim it on MarteXCentral.
   The first few hours of discussion between masternode owners typically
   bring up a lot of questions and can be critical to influence opinion
   and voting, so make yourself available during this time.
@@ -92,7 +92,7 @@ Keep the community updated when your proposal passes
 Consider arrangements for large requests
   If you are requesting a significant amount of funding, there is an
   understandable concern that you will deliver on your promises to the
-  network. Reach out to trusted intermediaries such as `Dash Core Group,
+  network. Reach out to trusted intermediaries such as `MarteX Core Group,
   Inc. <bradley.zastrow@dash.org>`_ or `Green Candle, Inc.
   <https://greencandle.io>`_ in advance for advice on escrow, and make
   the conditions for escrow release public and part of the proposal. If
@@ -101,7 +101,7 @@ Consider arrangements for large requests
   proposals out of the budget. Consider breaking your proposal into
   smaller monthly payments instead.
 
-See :ref:`this documentation <using-governance>` for specific
+See `this documentation <./using.rst>`_ for specific
 instructions on how to create a proposal when you are ready. Good luck!
 
 For an example of good reporting, reputation management and use of a
@@ -120,7 +120,7 @@ A few additional points:
    address, or to change the payment address after the proposal is
    posted to the blockchain.
     
-#. To avoid accusations of favouritism and inside trading, Dash Core
+#. To avoid accusations of favouritism and inside trading, MarteX Core
    cannot promote your proposal for you. If your proposal is an
    integration, reach out to the business development team in advance.
    Once your product is live, it may be possible to announce it from
@@ -128,11 +128,11 @@ A few additional points:
     
 #. If your proposal is for news, promotion or marketing, make sure you
    synchronise your efforts with major existing organisations such as
-   Dash Force News or marketing firms contracted by Dash Core.
+   MarteX Force News or marketing firms contracted by MarteX Core.
     
 #. You are responsible for your own planning to hedge against price
    volatility. If your proposal involves significant payments to third
-   parties in fiat currency, reach out to `Dash Core Group, Inc.
+   parties in fiat currency, reach out to `MarteX Core Group, Inc.
    <bradley.zastrow@dash.org>`_ or `Green Candle, Inc.
    <https://greencandle.io>`_ for advice on escrow, price maintenance,
    converting currencies and hedging against volatility.
@@ -149,4 +149,4 @@ A few additional points:
    significant portion of the budget, voting is likely to be very
    competitive with weaker projects being forced out of the budget, even
    if they collect sufficient votes to pass the 10% threshold. See
-   :ref:`here <understanding-governance>` for more details.
+   `here <./understanding.rst>`_ for more details.
