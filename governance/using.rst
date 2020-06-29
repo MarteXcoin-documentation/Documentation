@@ -137,59 +137,40 @@ MarteX Core wallet or masternode
 
 If you started your masternode using the MarteX Core Wallet (not
 recommended), you can vote manually from **Tools > Debug console**, or
-directly from your masternode via SSH using ``dash-cli``. First click on
-the proposal you want to vote on at either `DashCentral
-<https://www.dashcentral.org/budget>`__ or `Dash Ninja
-<https://www.dashninja.pl/governance.html>`__. You will see a command
+directly from your masternode via SSH using ``martex-cli``. First look at
+the proposal you want to vote on at either `MarteXCentral
+<https://martexcoin.org/governance>`_ .You will see a command
 for manual voting below the proposal description. Copy and paste the
 command and modify it as necessary. As an example, take this proposal
-from `Dash Ninja
-<https://www.dashninja.pl/proposaldetails.html?proposalhash=6ed741
-8455e07f4b30b99f0d4a24a2b83282e12b26fe3415673ecbea04ff6c9d>`__ (or
-`DashCentral
-<https://www.dashcentral.org/p/ScalingUpPublicityWithAmandaPMBC>`__).
-The voting code for Dash Core Wallet is as follows::
+from `MarteXCentral <https://martexcoin.org/governance>`_
+The voting code for MarteX Core Wallet is as follows::
 
-  gobject vote-many 6ed7418455e07f4b30b99f0d4a24a2b83282e12b26fe3415673ecbea04ff6c9d funding yes
-  gobject vote-many 6ed7418455e07f4b30b99f0d4a24a2b83282e12b26fe3415673ecbea04ff6c9d funding no
-  gobject vote-many 6ed7418455e07f4b30b99f0d4a24a2b83282e12b26fe3415673ecbea04ff6c9d funding abstain
+  gobject vote-many 18de3fb36b44098c83e4a3c18f398e8e6a97e00558a464bc0bc21dd6b3be0adf funding yes
+  gobject vote-many 18de3fb36b44098c83e4a3c18f398e8e6a97e00558a464bc0bc21dd6b3be0adf funding no
+  gobject vote-many 18de3fb36b44098c83e4a3c18f398e8e6a97e00558a464bc0bc21dd6b3be0adf funding abstain
 
 Note that to vote from your masternode directly, you need to prefix the
-command with ``dash-cli``, which is usually found in the ``.dashcore``
+command with ``martex-cli``, which is usually found in the ``.martexcore``
 folder. The command should be similar to the following::
 
-  ~/.dashcore/dash-cli gobject vote-many 6ed7418455e07f4b30b99f0d4a24a2b83282e12b26fe3415673ecbea04ff6c9d funding yes
-  ~/.dashcore/dash-cli gobject vote-many 6ed7418455e07f4b30b99f0d4a24a2b83282e12b26fe3415673ecbea04ff6c9d funding no
-  ~/.dashcore/dash-cli gobject vote-many 6ed7418455e07f4b30b99f0d4a24a2b83282e12b26fe3415673ecbea04ff6c9d funding abstain
+  ~/.martexcore/martex-cli gobject vote-many 18de3fb36b44098c83e4a3c18f398e8e6a97e00558a464bc0bc21dd6b3be0adf funding yes
+  ~/.martexcore/martex-cli gobject vote-many 18de3fb36b44098c83e4a3c18f398e8e6a97e00558a464bc0bc21dd6b3be0adf funding no
+  ~/.martexcore/martex-cli gobject vote-many 18de3fb36b44098c83e4a3c18f398e8e6a97e00558a464bc0bc21dd6b3be0adf funding abstain
 
 Note this command will trigger a vote from all masternodes configured in
-``dash.conf``. If you have multiple masternodes each with its own .conf
+``MarteX.conf``. If you have multiple masternodes each with its own .conf
 file, or if you want to vote with only some of your masternodes, you
 must change the command from ``vote-many`` to ``vote``. If your vote was
 successful, you should see a confirmation message reading **Voted
 successfully**.
 
-.. figure:: img/vote-dashcore.png
+.. figure:: images/vote-martexcore.png
    :width: 300px
 
-   Voting from the debug console in Dash Core Wallet
+   Voting from the debug console in MarteX Core Wallet
 
 You can also view a list of proposals in JSON format from the console to
 copy and paste the proposal hash for voting as follows::
 
   gobject list
 
-.. _delegating-votes:
-
-Delegating votes
-----------------
-
-:ref:`DIP003 masternodes <dip3-changes>` feature a separate voting key,
-which makes it possible to delegate your vote to a representative.
-Simply enter a Dash address provided by the delegate when
-:ref:`registering your masternode <masternode-setup>`, or :ref:`update
-<dip3-update-registrar>` your masternode registration to delegate the
-vote of a running masternode. The wallet controlling the private key to
-this address will then cast votes on behalf of this masternode owner
-simply by following the :ref:`Dash Core voting procedure <dash-core-voting>` 
-described above. No further configuration is required.
