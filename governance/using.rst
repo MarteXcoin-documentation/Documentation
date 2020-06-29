@@ -114,77 +114,28 @@ executed from the MarteX Core wallet console.
 Voting on proposals
 ===================
 
-**You must vote at least three days before the superblock is created or
+**You must vote at least 32 minutes before the superblock is created or
 your vote will not be counted. The exact deadline is 1662 blocks before
 the superblock.**
 
-Note that if you do not operate a masternode, you may still be able to
-vote on DashBoost proposals. See https://www.dashboost.org for more
-information.
-
 Voting on DGBB proposals is an important part of operating a masternode.
-Since masternodes are heavily invested in Dash, they are expected to
+Since masternodes are heavily invested in MarteX, they are expected to
 critically appraise proposals each month and vote in a manner they
 perceive to be consistent with the best interests of the network. Each
 masternode may vote once on each proposal, and the vote can be changed
 at any time before the voting deadline. The following sites and tools
 are available to view and manage proposals and voting:
 
-- `DashCentral <https://www.dashcentral.org/budget>`__
-- `Dash Nexus <https://dashnexus.org>`__
-- `Dash Ninja - Governance <https://www.dashninja.pl/governance.html>`__
-- `Dash Masternode Tool - Proposals <https://github.com/Bertrand256/dash-masternode-tool/releases>`__
+- `MarteXcore governance <https://martexcoin.org/governance/>`_
 
-For information on how to create a proposal, see :ref:`here
-<creating-proposals>`.
+For information on how to create a proposal, see `here. <#creating-proposals>`_
 
-DashCentral
------------
+.. _martex-core-voting:
 
-Many masternode operators store their password-protected masternode
-private key on `DashCentral <https://www.dashcentral.org>`__ to enable
-simple voting with a user-friendly interface. The popularity of this
-site has made it a common place for discussion of the proposals after
-they are submitted to the governance system. To vote from the
-DashCentral web interface, first add your masternode private key to your
-account according to the instructions here. Note that the masternode
-private key is not the same as the private key controlling the 1000 DASH
-collateral, so there is no risk of losing your collateral. A separate
-password is required to unlock the masternode private key for voting, so
-the risk of the site operator voting in your name is minimal.
-
-When you are ready to vote, go to the `budget proposals page
-<https://www.dashcentral.org/budget>`_. Simply click to view the
-proposals, then click either **Vote YES**, **Vote ABSTAIN** or **Vote
-NO**.
-
-.. figure:: img/vote-dashcentral.png
-   :width: 400px
-
-   Voting interface on DashCentral
-
-Dash Masternode Tool (DMT)
---------------------------
-
-If you started your masternode from a hardware wallet using `DMT
-<https://github.com/Bertrand256/dash-masternode-tool/releases>`_, you
-can also use the tool to cast votes. Click **Tools > Proposals** and
-wait for the list of proposals to load. You can easily see the voting
-status of each proposal, and selecting a proposal shows details on the
-**Details** tab in the lower half of the window. Switch to the **Vote**
-tab to **Vote Yes**, **Vote No** or **Vote Abstain** directly from DMT.
-
-.. figure:: img/vote-dmt.png
-   :width: 400px
-
-   Voting interface in DMT
-
-.. _dash-core-voting:
-
-Dash Core wallet or masternode
+MarteX Core wallet or masternode
 ------------------------------
 
-If you started your masternode using the Dash Core Wallet (not
+If you started your masternode using the MarteX Core Wallet (not
 recommended), you can vote manually from **Tools > Debug console**, or
 directly from your masternode via SSH using ``dash-cli``. First click on
 the proposal you want to vote on at either `DashCentral
