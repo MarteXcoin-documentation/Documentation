@@ -45,6 +45,6 @@ areas for improvement. You can view the report `here
 
 You can learn more about MarteX Governance in the following sections:
 
-   understanding.rst
-   using.rst
-   eight-steps.rst
+- `understanding <./understanding.rst>`_
+- `using <./using.rst>`_
+- `eight-steps <./eight-steps.rst>`_
