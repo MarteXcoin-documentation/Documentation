@@ -155,9 +155,9 @@ Contractors and proposals
 
 Contractors of the blockchain can be developers, outreach professionals,
 team leaders, attorneys or even people appointed to do specific tasks.
-Proposals generally begin life as simple `pre-proposal forum posts
-<https://www.dash.org/forum/topic/pre-budget-proposal-discussions.93/>`_
-on the Dash Forum, where feedback and suggestions are solicited from the
+Proposals generally begin life as simple `pre-proposal group posts
+<https://t.me/martexcoin>`_
+on the MarteX Group, where feedback and suggestions are solicited from the
 general community. Once the proposal owner decides they have a
 reasonable chance of passing their proposal, it is created as a
 governance object on the blockchain. A fee of 5 MARTEX is associated with
@@ -175,26 +175,15 @@ together with the overall block reward.
 Proposal websites
 =================
 
-The community has gathered around `DashCentral
-<https://www.dashcentral.org>`__ as a website to facilitate discussion
-and voting on proposals formally entered on the Dash blockchain. Other
-websites, such as `Dash Ninja <https://www.dashninja.pl>`__ and `Dash
-Nexus <https://dashnexus.org>`__ are available to monitor progress over
-time and gather more detailed statistics. `Dash Masternode Tool
-<https://github.com/Bertrand256/dash-masternode-tool/releases>`__ also
-allows for voting without the need to share masternode private keys with
-a third party service.
-
-.. figure:: img/governance-dashcentral.png
-   :width: 400px
-
-   A typical view of proposal discussion and voting on Dash Central
+The community has gathered around `MarteXCentral
+<https://martexcoin.org/governance/>`_ as a website to facilitate discussion
+and voting on proposals formally entered on the MarteX blockchain.
 
 Each proposal includes a description of the proposal goals, details of
 what work will be done and a breakdown of the requested budget. Many
 proposals also link to their own website or the pre-proposal discussion,
 or include a video to validate the identity and sincerity of the
-proposal owner. Discussion on Dash Central occurs below this
+proposal owner. Discussion on MarteX Central occurs below this
 information, and masternode owners have the option to verify their
 ownership of a masternode and ability to cast a vote by signing a
 message from the masternode collateral address. Masternodes can vote at
@@ -204,58 +193,26 @@ superblock. After voting stops, the blockchain executes a decentralized
 tally and validates all votes. Once consensus is reached, the results
 are broadcast and the budget is allocated soon after in a superblock.
 
-.. figure:: img/governance-dashcentral-vote.png
-   :width: 400px
-
-   Proposal details and voting buttons on Dash Central
-
 Once passed, proposals are able to report back to the network on the
-`Dash Forum <https://www.dash.org/forum/topic/approved-proposals-
-updates-news.140>`__ or via published public channels and social media.
-Since it is possible to create proposals that pay out over several
-months, it is also possible to revoke funding from a project by changing
-the vote if development or spending of already allocated funds is
-unsatisfactory. This encourages proposal owners to work honestly and
+`MarteX Group <https://t.me/martexcoin>`_ or via published public channels and social media.
+This encourages proposal owners to work honestly and
 diligently to win the trust and approval of the network. Ongoing
 discussion and gradual improvement over time results in a close bond
 between the network and those working for the network in supporting
 roles.
 
 Voting on proposals is updated in real time via P2P messages and stored
-by Dash in cache files, so current winning proposals and the total
+by MarteX in cache files, so current winning proposals and the total
 allocation of the available budget are always open and visible to
-everyone. `Dash Nexus <https://dashnexus.org>`__ is a popular site used
+everyone. `MarteX Central <https://martexcoin.org/governance/>`_ is a popular site used
 for to view progress on proposal voting.
-
-.. figure:: img/governance-dashnexus.png
-   :width: 400px
-
-   Monitoring budget allocation on Dash Nexus
-
-Finally, `Dash Watch <http://dashwatch.org>`__ (which was itself funded
-through a budget proposal) exists to monitor the ability of blockchain
-contractors to deliver on their promises with respect to delivery dates
-and the total amounts of budget allocated over multiple voting periods.
-A team of dedicated staff routinely interact with proposal owners to
-track progress of the various projects and provide reports to voting
-masternodes in a single location. While providing data on the
-performance of your proposal to Dash Watch is optional, many masternode
-owners take advantage of the data they make available to make their
-voting decisions. The Dash Watch team may be contacted at
-team@dashwatch.org email address or through their `website
-<http://dashwatch.org>`__.
-
-.. figure:: img/governance-dashwatch.png
-   :width: 400px
-
-   Proposal monitoring on Dash Watch
 
 Budget allocation
 =================
 
 The total budget of the network can be calculated by taking 10% of the
 reward over the period of time between two superblocks, which occur
-every 16616 blocks or approximately 30.29 days. A voting cutoff occurs
+every 21800 blocks or approximately 15.138 days. A voting cutoff occurs
 1662 blocks before the superblock, and the final votes are tallied at
 this point. A proposal must satisfy the condition ``(YES votes - NO
 votes) > (Total Number of Masternodes / 10)`` in order to be considered
