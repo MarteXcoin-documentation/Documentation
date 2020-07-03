@@ -1,11 +1,11 @@
 .. meta::
-   :description: Discussion of theory and motivation behind the Dash governance system and treasury
-   :keywords: dash, dgbb, governance, funding, voting, blockchain, development, block reward, treasury, budget
+   :description: Discussion of theory and motivation behind the MarteX governance system and treasury
+   :keywords: martex, dgbb, governance, funding, voting, blockchain, development, block reward, treasury, budget
 
 .. _understanding-governance:
 
 =============================
-Understanding Dash Governance
+Understanding MarteX Governance
 =============================
 
 One of the greatest challenges of building a cryptocurrency platform is
@@ -31,13 +31,13 @@ or running prelaunch sales, which is not a great solution either because
 control of the funds is centralized and at that stage it is impossible
 to quantify the future needs of the project.
 
-Through the network of full nodes and the collateral requirement, Dash
+Through the network of full nodes and the collateral requirement, MarteX
 already has a decentralized network of masternode operators that are
 heavily invested in the future of the currency, and that as a group can
 act as stewards of the core protocol development and promotion. We
 propose a decentralized management system based on the masternode voting
 mechanism. Masternode operators are not the only ones interested in the
-success of Dash, but they are the most stable ones because, unlike
+success of MarteX, but they are the most stable ones because, unlike
 miners, they can’t reuse their asset for any other purpose or coin.
 
 In the budget system, a portion of the block reward is held in escrow by
@@ -64,10 +64,6 @@ the budgets and projects. This guarantees there is a working system of
 maintenance as people come and go, making the network capable of
 sustaining itself on its own without depending on specific actors.
 
-Note that if you do not operate a masternode, you may still be able to
-vote on DashBoost proposals. See https://www.dashboost.org for more
-information.
-
 Budgets and masternode voting
 =============================
 
@@ -75,7 +71,7 @@ The system works as a decentralized voting mechanism set up in the rules
 governing the blockchain, where budgets for specific projects are
 proposed, then the masternodes as a whole vote on them. Each project, if
 it passes, is added to the total budget and paid directly from the
-blockchain to the person doing the work. This allows Dash to hire core
+blockchain to the person doing the work. This allows MarteX to hire core
 developers and pay them directly after approval of the work in a
 decentralized fashion.
 
@@ -104,7 +100,7 @@ hiring of marketing and PR firms and integrations with third party
 exchanges and payment platforms. The market recognizes the value of the
 stability of the network as a whole, and that the possibility of
 reliable and sufficient funding results in faster and more coherent
-implementation of the Dash roadmap and core Dash services.
+implementation of the MarteX roadmap and core MarteX services.
 
 Reward schedule
 ===============
@@ -121,7 +117,7 @@ preservation mechanism that is beyond the control of any individual.
 +----------------------------------------+-----+
 | Mining reward for Proof-of-Work        | 45% |
 +----------------------------------------+-----+
-| Masternode reward for Proof-of-Service | 45% |
+| Masternode reward for Proof-of-Stake   | 45% |
 +----------------------------------------+-----+
 | Decentralized governance budget        | 10% |
 +----------------------------------------+-----+
@@ -164,7 +160,7 @@ Proposals generally begin life as simple `pre-proposal forum posts
 on the Dash Forum, where feedback and suggestions are solicited from the
 general community. Once the proposal owner decides they have a
 reasonable chance of passing their proposal, it is created as a
-governance object on the blockchain. A fee of 5 DASH is associated with
+governance object on the blockchain. A fee of 5 MARTEX is associated with
 this action to prevent spam and ensure only serious proposals make it to
 this stage. Several tools exist to allow masternode operators to
 comfortably review and vote on proposals. The net total of yes votes must
@@ -172,19 +168,9 @@ exceed 10% of the total masternode count at the time votes are tallied
 in order to pass. If there are more passing proposals than the available
 block reward can provide for, the proposals with the most yes votes will
 pass first, creating a cut-off point for less popular proposals. The
-same process is then repeated every month, and the total amount of Dash
+same process is then repeated every month, and the total amount of MarteX
 available for proposals decreases by approximately 7.14% per year,
 together with the overall block reward.
-
-The following video by Tao of Satoshi includes advice for proposal
-owners entering proposals during periods of high competition for the
-available budget funds:
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 1em; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/MR_1BJNX2SE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
 
 Proposal websites
 =================
@@ -314,16 +300,16 @@ As the number of blockchain contractors increases, a point is reached
 where masternode operators cannot be realistically expected to evaluate
 the volume of proposals. At this point funding organizations can be
 created to act as contractors for the distribution of funds to many
-smaller decentralized projects, according to current needs. Dash Core
+smaller decentralized projects, according to current needs. MarteX Core
 Group, Inc. is one example of such an organization.
 
 The existence of the decentralized budget system puts the power of
-determining where Dash goes in the future in the hands of the masternode
+determining where MarteX goes in the future in the hands of the masternode
 network itself. All core development and several peripheral developers
 are already funded from the budget, and other projects not even
 conceivable at this time will likely arise in the future. This decouples
 the survival and value of the blockchain from the current userbase and
-developers, making Dash the first blockchain designed to outlive its
+developers, making MarteX the first blockchain designed to outlive its
 original users, a self sustainable decentralized cryptocurrency network
 that can still operate cohesively and bring added value services to end
 users in a consistent way.
