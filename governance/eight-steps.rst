@@ -26,13 +26,10 @@ Run a pre-proposal discussion
   Get feedback from the community before you post your proposal to the
   blockchain. A discussion period of around two weeks will help you find
   out if someone has proposed something similar in the past, and whether
-  it succeeded or failed. There are `pre-proposal channels on the forum
-  <https://www.dash.org/forum/topic/pre-budget-proposal-
-  discussions.93>`__ and `Dash Nation Discord <http://dashchat.org>`__,
-  and `Reddit <https://www.reddit.com/r/dashpay>`__ also attracts a lot
-  of views - consider the discussion on these channels to be the
+  it succeeded or failed. There are `pre-proposal channels on the group
+  <https://t.me/martexcoin>`_ consider the discussion on this group to be the
   research phase of your proposal. Later, you can post a link to the
-  forum discussion when your proposal goes live to show you are
+  group discussion when your proposal goes live to show you are
   including community feedback in your work.
 
 Manage your identity and reputation
@@ -51,10 +48,8 @@ Run an enthusiastic campaign for your proposal
   Proposals with a video or website have a far greater chance of
   succeeding! Uploading a video gives your proposal a human touch and a
   chance to convey your enthusiasm in a way that isn't always possible
-  in text. Post your video to the `forum
-  <https://www.dash.org/forum/topic/pre-budget-proposal-
-  discussions.93>`_ and `DashCentral
-  <https://www.dashcentral.org/budget>`_, become a regular on Discord
+  in text. Post your video to the `group
+  <https://t.me/martexcoin>`_, become a regular on Telegram
   or run a webinar to explain the proposal and answer questions. Put
   some work in before you ask for funding to demonstrate your
   involvement with MarteX - but don't be annoying and spam many channels
@@ -67,11 +62,11 @@ Demonstrate your commitment to the network
   can be very helpful to show you have skin in the game by matching the
   contribution provided in MarteX with funds from your own business or
   investors. Equity or exclusivity agreements can be reached with `MarteX
-  Core Group, Inc. <bradley.zastrow@dash.org>`_, but must be clarified
+  Core Group, Inc. <martexcoin@martexcoin.org>`_, but must be clarified
   in writing before the proposal is posted.
 
 Post your proposal early and make yourself available for questions
-  The voting window closes 1662 blocks (or just under 3 days) before the
+  The voting window closes 1662 blocks (or just under 1.15416 day) before the
   superblock. To give the masternode operators enough time to consider,
   discuss and vote on your proposal, you must post it well in advance of
   the voting deadline - it's better to wait for the next superblock than
@@ -93,8 +88,7 @@ Consider arrangements for large requests
   If you are requesting a significant amount of funding, there is an
   understandable concern that you will deliver on your promises to the
   network. Reach out to trusted intermediaries such as `MarteX Core Group,
-  Inc. <bradley.zastrow@dash.org>`_ or `Green Candle, Inc.
-  <https://greencandle.io>`_ in advance for advice on escrow, and make
+  Inc. <martexcoin@martexcoin.org>`_ in advance for advice on escrow, and make
   the conditions for escrow release public and part of the proposal. If
   your proposal is so large that uses a significant percentage of the
   budget, there is a risk that approving your proposal will bump smaller
@@ -103,16 +97,6 @@ Consider arrangements for large requests
 
 See `this documentation <./using.rst>`_ for specific
 instructions on how to create a proposal when you are ready. Good luck!
-
-For an example of good reporting, reputation management and use of a
-video to request funding in a pre-proposal, see this video from Amanda
-B. Johnson's extremely popular **DASH: Detailed** proposal:
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 1em; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/NuJZwmpMlVA" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
 
 A few additional points:
 
@@ -124,17 +108,16 @@ A few additional points:
    cannot promote your proposal for you. If your proposal is an
    integration, reach out to the business development team in advance.
    Once your product is live, it may be possible to announce it from
-   Dash Core channels.
+   MarteX Core channels.
     
 #. If your proposal is for news, promotion or marketing, make sure you
    synchronise your efforts with major existing organisations such as
-   MarteX Force News or marketing firms contracted by MarteX Core.
+   MarteX Core.
     
 #. You are responsible for your own planning to hedge against price
    volatility. If your proposal involves significant payments to third
    parties in fiat currency, reach out to `MarteX Core Group, Inc.
-   <bradley.zastrow@dash.org>`_ or `Green Candle, Inc.
-   <https://greencandle.io>`_ for advice on escrow, price maintenance,
+   <martexcoin@martexcoin.org>`_ for advice on escrow, price maintenance,
    converting currencies and hedging against volatility.
     
 #. For the same reason, it is not recommended to request funding for
