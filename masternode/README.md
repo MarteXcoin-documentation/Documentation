@@ -14,5 +14,5 @@ In this folder you you will find different manuals for creating and configuring 
 
  6. [How to protect your Masternode VPS against DDoS attack Linux.md](./How-to-protect-your-Masternode-VPS-against-DDoS-attack---Linux.md)
 
- 7. [In this directory you will find the automated masternode creation process.](./masternode/mxt-mn)
+ 7. [In this directory you will find the automated masternode creation process.](https://github.com/martexcoin/mxt-mn)
 
