@@ -29,7 +29,7 @@
   
   Extract wallet to you local folder
 
- `tar- -vzxf nameoffile.tar.gz`
+ `tar -vzxf nameoffile.tar.gz`
 
   Create a sh file to run one masternode instance. For example:
 
