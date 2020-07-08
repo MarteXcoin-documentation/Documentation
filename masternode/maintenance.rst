@@ -96,29 +96,26 @@ the following settings are configured correctly:
 - Ensure you are running the :ref:`latest version of MarteX <masternode-update>`
 - Ensure your masternode has sufficient memory, swap, processing power 
   and hard drive space
-- Ensure you are fully synced to the `correct blockheight <https://insight.dash.org/insight/>`__, 
+- Ensure you are fully synced to the `correct blockheight <https://be.martexcoin.org>`_, 
   and that you are on the correct chain and not forked off
-- Ensure that a BLS private key is specified using the 
-  ``masternodeblsprivkey`` option in the masternode's ``dash.conf`` file
-- Ensure that the BLS private key on the masternode is unique on the 
+- Ensure that marternode private key is specified using the 
+  ``masternodeprivkey`` option in the masternode's ``MarteX.conf`` file
+- Ensure that the masternode private key on the masternode is unique on the 
   network and not shared with any other masternodes
-- Ensure that the BLS private key on the masternode corresponds to the 
-  BLS public key registered on the blockchain in the ``ProRegTx`` or 
-  ``ProUpRegTx``
 - Ensure that the ``externalip`` (and ``port`` if using testnet) are 
   specified correctly and not blocked by a firewall or port forwarding 
   service
 - Ensure that Sentinel is installed, updated, not exiting with an error 
-  and is entered in your crontab to run every * * * * time.
+  and is entered in your crontab to run every * * * * * `time <https://github.com/martexcoin/sentinel#set-up-cron>`_.
 
 Once you are certain these settings are correct, you can update your
-service status on the network and return to the valid set of masternodes
-by creating a :ref:`ProUpServTx <dip3-update-service>`. Monitor your
+service status on the network. Monitor your
 masternode closely using ``masternode status`` and/or the ``debug.log``
 file after restoring service. This information can help you pinpoint the
 specific misconfiguration that is causing the masternode to be banned.
 The masternode will be banned again if it continues to fail to provide
 service.
+
 
 Masternode monitoring tools
 ===========================
