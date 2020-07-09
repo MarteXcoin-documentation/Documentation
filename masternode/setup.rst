@@ -1,6 +1,6 @@
 .. meta::
-   :description: This guide describes how to set up a Dash masternode. It also describes various options for hosting and different wallets
-   :keywords: dash, guide, masternodes, trezor, dip3, setup, bls
+   :description: This guide describes how to set up a MarteX masternode. It also describes various options for hosting and different wallets
+   :keywords: martex, guide, masternodes, setup
 
 .. _masternode-setup:
 
@@ -11,14 +11,14 @@ Setup
 Setting up a masternode requires a basic understanding of Linux and
 blockchain technology, as well as an ability to follow instructions
 closely. It also requires regular maintenance and careful security,
-particularly if you are not storing your Dash on a hardware wallet.
+particularly if you are not storing your MarteX on a hardware wallet.
 There are some decisions to be made along the way, and optional extra
 steps to take for increased security.
 
 Commercial :ref:`masternode hosting services <masternode-hosting>` are
 available if you prefer to delegate day-to-day operation of your
 masternode to a professional operator. When using these hosting
-services, you retain full control of the 1000 DASH collateral and pay an
+services, you retain full control of the 5000 MARTEX collateral and pay an
 agreed percentage of your reward to the operator. It is also possible to
 delegate your voting keys to a representative, see the 
 :ref:`governance documentation <delegating-votes>` for more
@@ -32,28 +32,16 @@ This guide assumes you are setting up a single mainnet masternode for
 the first time. If you are updating a masternode, see  :ref:`here
 <masternode-update>` instead. You will need:
 
-- 1000 Dash
-- A wallet to store your Dash, preferably a hardware wallet, although 
-  Dash Core wallet is also supported
+- 5000 MARTEX
+- A wallet to store your MarteX, preferably a hardware wallet, although 
+  MarteX Core wallet is also supported
 - A Linux server, preferably a Virtual Private Server (VPS)
-
-Dash 0.13.0 and later implement DIP003, which introduces several changes
-to how a Dash masternode is set up and operated. While this network
-upgrade was completed in early 2019, a list of available documentation
-appears below:
-
-- `DIP003 Deterministic Masternode Lists <https://github.com/dashpay/dips/blob/master/dip-0003.md>`__
-- :ref:`dip3-changes`
-- `Dash 0.13 Upgrade Procedure for Masternodes (legacy documentation) <https://docs.dash.org/en/0.13.0/masternodes/dip3-upgrade.html>`__
-- :ref:`Full masternode setup guide <masternode-setup>` (you are here)
-- :ref:`Information for users of hosted masternodes <hosted-setup>`
-- :ref:`Information for operators of hosted masternodes <operator-transactions>`
 
 This documentation describes the commands as if they were
 entered in the Dash Core GUI by opening the console from **Tools > Debug
 console**, but the same result can be achieved on a masternode by
 entering the same commands and adding the prefix 
-``~/.dashcore/dash-cli`` to each command.
+``~/.martexcore/martex-cli`` to each command.
 
 
 .. _vps-setup:
@@ -66,7 +54,7 @@ installation of an operating system (usually Linux) operating within a
 virtual machine. The virtual machine allows the VPS provider to run
 multiple systems on one physical server, making it more efficient and
 much cheaper than having a single operating system running on the "bare
-metal" of each server. A VPS is ideal for hosting a Dash masternode
+metal" of each server. A VPS is ideal for hosting a MarteX masternode
 because they typically offer guaranteed uptime, redundancy in the case
 of hardware failure and a static IP address that is required to ensure
 you remain in the masternode payment queue. While running a masternode
@@ -79,7 +67,9 @@ VPS, although `DigitalOcean <https://www.digitalocean.com/>`_, `Amazon
 EC2 <https://aws.amazon.com/ec2>`_, `Google Cloud
 <https://cloud.google.com/compute/>`_, `Choopa
 <https://www.choopa.com/>`_ and `OVH <https://www.ovh.com/>`_ are also
-popular choices. First create an account and add credit. Then go to the
+popular choices.
+You can find several cheap VPS by looking on this `site <https://lowendbox.com/>`_.
+ First create an account and add credit. Then go to the
 **Servers** menu item on the left and click **+** to add a new server.
 Select a location for your new server on the following screen:
 
@@ -156,7 +146,7 @@ click **Yes** to trust this server in the future.
    PuTTY security alert when connecting to a new server
 
 You are now connected to your server and should see a terminal
-window. Begin by logging in to your server with the user ``root`` and
+window. Begin by logging in to your server with the user ``root`` and
 password supplied by your hosting provider.
 
 .. figure:: img/setup-putty-connect.png
@@ -182,7 +172,7 @@ You will be prompted for a password. Enter and confirm using a new
 password (different to your root password) and store it in a safe place.
 You will also see prompts for user information, but this can be left
 blank. Once the user has been created, we will add them to the sudo
-group so they can perform commands as root::
+group so they can perform commands as root::
 
   usermod -aG sudo <username>
 
@@ -280,114 +270,27 @@ Dash, these steps are considered beyond the scope of this guide.
 Send the collateral
 ===================
 
-A Dash address with a single unspent transaction output (UTXO) of
-exactly 1000 DASH is required to operate a masternode. Once it has been
+A MarteX address with a single unspent transaction output (UTXO) of
+exactly 5000 MARTEX is required to operate a masternode. Once it has been
 sent, various keys regarding the transaction must be extracted for later
 entry in a configuration file and registration transaction as proof to
 write the configuration to the blockchain so the masternode can be
 included in the deterministic list. A masternode can be registered from
-a hardware wallet or the official Dash Core wallet, although a hardware
-wallet is highly recommended to enhance security and protect yourself
-against hacking. This guide will describe the steps for both hardware
-wallets and Dash Core.
+the official MarteX Core wallet. This guide will describe the steps for MarteX Core.
 
-Option 1: Sending from a hardware wallet
-----------------------------------------
+Sending from MarteX Core wallet
+-------------------------------
 
-Set up your Trezor using the Trezor wallet at https://wallet.trezor.io/
-and send a test transaction to verify that it is working properly. For
-help on this, see :ref:`this guide <hardware-trezor>` - you may also
-choose to (carefully!) `add a passphrase <https://blog.trezor.io/hide-your-trezor-wallets-with-multiple-passphrases-f2e0834026eb>`_
-to your Trezor to further protect your collateral. Create a new account
-in your Trezor wallet by clicking **Add account**. Then click the
-**Receive** tab and send exactly 1000 DASH to the address displayed. If
-you are setting up multiple masternodes, send 1000 DASH to consecutive
-addresses within the same new account. You should see the transaction as
-soon as the first confirmation arrives, usually within a few minutes.
-
-.. figure:: img/setup-collateral-trezor.png
-   :width: 400px
-
-   Trezor Wallet Receive tab showing successfully received collateral of
-   1000 DASH
-
-Once the transaction appears, click the QR code on the right to view the
-transaction on the blockchain. Keep this window open as we complete the
-following steps, since we will soon need to confirm that 15
-confirmations exist, as shown in the following screenshot.
-
-.. figure:: img/setup-collateral-blocks.png
-   :width: 400px
-
-   Trezor blockchain explorer showing 15 confirmations for collateral
-   transfer
-
-While we are waiting for 15 confirmations, download the latest version
-of the Dash Masternode Tool (DMT) from the GitHub releases page `here
-<https://github.com/Bertrand256/dash-masternode-tool/releases>`__. Unzip
-and run the file. The following window appears.
-
-.. figure:: img/setup-collateral-dmt-start.png
-   :width: 400px
-
-   Dash Masternode Tool startup screen
-
-Click the third button from the left **Check Dash Network Connection**
-in the top left corner of the main window to verify that the connection
-is working. Then connect your Trezor device and click the next button
-**Test Hardware Wallet Connection** to verify the Trezor connection is
-working.
-
-.. image:: img/setup-collateral-connection.png
-   :width: 100px
-
-.. figure:: img/setup-collateral-hardware.png
-   :width: 180px
-
-   Dash Masternode Tool successful connection confirmations
-
-We will now use DMT to enter some basic information about the masternode
-and extract the transaction ID. Carry out the following sequence of
-steps as shown in this screenshot:
-
-.. figure:: img/setup-collateral-dmt-steps.png
-   :width: 400px
-
-   Dash Masternode Tool configuration steps
-
-#. Click the **New** button.
-#. Enter a name for your masternode. The host name you specified 
-   for your VPS above is a good choice.
-#. Enter the IP address of your masternode. This was given to you
-   by the VPS provider when you set up the server. Then enter the TCP 
-   port number. This should be 9999.
-#. Click **Locate collateral** to view unused collateral funding 
-   transactions available on the connected hardware wallet. Select the 
-   address to which you sent 1000 Dash and click **Apply**. The 
-   **Collateral address**, **path**, **Collateral TX hash** and
-   **index** fields should be filled automatically.
-
-.. figure:: img/setup-collateral-dmt-ready.png
-   :width: 400px
-
-   Dash Masternode Tool with masternode configuration
-
-Leave DMT open and continue with the next step: :ref:`installing Dash
-Core on your VPS <masternode-setup-install-dashcore>`.
-
-Option 2: Sending from Dash Core wallet
----------------------------------------
-
-Open Dash Core wallet and wait for it to synchronize with the network.
+Open MarteX Core wallet and wait for it to synchronize with the network.
 It should look like this when ready:
 
 .. figure:: img/setup-collateral-dashcore.png
    :width: 400px
 
-   Fully synchronized Dash Core wallet
+   Fully synchronized MarteX Core wallet
 
 Click **Tools > Debug console** to open the console. Type the following
-command into the console to generate a new Dash address for the
+command into the console to generate a new MarteX address for the
 collateral::
 
   getnewaddress
@@ -405,7 +308,7 @@ since this will be the only way you can access our funds if anything
 happens to your computer. For more details on these steps, see
 :ref:`here <dashcore-backup>`.
 
-Now send exactly 1000 DASH in a single transaction to the new address
+Now send exactly 5000 MARTEX in a single transaction to the new address
 you generated in the previous step. This may be sent from another
 wallet, or from funds already held in your current wallet. Once the
 transaction is complete, view the transaction in a `blockchain explorer
@@ -423,12 +326,12 @@ your masternode operator key.
 
 .. _masternode-setup-install-dashcore:
 
-Install Dash Core
-=================
+Install MarteX Core
+===================
 
-Dash Core is the software behind both the Dash Core GUI wallet and Dash
+MarteX Core is the software behind both the MarteX Core GUI wallet and MarteX
 masternodes. If not displaying a GUI, it runs as a daemon on your VPS
-(dashd), controlled by a simple command interface (dash-cli).
+(martexd), controlled by a simple command interface (martex-cli).
 
 Open PuTTY or a console again and connect using the username and
 password you just created for your new, non-root user. There are two
@@ -436,58 +339,16 @@ options to install Dash Core, an automated option using a script utility
 called dashman, and a more complicated option which will allow you to
 understand all of the key steps involved in preparing your masternode.
 
-Option 1: Automated installation using dashman
-----------------------------------------------
+Option 1: Automated installation using mxt-mn
+---------------------------------------------
 
-To install Dash using dashman, enter the following commands after
-logging in::
+Just follow all steps presents in this `link <https://github.com/martexcoin/mxt-mn>`_.
 
-  cd ~
-  git clone https://github.com/moocowmoo/dashman
-  ~/dashman/dashman install
-
-(press **Y** and **Enter** to confirm)
-
-dashman will download the latest version of Dash Core for your system,
-as well as an initial snapshot of the blockchain to speed up the
-bootstrapping process. Next download and install Sentinel, which is
-required for masternodes at version 0.12.1 or higher::
-
-  ~/dashman/dashman install sentinel
-
-Your system is now running as a standard Dash node, and is busy
-completing synchronisation with the blockchain. Since dashman does not
-automatically restart your masternode in the event of a system error,
-add a check function to crontab to make sure it checks every minute to
-ensure your masternode is still running::
-
-  crontab -e
-
-Choose nano as your editor and enter the following line at the end of
-the file, after the line for sentinel::
-
-  * * * * * { pidof dashd || ~/.dashcore/dashd;} >/dev/null 2>&1
-
-Press enter to make sure there is a blank line at the end of the file,
-then press **Ctrl + X** to close the editor and **Y** and **Enter** save
-the file. Check the sync status and wait until all blockchain
-synchronisation and the 15 confirmations for the collateral transaction
-are complete::
-
-  ~/dashman/dashman status
-
-.. figure:: img/setup-dashman-done.png
-   :width: 400px
-
-   dashman status output showing masternode ready to be registered
-
-Continue with the :ref:`next step to register your masternode
-<register-masternode>`.
 
 Option 2: Manual installation
 -----------------------------
 
-To manually download and install the components of your Dash masternode,
+To manually download and install the components of your MarteX masternode,
 visit the `GitHub releases page <https://github.com/dashpay/dash/releases>`_ 
 and copy the link to the latest ``x86_64-linux-gnu`` version. Go back to
 your terminal window and enter the following command, pasting in the
@@ -505,20 +366,7 @@ and comparing the output against the value for the file as shown in the
   sha256sum dashcore-0.15.0.0-x86_64-linux-gnu.tar.gz
   cat SHA256SUMS.asc
 
-You can also optionally verify the authenticity of your download as an
-official release by Dash Core Team. All releases of Dash are signed
-using GPG by Alexander Block (codablock) with the key ``63A9 6B40 6102 E091``, 
-`verifiable here on Keybase <https://keybase.io/codablock>`_. Import the
-key, download the ASC file for the current release of Dash and verify
-the signature as follows::
 
-  curl https://keybase.io/codablock/pgp_keys.asc | gpg --import
-  gpg --verify SHA256SUMS.asc
-
-.. figure:: img/setup-manual-gpg.png
-   :width: 400px
-
-   Downloading the PGP key and verifying the signed binary
 
 Create a working directory for Dash, extract the compressed archive and
 copy the necessary files to the directory::
@@ -760,7 +608,7 @@ Add the private key to your masternode configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The public key will be used in following steps. The private key must be
-entered in the ``dash.conf`` file on the masternode. This allows the
+entered in the ``MarteX.conf`` file on the masternode. This allows the
 masternode to watch the blockchain for relevant Pro*Tx transactions, and
 will cause it to start serving as a masternode when the signed ProRegTx
 is broadcast by the owner (final step below). Log in to your masternode
