@@ -1,6 +1,6 @@
 
 MarteXcoin Core
-=============
+===============
 
 Setup
 ---------------------
@@ -21,7 +21,7 @@ Unpack the files into a directory and run:
 
 ### Need Help?
 
-* See the documentation at the [Documentation]()
+* See the documentation at the [Documentation](/introduction/)
 for help and more information.
 * Ask for help on the [MarteXcooin Telegram group](https://t.me/martexcoin).
 
