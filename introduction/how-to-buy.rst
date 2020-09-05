@@ -73,10 +73,6 @@ Marketplace comparison websites
 -------------------------------
 
 Coinpaprika
-  .. image:: exchanges/coinpaprika.png
-     :width: 200px
-     :align: right
-     :target: https://coinpaprika.com/coin/dash-dash/
 
   https://coinpaprika.com
 
@@ -86,11 +82,7 @@ Coinpaprika
   are also available.
 
 Cryptoradar
-  .. image:: exchanges/cryptoradar.png
-     :width: 200px
-     :align: right
-     :target: https://cryptoradar.co/buy-dash
-
+  
   https://cryptoradar.co
 
   Cryptoradar is a real-time cryptocurrency marketplace price comparison
@@ -98,10 +90,6 @@ Cryptoradar
   on prices, fees, payment methods, reviews and more.
 
 CoinMarketCap
-  .. image:: exchanges/coinmarketcap.png
-     :width: 200px
-     :align: right
-     :target: https://coinmarketcap.com/currencies/dash/#markets
 
   https://coinmarketcap.com
 
@@ -111,17 +99,13 @@ CoinMarketCap
   trading pairs they offer.
 
 
-Dash.org markets
-----------------
+MarteX.org markets
+------------------
 
-  .. image:: exchanges/dash.png
-     :width: 200px
-     :align: right
-     :target: https://www.dash.org/exchanges
 
-https://www.dash.org/exchanges
+https://www.martexcoin.org/exchanges
 
-The official Dash website also provides a list of major exchanges
+The official MarteX website also provides a list of major exchanges
 offering Dash.
 
 
@@ -132,12 +116,6 @@ Please see `here <https://coincodex.com/article/3063/how-to-buy-dash-dash-on-kra
 for a detailed guide on how to buy Dash on an exchange. The exchanges 
 listed here are for informational purposes only and do not indicate 
 endorsement or affiliation with any particular platform.
-
-Kraken
-  .. image:: exchanges/kraken.png
-     :width: 200px
-     :align: right
-     :target: https://www.kraken.com
 
   https://www.kraken.com
 
