@@ -1,6 +1,6 @@
 .. meta::
-   :description: Dash can be purchased on cryptocurrency exchanges, over the counter and from ATMs
-   :keywords: dash, cryptocurrency, purchase, buy, exchange, atm, shapeshift, over the counter
+   :description: MarteX can be purchased on cryptocurrency exchanges, over the counter and from ATMs
+   :keywords: martex, cryptocurrency, purchase, buy, exchange, atm, shapeshift, over the counter
 
 .. _how-to-buy:
 
@@ -8,7 +8,7 @@
 How To Buy
 ==========
 
-Dash can be purchased and sold in several ways, each with different
+MarteX can be purchased and sold in several ways, each with different
 advantages and disadvantages. The following options are available:
 
 - :ref:`Exchanges <exchanges>` are one of the most popular ways to trade
