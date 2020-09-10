@@ -25,6 +25,8 @@ Unpack the files into a directory and run:
 for help and more information.
 * Ask for help on the [MarteXcooin Telegram group](https://t.me/martexcoin).
 
+### Pull requests are welcome
+
 License
 ---------------------
 Distributed under the [MIT software license](/COPYING).
