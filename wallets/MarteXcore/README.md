@@ -1,6 +1,6 @@
 # Commands
 
-In this folder, you will find different commands for using your wallet.
+In this folder, you will find different commands to use in your MarteXcore.
 
  1. [PHP RPC EXAMPLE](./PHP-RPC-EXAMPLE.md)
  
