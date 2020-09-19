@@ -1,4 +1,4 @@
-MarteX Core martex-tx utility version v3.0.6.1-a4933cd-dirty
+MarteX Core martex-tx utility version v4.0.3.3-ff60810-dirty
 
 Usage:
   martex-tx [options] <hex-tx> [commands]  Update hex-encoded martex transaction
@@ -80,3 +80,4 @@ Register Commands:
 
   set=NAME:JSON-STRING
        Set register NAME to given JSON-STRING
+
