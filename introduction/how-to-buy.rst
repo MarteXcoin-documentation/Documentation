@@ -11,7 +11,7 @@ How To Buy
 MarteX can be purchased and sold in several ways, each with different
 advantages and disadvantages. The following options are available:
 
-- :ref:`Exchanges <exchanges>` are one of the most popular ways to trade
+- Exchanges are one of the most popular ways to trade
   cryptocurrency. A wide range of exchanges exist, each offering 
   slightly different features. Some serve different markets, some are in
   direct competition, some have cheaper fees, and some are subject to
@@ -26,28 +26,28 @@ advantages and disadvantages. The following options are available:
   cryptocurrencies only. For safety, exchanges should not be used as 
   wallets. Exchanges are for trading, not for savings.
 
-- :ref:`Instant exchanges <instant_exchanges>` perform a similar
+- Instant exchanges perform a similar
   function to normal exchanges, but without the requirement to log in.
   They effectively convert one currency to another, with some limits on
   the amount to be exchanged and usually at a less advantageous rate.
   Others may even offer to sell cryptocurrency as a credit card
   purchase.
 
-- :ref:`Over the counter <over-the-counter>` exchanges have recently 
-  appeared to facilitate sale of Dash directly from a company to the 
+- Over the counter exchanges have recently 
+  appeared to facilitate sale of MarteX directly from a company to the 
   individual at a specified price, or peer-to-peer between individuals 
   at a negotiated price. Volume may be limited compared to exchanges, 
   but these services are usually much easier to use. More advanced 
   peer-to-peer sites offer escrow services for a fee to prevent cheating
   during the sale between two parties who have never met.
 
-- :ref:`ATMs <atms>` accepting card and cash payments in return for
+- ATMs accepting card and cash payments in return for
   crypto are widely available. Mapping services can show the specific
   location of these machines, or you can even set one up at your own 
   business and earn a percentage of sales.
 
 DISCLAIMER: This list is provided for informational purposes only.
-Services listed here have not been evaluated or endorsed by Dash Core
+Services listed here have not been evaluated or endorsed by MarteX Core
 and no guarantees are made as to the accuracy of this information.
 Please exercise discretion when using third-party services.
 
@@ -63,7 +63,7 @@ money, and exchange between various cryptocurrencies only. Trades are
 handled on markets, and trades are created between pairs of currencies,
 identified by their ticker codes. Dash is widely accepted on exchanges
 and many pairs exist against both fiat money and cryptocurrency. This
-means it is possible to exchange EUR for DASH, or DASH for BTC, for
+means it is possible to exchange EUR for MARTEX, or MARTEX for BTC, for
 example. The volume traded on an exchange provides a good indication of
 how quickly a buy or sell order you place will be filled. This section
 introduces some of the most popular exchanges for trading Dash.
@@ -111,25 +111,22 @@ CoinMarketCap
   trading pairs they offer.
 
 
-Dash.org markets
-----------------
+MarteX.org markets
+------------------
 
-  .. image:: exchanges/dash.png
-     :width: 200px
-     :align: right
-     :target: https://www.dash.org/exchanges
 
-https://www.dash.org/exchanges
 
-The official Dash website also provides a list of major exchanges
-offering Dash.
+https://
+
+The official MarteX website also provides a list of major exchanges
+offering MarteX.
 
 
 List of exchanges
 -----------------
 
-Please see `here <https://coincodex.com/article/3063/how-to-buy-dash-dash-on-kraken/>`__
-for a detailed guide on how to buy Dash on an exchange. The exchanges 
+Please see `here <>`__
+for a detailed guide on how to buy MarteX on an exchange. The exchanges 
 listed here are for informational purposes only and do not indicate 
 endorsement or affiliation with any particular platform.
 
