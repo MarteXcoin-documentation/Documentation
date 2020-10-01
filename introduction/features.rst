@@ -166,24 +166,17 @@ You can view a practical guide to use FastSend `here <dashcore-privatesend-insta
 .. <https://github.com/dashpay/dips/blob/master/dip-0010.md>`__ in Dash 0.14.
 
 
-**How Dash 'FastSend' Protects Merchants from Double Spends**,
-Dash Detailed by Amanda B. Johnson, 16 September 2016
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 1em; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/HJx82On8jig" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
+**How MarteX 'FastSend' Protects Merchants from Double Spends**,
+MarteXcoin uses the same principle in `Dash Detailed by Amanda B. Johnson, 16 September 2016<www.youtube.com/embed/HJx82On8jig>`_
 
 .. _chainlocks:
 
 ChainLocks
 ==========
 
-ChainLocks are a feature provided by the Dash Network which provides
+ChainLocks are a feature provided by the MarteX Network which provides
 certainty when accepting payments. This technology, particularly when
-used in parallel with :ref:`InstantSend <instantsend>`, creates an
+used in parallel with `FastSend <>`_, creates an
 environment in which payments can be accepted immediately and without
 the risk of “Blockchain Reorganization Events”.
 
@@ -233,9 +226,11 @@ test data in the live network environment. This process of multi-phased
 forking was originally to be called "soft forking" but the community
 affectionately dubbed it "the spork" and the name stuck.
 
-New features or versions of Dash undergo extensive testing on testnet
+MarteXcore adopted this method and yours in your systems.
+
+New features or versions of MarteX undergo extensive testing on testnet
 before they are released to the main network. When a new feature or
-version of Dash is released on mainnet, communication is sent out to
+version of MarteX is released on mainnet, communication is sent out to
 users informing them of the change and the need for them to update their
 clients. Those who update their clients run the new code, but it is not
 activated until a sufficient percentage of network participants (usually
@@ -250,26 +245,25 @@ members of the core development team signing a network message together
 with their respective private keys. Should problems arise, the code can
 be deactivated in the same manner, without the need for a network-wide
 rollback or client update. For technical details on individual sporks,
-see :ref:`here <understanding-sporks>`.
+see `here <understanding-sporks>`_.
 
 
-.. _x11-hash-algorithm:
+.. _x13-hash-algorithm:
 
-X11 Hash Algorithm
+X13 Hash Algorithm
 ==================
 
-X11 is a widely used hashing algorithm created by Dash core developer
-Evan Duffield. X11’s chained hashing algorithm utilizes a sequence of
-eleven scientific hashing algorithms for the proof-of-work. This is so
+X13 is a widely used hashing algorithm based on X11. X13’s chained hashing algorithm utilizes a sequence of
+eleven scientific hashing algorithms for the proof-of-stake. This is so
 that the processing distribution is fair and coins will be distributed
-in much the same way Bitcoin’s were originally. X11 was intended to make
+in much the same way Bitcoin’s were originally. X13 was intended to make
 ASICs much more difficult to create, thus giving the currency plenty of
 time to develop before mining centralization became a threat. This
 approach was largely successful; as of early 2016, ASICs for X11 now
 exist and comprise a significant portion of the network hashrate, but
 have not resulted in the level of centralization present in Bitcoin.
-Information on mining with X11 can be found in the :ref:`Mining
-<mining>` section of this documentation.
+Information on mining with X11 can be found in the `Mining
+<./Documentation/tree/master/mining>`_ section of this documentation.
 
 X11 is the name of the chained proof-of-work (**PoW**) algorithm that
 was introduced in Dash (launched January 2014 as "Xcoin"). It was 
@@ -285,7 +279,7 @@ hashes in use by modern cryptocurrencies. The name X11 is not related to
 the open source X11 windowing system common on UNIX-like operating 
 systems.
 
-Advantages of X11
+Advantages of X13
 -----------------
 
 The increased complexity and sophistication of the chained algorithm
@@ -297,16 +291,16 @@ SHA256 hash could jeopardize the entire Bitcoin network until the
 network shifts through a hard fork to another cryptographic hash.
 
 In the event of a similar computing breakthrough, a digital currency
-using the X11 PoW would continue to function securely unless all 11
-hashes were broken simultaneously. Even if some of the 11 hashes were to
+using the X13 PoS would continue to function securely unless all 13
+hashes were broken simultaneously. Even if some of the 13 hashes were to
 prove unreliable, there would be adequate warning for a currency using
-X11 to take measures and replace the problematic hashes with other more
+X13 to take measures and replace the problematic hashes with other more
 reliable hashing algorithms.
 
 Given the speculative nature of digital currencies and their inherent
-uncertainties as a new field, the X11 algorithm can provide increased
+uncertainties as a new field, the X13 algorithm can provide increased
 confidence for its users and potential investors that single-hash
-approaches cannot. Chained hashing solutions, like X11, provide
+approaches cannot. Chained hashing solutions, like X13, provide
 increased safety and longevity for store of wealth purposes, investment
 diversification and hedging against risks associated with single-hash
 currencies plagued by SPOF (Single Point Of Failure).
@@ -480,13 +474,13 @@ of this documentation.
 Sentinel
 =========
 
-Introduced in Dash 0.12.1, Sentinel is an autonomous agent for
-persisting, processing and automating Dash governance objects and tasks.
+Introduced in MarteX 3.0.5.1, Sentinel is an autonomous agent for
+persisting, processing and automating MarteX governance objects and tasks.
 Sentinel is implemented as a Python application that binds to a local
-version dashd instance on each Dash masternode.
+version dashd instance on each MarteX masternode.
 
 A Governance Object (or "govObject") is a generic structure introduced
-in Dash 0.12.1 to allow for the creation of Budget Proposals and
+in MarteX 3.0.5.1 to allow for the creation of Budget Proposals and
 Triggers. Class inheritance has been utilized to extend this generic
 object into a "Proposal" object to supplant the current Dash budget
 system.
@@ -494,7 +488,7 @@ system.
 .. figure:: img/sentinel.png
    :width: 500px
 
-   Diagram highlighting the relationship between Dash Sentinel and Core
+   Diagram highlighting the relationship between MarteX Sentinel and Core
 
 
 .. _fees:
@@ -573,90 +567,10 @@ input. Always check your fees before sending a transaction.
 Evolution
 ==========
 
-`Dash Evolution <https://www.dash.org/roadmap/>`_ is the code name for a
-decentralized platform built on Dash blockchain technology. The goal is
-to provide simple access to the unique features and benefits of Dash to
-assist in the creation of decentralized technology. Dash introduces a
+MarteX Evolution is the code name for a
+decentralized platform built on MarteX blockchain technology. The goal is
+to provide simple access to the unique features and benefits of MarteX to
+assist in the creation of decentralized technology. MarteX introduces a
 tiered network design, which allows users to do various jobs for the
 network, along with decentralized API access and a decentralized file
 system.
-
-Dash Evolution will be released in stages. Dash Core releases 0.12.1 
-through to 0.12.3 lay the groundwork for the decentralized features 
-behind the scenes. Version 0.13 introduces the foundation of Evolution,
-specifically `DIP2 Special Transactions <https://github.com/dashpay/dips/blob/master/dip-0002.md>`__ 
-and `DIP3 Deterministic Masternode Lists <https://github.com/dashpay/dips/blob/master/dip-0003.md>`__.
-Version 0.14 establishes `DIP6 Long Living Masternode Quorums <https://github.com/dashpay/dips/blob/master/dip-0006.md>`__.
-Expected in late 2019, Dash Core 1.0 will introduce key Evolution
-features such as username-based payments, the world's first
-decentralized API (DAPI) and a decentralized data storage system (Drive)
-based on IPFS.
-
-Included below is our current work on Evolution, that adds many
-components such as:
-
-- **Drive:** A decentralized shared file system for user data that
-  lives on the second tier network
-- **DAPI:** A decentralized API which allows third tier users to access
-  the network securely
-- **DashPay Decentralized Wallets:** These wallets are light clients
-  connected to the network via DAPI and run on various platforms
-- **Second Tier:** The masternode network, which provides compensated
-  infrastructure for the project
-- **Budgets:** The second tier is given voting power to allocate funds 
-  for specific projects on the network via the budget system
-- **Governance:** The second tier is given voting power to govern the
-  currency and chart the course the currency takes
-- **Deterministic Masternode Lists:** This feature introduces an 
-  on-chain masternode list, which can be used to calculate past and 
-  present quorums
-- **Social Wallet:** We introduce a social wallet, which allows friends
-  lists, grouping of users and shared multisig accounts
-
-Evolution Previews
-------------------
-
-The following videos featuring Dash Founder Evan Duffield and Head of
-UI/UX Development Chuck Williams describe the development process and
-upcoming features of the Dash Evolution platform.
-
-**Evolution Demo #1 - The First Dash DAP**, 16 March 2018
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; margin-bottom: 1em; height: 0; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/gbjYhZT2Ulc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-**Evolution Demo #2 - Mobile Evolution**, 25 April 2018
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; margin-bottom: 1em; height: 0; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/EtYax7iz4hU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-**Evolution Demo #3 - Dashpay User Experience**, 15 May 2018
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; margin-bottom: 1em; height: 0; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/ZJVW9iUHqLg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-**Chuck Williams on Evolution**, Dash Conference London, 14 September 2017
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; margin-bottom: 1em; height: 0; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/b-XL_ddWCwQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-**Evan Duffield on the Evolution Roadmap**, Dash Force News, 28 June 
-2017
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; margin-bottom: 1em; height: 0; overflow: hidden; max-width: 70%; height: auto;">
-        <iframe src="//www.youtube.com/embed/E65QixSRosw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
