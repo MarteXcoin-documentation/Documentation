@@ -1,6 +1,6 @@
 .. meta::
    :description: MarteX features several unique value propositions including masternodes, AnonSend, FastSend and a decentralized governance system
-   :keywords: martex, cryptocurrency, features, masternodes, anonesend, fasttsend, sporks, x13, governance, sentinel, evolution
+   :keywords: martex, cryptocurrency, features, masternodes, anonsend, fastsend, sporks, x13, governance, sentinel, evolution
 
 .. _features:
 
@@ -13,11 +13,10 @@ Features
 Specifications
 ==============
 
-- First block mined at 11PM EST, 18th January 2014
+- First block mined at 12:51:21PM EST, 15th July 2017
 - No premine
-- X13 hashing algorithm, PoS mining available
-- 1 minute block time, 2MB blocks, ~56 transactions per second
-- Block reward decreases.
+- X13 hashing algorithm, PoS mining available, POW deactivate
+- 1 minute block time, adaptive block size
 - Dark Gravity Wave difficulty adjustment algorithm
 - 11.6M total coin supply
 - Decentralized second-tier masternode network
@@ -34,25 +33,25 @@ Specifications
 Masternodes
 ===========
 
-In addition to traditional Proof of Work (PoW) rewards for mining Dash,
+In addition to Proof of Stake (PoS) rewards for mining MarteX,
 users are also rewarded for running and maintaining special servers
-called masternodes. Thanks to this innovative two tier network, Dash can
+called masternodes. Thanks to this innovative two tier network, MarteX can
 offer innovative features in a trustless and decentralized way.
-Masternodes are used to power PrivateSend, InstantSend, and the
+Masternodes are used to power AnonSend, FastSend, and the
 governance and treasury system. Users are rewarded for running
 masternodes; 45% of the block reward is allocated to pay the masternode
 network. You can view practical guides on all topics relating to
-masternodes :ref:`here <masternodes>`.
+masternodes `here </Documentation/tree/master/masternode>`_.
 
 Masternodes enable the following services:
 
--  **FatsSend** allows for near-instant transactions. Dash
+-  **FastSend** allows for near-instant transactions. MarteX
    FastSend transactions are fully confirmed within two seconds.
 -  **AnonSend** gives financial privacy through a decentralized 
    implementation of CoinJoin.
 -  **ChainLocks**, which protects the blockchain against 51% mining 
    attacks by signing blocks as they are mined.
--  **Governance and Treasury** allows stakeholders in Dash to determine
+-  **Governance and Treasury** allows stakeholders in MarteX to determine
    the direction of the project and devotes 10% of the block reward to
    development of the project and ecosystem.
 -  **Martex Evolution** will make using cryptocurrency as easy as using
@@ -60,18 +59,18 @@ Masternodes enable the following services:
 
 Masternode owners must have possession of 5000 MarteX, which they prove by
 signing a message included in a special transaction written to the
-blockchain. The Dash can be moved or spent at any time, but doing so
+blockchain. The MarteX can be moved or spent at any time, but doing so
 will cause the masternode to fall out of queue and stop earning rewards.
 Masternode users are also given **voting rights** on proposals. Each
 masternode has one vote and this vote can be used on budget proposals or
-important decisions that affect Dash.
+important decisions that affect MarteX.
 
 Masternodes cost money and effort to host so they are paid a percentage
 of the block reward as an incentive. Because only one masternode is paid
 in each block, the frequency of the payment can vary, as well as the
-value of the Dash paid out. This `tool <https://stats.masternode.me/>`_
+value of the MarteX paid out. This `tool <>`_
 shows a live calculation of masternode earnings. These rewards decrease
-by 7% each year, together with the block reward. There is also the
+by % each year, together with the block reward. There is also the
 possibility for masternodes to earn money from fees in the future.
 
 
@@ -81,21 +80,21 @@ AnonSend
 ========
 
 AnonSend gives you true financial privacy by obscuring the origins of
-your funds. All the Dash in your wallet is comprised of different
+your funds. All the MarteX in your wallet is comprised of different
 "inputs", which you can think of as separate, discrete coins.
 AnonSend uses an innovative process to mix your inputs with the
 inputs of at least two other people in a single transaction, so the
-value in Dash never leaves your wallet. You retain control of your money
+value in MarteX never leaves your wallet. You retain control of your money
 at all times.
 
-You can view a practical guide to use PrivateSend 
-:ref:`here <dashcore-privatesend-instantsend>`.
+.. You can view a practical guide to use AnonSend 
+.. `here <dashcore-privatesend-instantsend>`.
 
-The PrivateSend process works like this:
+The AnonSend process works like this:
 
-#. PrivateSend begins by breaking your transaction inputs down into
+#. AnonSend begins by breaking your transaction inputs down into
    standard denominations. These denominations are 0.001, 0.01, 0.1, 1
-   and 10 DASH -- much like the paper money you use every day.
+   and 10 MARTEX -- much like the paper money you use every day.
 #. Your wallet then sends requests to specially configured software
    nodes on the network, called "masternodes". These masternodes are
    informed then that you are interested in mixing a certain
@@ -109,16 +108,16 @@ The PrivateSend process works like this:
    (called a change address).
 #. Your wallet must repeat this process a number of times with each
    denomination. Each time the process is completed, it's called a
-   "round". Each round of PrivateSend makes it exponentially more
+   "round". Each round of AnonSend makes it exponentially more
    difficult to determine where your funds originated. The user may
    choose between 1-16 rounds of mixing.
 #. This mixing process happens in the background without any
-   intervention on your part. When you wish to make a private
+   intervention on your part. When you wish to make a anon
    transaction, your funds will be ready to spend. No additional waiting
    is required.
 
-Note that PrivateSend transactions will be rounded up so that all
-transaction inputs are spent. Any excess Dash will be spent on the
+Note that AnonSend transactions will be rounded up so that all
+transaction inputs are spent. Any excess MarteX will be spent on the
 transaction fee.
 
 **IMPORTANT:** Your wallet only contains 1000 of these "change
@@ -126,13 +125,13 @@ addresses". Every time a mixing event happens, one of your addresses is
 used up. Once enough of them are used, your wallet must create more
 addresses. It can only do this, however, if you have automatic backups
 enabled. Consequently, users who have backups disabled will also have
-PrivateSend disabled.
+AnonSend disabled.
 
 
-.. _instantsend:
+.. _fastsend:
 
-InstantSend
-===========
+FastSend
+========
 
 Traditional decentralized cryptocurrencies must wait for certain period 
 of time for enough blocks to pass to ensure that a transaction is both 
@@ -143,7 +142,7 @@ six blocks to accumulate. Other cryptocurrencies achieve faster
 transaction confirmation time by centralizing authority on the network 
 to various degrees.
 
-Dash suffers from neither of these limitations thanks to its 
+MarteX suffers from neither of these limitations thanks to its 
 second-layer network of masternodes. Masternodes regularly form voting
 quorums to check whether or not a submitted transaction is valid. If it
 is valid, the masternodes "lock" the inputs for the transaction and
@@ -152,24 +151,22 @@ the transaction will be included in subsequently mined blocks and not
 allowing any other spending of these inputs during the confirmation time
 period.
 
-InstantSend technology will allow for cryptocurrencies such as Dash to 
+FastSend technology will allow for cryptocurrencies such as MarteX to 
 compete with nearly instantaneous transaction systems such as credit 
 cards for point-of-sale situations while not relying on a centralized 
-authority. Widespread vendor acceptance of Dash and InstantSend could
+authority. Widespread vendor acceptance of MarteX and FastSend could
 revolutionize cryptocurrency by shortening the delay in confirmation of
 transactions from as long as an hour (with Bitcoin) to as little as a 
 few seconds.
 
-You can view a practical guide to use InstantSend 
-:ref:`here <dashcore-privatesend-instantsend>`. InstantSend was 
-introduced in a whitepaper called `Transaction Locking and Masternode 
-Consensus: A Mechanism for Mitigating Double Spending Attacks <https://github.com/dashpay/docs/blob/master/binary/Dash%20Whitepaper%20-%20Transaction%20Locking%20and%20Masternode%20Consensus.pdf>`_, 
-and further improved through the introduction of `LLMQ-based InstantSend
-<https://github.com/dashpay/dips/blob/master/dip-0010.md>`__ in Dash
-0.14.
+You can view a practical guide to use FastSend `here <dashcore-privatesend-instantsend>`_. 
+.. FastSend was introduced in a whitepaper called `Transaction Locking and Masternode 
+.. Consensus: A Mechanism for Mitigating Double Spending Attacks <https://github.com/dashpay/docs/blob/master/binary/Dash%20Whitepaper%20-%20Transaction%20Locking%20and%20Masternode%20Consensus.pdf>`_, 
+.. and further improved through the introduction of `LLMQ-based InstantSend
+.. <https://github.com/dashpay/dips/blob/master/dip-0010.md>`__ in Dash 0.14.
 
 
-**How Dash 'InstantSend' Protects Merchants from Double Spends**,
+**How Dash 'FastSend' Protects Merchants from Double Spends**,
 Dash Detailed by Amanda B. Johnson, 16 September 2016
 
 .. raw:: html
@@ -345,6 +342,8 @@ exploit.
   difficulty re-targeting with smoother transitions. It also fixes 
   issues with various architectures that had different levels of 
   floating-point accuracy through the use of integers.
+
+- MarteXcoin uses the same system adopted in the DASH.
 
 
 .. _emission-rate:
