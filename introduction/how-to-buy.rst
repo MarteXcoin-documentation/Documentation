@@ -11,7 +11,7 @@ How To Buy
 MarteX can be purchased and sold in several ways, each with different
 advantages and disadvantages. The following options are available:
 
-- Exchanges are one of the most popular ways to trade
+- `Exchanges <./how-to-buy.rst#exchanges>`_ are one of the most popular ways to trade
   cryptocurrency. A wide range of exchanges exist, each offering 
   slightly different features. Some serve different markets, some are in
   direct competition, some have cheaper fees, and some are subject to
@@ -26,14 +26,14 @@ advantages and disadvantages. The following options are available:
   cryptocurrencies only. For safety, exchanges should not be used as 
   wallets. Exchanges are for trading, not for savings.
 
-- Instant exchanges perform a similar
+- `Instant exchanges <./how-to-buy.rst#instant-exchanges>`_ perform a similar
   function to normal exchanges, but without the requirement to log in.
   They effectively convert one currency to another, with some limits on
   the amount to be exchanged and usually at a less advantageous rate.
   Others may even offer to sell cryptocurrency as a credit card
   purchase.
 
-- Over the counter exchanges have recently 
+- `Over the counter <./how-to-buy.rst#over-the-counter>`_ exchanges have recently 
   appeared to facilitate sale of MarteX directly from a company to the 
   individual at a specified price, or peer-to-peer between individuals 
   at a negotiated price. Volume may be limited compared to exchanges, 
@@ -41,7 +41,7 @@ advantages and disadvantages. The following options are available:
   peer-to-peer sites offer escrow services for a fee to prevent cheating
   during the sale between two parties who have never met.
 
-- ATMs accepting card and cash payments in return for
+- `ATMs <./how-to-buy.rst#atms>`_ accepting card and cash payments in return for
   crypto are widely available. Mapping services can show the specific
   location of these machines, or you can even set one up at your own 
   business and earn a percentage of sales.
