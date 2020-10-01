@@ -1,6 +1,6 @@
 .. meta::
    :description: MarteX features several unique value propositions including masternodes, AnonSend, FastSend and a decentralized governance system
-   :keywords: martex, cryptocurrency, features, masternodes, privatesend, instantsend, sporks, x13, dgw, governance, sentinel, evolution
+   :keywords: martex, cryptocurrency, features, masternodes, anonesend, fasttsend, sporks, x13, governance, sentinel, evolution
 
 .. _features:
 
@@ -16,17 +16,17 @@ Specifications
 - First block mined at 11PM EST, 18th January 2014
 - No premine
 - X13 hashing algorithm, PoS mining available
-- 2.6 minute block time, 2MB blocks, ~56 transactions per second
-- Block reward decreases by 7.14% per year
+- 1 minute block time, 2MB blocks, ~56 transactions per second
+- Block reward decreases.
 - Dark Gravity Wave difficulty adjustment algorithm
-- Between 17.74M and 18.92M total coin supply
+- 11.6M total coin supply
 - Decentralized second-tier masternode network
 - Superior privacy using AnonSend
 - Instant transactions using FastSend
 - Protection against blockchain reorganization events (commonly called 
   51% attacks) using ChainLocks
 - Decentralized Governance By Blockchain allows masternode owners to
-  vote on budget proposals and decisions that affect Dash
+  vote on budget proposals and decisions that affect MarteX
 
 
 .. _masternode-network:
@@ -46,19 +46,19 @@ masternodes :ref:`here <masternodes>`.
 
 Masternodes enable the following services:
 
--  **InstantSend** allows for near-instant transactions. Dash
-   InstantSend transactions are fully confirmed within two seconds.
--  **PrivateSend** gives financial privacy through a decentralized 
+-  **FatsSend** allows for near-instant transactions. Dash
+   FastSend transactions are fully confirmed within two seconds.
+-  **AnonSend** gives financial privacy through a decentralized 
    implementation of CoinJoin.
 -  **ChainLocks**, which protects the blockchain against 51% mining 
    attacks by signing blocks as they are mined.
 -  **Governance and Treasury** allows stakeholders in Dash to determine
    the direction of the project and devotes 10% of the block reward to
    development of the project and ecosystem.
--  **Dash Evolution** will make using cryptocurrency as easy as using
+-  **Martex Evolution** will make using cryptocurrency as easy as using
    PayPal.
 
-Masternode owners must have possession of 1000 DASH, which they prove by
+Masternode owners must have possession of 5000 MarteX, which they prove by
 signing a message included in a special transaction written to the
 blockchain. The Dash can be moved or spent at any time, but doing so
 will cause the masternode to fall out of queue and stop earning rewards.
