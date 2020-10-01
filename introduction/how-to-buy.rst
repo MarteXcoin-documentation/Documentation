@@ -73,10 +73,6 @@ Marketplace comparison websites
 -------------------------------
 
 Coinpaprika
-  .. image:: exchanges/coinpaprika.png
-     :width: 200px
-     :align: right
-     :target: https://coinpaprika.com/coin/dash-dash/
 
   https://coinpaprika.com
 
@@ -86,10 +82,6 @@ Coinpaprika
   are also available.
 
 Cryptoradar
-  .. image:: exchanges/cryptoradar.png
-     :width: 200px
-     :align: right
-     :target: https://cryptoradar.co/buy-dash
 
   https://cryptoradar.co
 
@@ -98,10 +90,6 @@ Cryptoradar
   on prices, fees, payment methods, reviews and more.
 
 CoinMarketCap
-  .. image:: exchanges/coinmarketcap.png
-     :width: 200px
-     :align: right
-     :target: https://coinmarketcap.com/currencies/dash/#markets
 
   https://coinmarketcap.com
 
@@ -110,22 +98,27 @@ CoinMarketCap
   clicking Markets allows you to view the markets available and the
   trading pairs they offer.
 
+CoinGecko
+
+  https://www.coingecko.com
+  CoinGecko provides a fundamental analysis of the crypto market. In addition to
+  tracking price, volume and market capitalization, CoinGecko tracks community
+  growth, open-source code development, major events and on-chain metrics. 
+
 
 MarteX.org markets
 ------------------
 
-
-
-https://
-
 The official MarteX website also provides a list of major exchanges
 offering MarteX.
+
+  https://martexcoin.org/getstarted.html
 
 
 List of exchanges
 -----------------
 
-Please see `here <>`__
+Please see `here <https://coinsquare.com/buy/martexcoin/>`_
 for a detailed guide on how to buy MarteX on an exchange. The exchanges 
 listed here are for informational purposes only and do not indicate 
 endorsement or affiliation with any particular platform.
@@ -136,12 +129,29 @@ endorsement or affiliation with any particular platform.
 Instant exchanges
 =================
 
+MXBroker
+
+  https://mxbroker.info/
+
+  A simple and quick way to pay your bills and recharge your phone with MXT!
+  In addition to buying and selling on p2p!
 
 .. _over-the-counter:
 
 Over the Counter
 ================
 
+SPERO EXCHANGE
+
+  https://exchange.sperocoin.org/markets/mxtbtc
+
+  The SeroCoin community-created Exchange.
+
+CREX24
+
+  https://crex24.com/pt/exchange/MXT-BTC
+
+  CREX24 is a modern cryptocurrency exchange with great potential.
 
 .. _atms:
 
