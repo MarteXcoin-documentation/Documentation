@@ -74,36 +74,36 @@ Marketplace comparison websites
 
 Coinpaprika
 
-  https://coinpaprika.com
+https://coinpaprika.com
 
-  Coinpaprika lists hundreds of cryptocurrencies by their market
-  capitalization, traded volume and recent price performance. A number
-  of advanced features to research cryptocurrency projects and exchanges
-  are also available.
+Coinpaprika lists hundreds of cryptocurrencies by their market
+capitalization, traded volume and recent price performance. A number
+of advanced features to research cryptocurrency projects and exchanges
+are also available.
 
 Cryptoradar
 
-  https://cryptoradar.co
+https://cryptoradar.co
 
-  Cryptoradar is a real-time cryptocurrency marketplace price comparison
-  and review platform. The website compares dozens of Dash markets based
-  on prices, fees, payment methods, reviews and more.
+Cryptoradar is a real-time cryptocurrency marketplace price comparison
+and review platform. The website compares dozens of Dash markets based
+on prices, fees, payment methods, reviews and more.
 
 CoinMarketCap
 
-  https://coinmarketcap.com
+https://coinmarketcap.com
 
-  CoinMarketCap lists all cryptocurrencies by their market capitalization.
-  Clicking one of these currencies allows you to view price charts, and
-  clicking Markets allows you to view the markets available and the
-  trading pairs they offer.
+CoinMarketCap lists all cryptocurrencies by their market capitalization.
+Clicking one of these currencies allows you to view price charts, and
+clicking Markets allows you to view the markets available and the
+trading pairs they offer.
 
 CoinGecko
 
-  https://www.coingecko.com
-  CoinGecko provides a fundamental analysis of the crypto market. In addition to
-  tracking price, volume and market capitalization, CoinGecko tracks community
-  growth, open-source code development, major events and on-chain metrics. 
+https://www.coingecko.com
+CoinGecko provides a fundamental analysis of the crypto market. In addition to
+tracking price, volume and market capitalization, CoinGecko tracks community
+growth, open-source code development, major events and on-chain metrics. 
 
 
 MarteX.org markets
@@ -112,7 +112,7 @@ MarteX.org markets
 The official MarteX website also provides a list of major exchanges
 offering MarteX.
 
-  https://martexcoin.org/getstarted.html
+https://martexcoin.org/getstarted.html
 
 
 List of exchanges
@@ -131,10 +131,10 @@ Instant exchanges
 
 MXBroker
 
-  https://mxbroker.info/
+https://mxbroker.info/
 
-  A simple and quick way to pay your bills and recharge your phone with MXT!
-  In addition to buying and selling on p2p!
+A simple and quick way to pay your bills and recharge your phone with MXT!
+In addition to buying and selling on p2p!
 
 .. _over-the-counter:
 
@@ -143,15 +143,15 @@ Over the Counter
 
 SPERO EXCHANGE
 
-  https://exchange.sperocoin.org/markets/mxtbtc
+https://exchange.sperocoin.org/markets/mxtbtc
 
-  The SeroCoin community-created Exchange.
+The SeroCoin community-created Exchange.
 
 CREX24
 
-  https://crex24.com/pt/exchange/MXT-BTC
+https://crex24.com/pt/exchange/MXT-BTC
 
-  CREX24 is a modern cryptocurrency exchange with great potential.
+CREX24 is a modern cryptocurrency exchange with great potential.
 
 .. _atms:
 
