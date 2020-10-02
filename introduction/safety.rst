@@ -44,7 +44,7 @@ Impersonation
 
 Scammers may attempt to impersonate well-known community members and
 manipulate you into granting them access to your system or wallets. This
-is usually done via private messages on forumz, Discord or email. The
+is usually done via private messages on forum, Discord or email. The
 attacks are often targeted against masternode owners. If you require
 technical assistance, it is best to ask in a public channel/forum or go
 to your official `telegram group <http://t.me/martexcoin>`_.
