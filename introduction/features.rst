@@ -159,11 +159,13 @@ revolutionize cryptocurrency by shortening the delay in confirmation of
 transactions from as long as an hour (with Bitcoin) to as little as a 
 few seconds.
 
-You can view a practical guide to use FastSend `here <dashcore-privatesend-instantsend>`_. 
-.. FastSend was introduced in a whitepaper called `Transaction Locking and Masternode 
-.. Consensus: A Mechanism for Mitigating Double Spending Attacks <https://github.com/dashpay/docs/blob/master/binary/Dash%20Whitepaper%20-%20Transaction%20Locking%20and%20Masternode%20Consensus.pdf>`_, 
-.. and further improved through the introduction of `LLMQ-based InstantSend
-.. <https://github.com/dashpay/dips/blob/master/dip-0010.md>`__ in Dash 0.14.
+You can view a practical guide to use FastSend `here <>`_.
+FastSend was introduced in a whitepaper called `Transaction Locking and Masternode 
+Consensus: A Mechanism for Mitigating Double Spending Attacks <https://github.com/dashpay/docs/blob/master/binary/Dash%20Whitepaper%20-%20Transaction%20Locking%20and%20Masternode%20Consensus.pdf>`_, 
+and further improved through the introduction of `LLMQ-based InstantSend
+<https://github.com/dashpay/dips/blob/master/dip-0010.md>`_ in Dash 0.14.
+
+MarteXcore uses the same systems above.
 
 
 **How MarteX 'FastSend' Protects Merchants from Double Spends**,
@@ -347,9 +349,9 @@ Emission Rate
 
 Cryptocurrencies such as Dash and Bitcoin are created through a
 cryptographically difficult process known as mining. Mining involves
-repeatedly solving :ref:`hash algorithms <x11-hash-algorithm>` until a
-valid solution for the current :ref:`mining difficulty 
-<dark-gravity-wave>` is discovered. Once discovered, the miner is 
+repeatedly solving `hash algorithms <x11-hash-algorithm>`_ until a
+valid solution for the current `mining difficulty 
+<./features.rst#dark-gravity-wave>`_ is discovered. Once discovered, the miner is 
 permitted to create new units of the currency. This is known as the 
 block reward. To ensure that the currency is not subject to endless 
 inflation, the block reward is reduced at regular intervals, as `shown 
@@ -365,11 +367,6 @@ reduces the emission by one-fourteenth (approx. 7.14%) every 210240
 blocks (approx. 383.25 days). It can be seen that reducing the block
 reward by a smaller amount each year offers a smoother transition to a
 fee-based economy than Bitcoin.
-
-
-.. figure:: img/coin_emission.jpg
-
-   Bitcoin vs. Dash coin emission rate
 
 
 Total coin emission
@@ -404,15 +401,15 @@ between:
 Block reward allocation
 -----------------------
 
-Unlike Bitcoin, which allocates 100% of the block reward to miners, Dash
+Unlike Bitcoin, which allocates 100% of the block reward to miners, MarteX
 holds back 10% of the block reward for use in the decentralized
-:ref:`budget system <decentralized-governance>`. The remainder of the
+`budget system <./features.rst#decentralized-governance>`_. The remainder of the
 block, as well as any transaction fees, are split 50/50 between the
-:ref:`miner <mining>` and a :ref:`masternode <masternodes>`, which is
-deterministically selected according to the :ref:`payment logic
-<payment-logic>`. Dash features superblocks, which appear every 16616
+`miner <./Documentation/tree/master/mining>`_ and a :`masternode <./Documentation/tree/master/masternode>`_, which is
+deterministically selected according to the payment logic
+. MarteX features superblocks, which appear every 21800
 blocks (approx. 30.29 days) and can release up to 10% of the cumulative
-budget held back over that :ref:`budget cycle period <budget-cycles>` to
+budget held back over that `budget cycle period <./Documentation/blob/master/governance/understanding.rst#budget-allocation>`_ to
 the winning proposals in the budget system. Depending on budget
 utilization, this results in an approximate coin reward allocation over
 a budget cycle as follows:
@@ -425,35 +422,22 @@ a budget cycle as follows:
 | 10% | Decentralized Governance Budget        |
 +-----+----------------------------------------+
 
-This documentation is based on calculations and posts by moocowmoo.
-Please see `this reddit post <https://www.reddit.com/r/dashpay/comments/
-7fc2on/dash_over_1000_in_a_few_weeks/dqb4pjn/>`_ for more details, or
-run your own `emission calculations using this tool
-<https://repl.it/@moocowmoo/dash-minmax-coin-generation>`_. See `this
-site <https://stats.masternode.me>`_ for live data on current network
-statistics.
-
 .. _decentralized-governance:
 
 Decentralized Governance
 ========================
 
-Decentralized Governance by Blockchain, or DGBB, is Dash's attempt to
+Decentralized Governance by Blockchain, or DGBB, is MarteX's attempt to
 solve two important problems in cryptocurrency: governance and funding.
 Governance in a decentralized project is difficult, because by
 definition there are no central authorities to make decisions for the
-project. In Dash, such decisions are made by the network, that is, by
+project. In MarteX, such decisions are made by the network, that is, by
 the owners of masternodes. The DGBB system allows each masternode to
 vote once (yes/no/abstain) for each proposal. If a proposal passes, it
-can then be implemented (or not) by Dash's developers. A key example is
-early in 2016, when Dash's Core Team submitted a proposal to the network
-asking whether the blocksize should be increased to 2 MB. Within 24
-hours, consensus had been reached to approve this change. Compare this
-to Bitcoin, where debate on the blocksize has been raging for nearly
-three years.
+can then be implemented (or not) by MarteX's developers.
 
-DGBB also provides a means for Dash to fund its own development. While 
-other projects have to depend on donations or premined endowments, Dash 
+DGBB also provides a means for MarteX to fund its own development. While 
+other projects have to depend on donations or premined endowments, MarteX 
 uses 10% of the block reward to fund its own development. Every time a 
 block is mined, 45% of the reward goes to the miner, 45% goes to a 
 masternode, and the remaining 10% is not created until the end of the
@@ -465,7 +449,7 @@ not paid out (10% of each block) will be used to fund approved
 proposals. The network thus funds itself by reserving 10% of the block
 reward for budget projects.
 
-You can read more about Dash governance in the :ref:`governance` section
+You can read more about MarteX governance in the `governance <./Documentation/tree/master/governance>`_ section
 of this documentation.
 
 
@@ -496,7 +480,7 @@ system.
 Fees
 ====
 
-Transactions on the Dash network are recorded in blocks on the
+Transactions on the MarteX network are recorded in blocks on the
 blockchain. The size of each transaction is measured in bytes, but there
 is not necessarily a correlation between high value transactions and the
 number of bytes required to process the transaction. Instead,
@@ -513,52 +497,52 @@ included as an incentive to the miner to process the transaction. Most
 wallets include a small fee by default, although some miners will
 process transactions even if no fee is included.
 
-The release of Dash 0.12.2.0 and activation of DIP0001 saw a
+The release of MarteX 2.7  saw a
 simultaneous reduction of fees by a factor of 10, while the block size
-was increased from 1MB to 2MB to promote continued growth of low-cost
-transactions even as the cost of Dash rises. Dash also supports
-:ref:`instantsend` and :ref:`privatesend` transactions, which operate on
-a different and mandatory fee schedule. Dash 0.13.0.0 introduced
-InstantSend autolocks, which causes masternodes to automatically attempt
+was increased a adaptive size to promote continued growth of low-cost
+transactions even as the cost of MarteX rises. MarteX also supports
+`Fastsend <./features.rst#fastsend>`_ and `anonsend<./features.rst#anonsend>`_ transactions, which operate on
+a different and mandatory fee schedule, FastSend autolocks, which causes
+ masternodes to automatically attempt
 to lock any transaction with 4 or fewer inputs — which are referred to
 as “simple” transactions — and removes the additional fee for
-InstantSend. The current fee schedule for Dash is as follows:
+FastSend. The current fee schedule for MarteX is as follows:
 
 +----------------------+-----------------+-----------------------------------+
 | Transaction type     | Recommended fee | Per unit                          |
 +======================+=================+===================================+
-| Standard transaction | .00001 DASH     | Per kB of transaction data        |
+| Standard transaction | .00001 MARTEX   | Per kB of transaction data        |
 +----------------------+-----------------+-----------------------------------+
-| InstantSend autolock | .00001 DASH     | Per kB of transaction data        |
+| FastSend autolock    | .00001 MARTEX   | Per kB of transaction data        |
 +----------------------+-----------------+-----------------------------------+
-| InstantSend          | .0001 DASH      | Per transaction input             |
+| FastSend             | .0001 MARTEX    | Per transaction input             |
 +----------------------+-----------------+-----------------------------------+
-| PrivateSend          | .001 DASH       | Per 10 rounds of mixing (average) |
+| AnonSend             | .001 MARTEX     | Per 10 rounds of mixing (average) |
 +----------------------+-----------------+-----------------------------------+
 
-As an example, a standard and relatively simple transaction on the Dash
+As an example, a standard and relatively simple transaction on the MarteX
 network with one input, one output and a possible change address
 typically fits in the range of 200 - 400 bytes. Assuming a price of
-US$100 per DASH, the fee falls in the range of $0.0002 - $0.0004, or
-1/50th of a cent. Processing a simple transaction using InstantSend at
-the same price is free of charge, while more complex InstantSend
+US$100 per MARTEX, the fee falls in the range of $0.0002 - $0.0004, or
+1/50th of a cent. Processing a simple transaction using FastSend at
+the same price is free of charge, while more complex FastSend
 transactions may cost around 1-2 cents per transaction, depending on the
-number of inputs. These fees apply regardless of the Dash or dollar
+number of inputs. These fees apply regardless of the MarteX or dollar
 value of the transaction itself.
 
-PrivateSend works by creating denominations of 10, 1, 0.1, 0.01 and
-0.001 DASH and then mixing these denominations with other users.
+AnonSend works by creating denominations of 10, 1, 0.1, 0.01 and
+0.001 MARTEX and then mixing these denominations with other users.
 Creation of the denominations is charged at the default fee for a
 standard transaction. Mixing is free, but to prevent spam attacks, an
 average of one in ten mixing transactions are charged a fee of 0.0001
-DASH. Spending inputs mixed using PrivateSend incurs the usual standard
-or InstantSend fees, but to avoid creating a potentially identifiable
+MARTEX. Spending inputs mixed using AnonSend incurs the usual standard
+or FastSend fees, but to avoid creating a potentially identifiable
 change address, the fee is always rounded up to the lowest possible
-denomination. This is typically .001 DASH, so it is important to deduct
+denomination. This is typically .001 MARTEX, so it is important to deduct
 the fee from the amount being sent if possible to minimise fees.
-Combining InstantSend and PrivateSend may be expensive due to this
-requirement and the fact that a PrivateSend transaction may require
-several inputs, while InstantSend charges a fee of 0.0001 DASH per
+Combining FastSend and AnonSend may be expensive due to this
+requirement and the fact that a AnonSend transaction may require
+several inputs, while FastSend charges a fee of 0.0001 MARTEX per
 input. Always check your fees before sending a transaction.
 
 
