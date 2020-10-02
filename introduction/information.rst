@@ -1,6 +1,6 @@
 .. meta::
-   :description: Glossary and collection of links to other parts of the Dash ecosystem and network
-   :keywords: dash, cryptocurrency, glossary, links, community, official, github, roadmap, chat, discord, facebook, twitter, social media
+   :description: Glossary and collection of links to other parts of the MarteX ecosystem and network
+   :keywords: martex, cryptocurrency, glossary, links, community, official, github, roadmap, chat, discord, facebook, twitter, social media
 
 .. _information:
 
@@ -26,137 +26,62 @@ Official sites
 - **Roadmap:** https://www.dash.org/roadmap
 - **DIPs:** https://github.com/dashpay/dips
 
+
 Community sites
 ---------------
 
-- https://dashdevs.org
-- https://www.dashnexus.org
-- https://www.dashwatch.org
-- https://www.dashboost.org
-- https://www.dashcentral.org
-- https://www.dashninja.pl
-- https://www.dashnews.org
-- https://dashthailand.org
-- https://www.dashnation.com
-- https://dashvotetracker.com
-- https://www.dashspain.org
-- http://www.dashhaiti.com
-- http://thedashbrain.com
+- 
+
 
 Forums
 ------
 
-- **Dash Forum**: https://www.dash.org/forum
-- **BitcoinTalk thread:** https://bitcointalk.org/index.php?topic=421615.0
-- **Cryptocurrencytalk.com:** https://cryptocurrencytalk.com/forum/693-dash
-- **巴比特 (8BTC) Forum:** http://8btc.com/forum-115-1.html
-- **百度贴吧 达世币吧 (Baidu Tieba):** `https://tieba.baidu.com/f?kw=达世币 <https://tieba.baidu.com/f?kw=达世币>`_
-- **彩云比特 达世币 (CYBTC Dash):** http://www.cybtc.com/forum-123-1.html
+- **Dash Forum**: https://martexcoin.org/
 
 
 Chat
 ----
 
-- **Dash Nation Discord:** https://discordapp.com/invite/9z8zX5j
-- **Dash Talk Discord:** https://discordapp.com/invite/PXbUxJB
-- **Dash Dapp Devs Discord:** https://chat.dashdevs.org
-- **Dash English Telegram:** https://t.me/dash_chat
-- **Dash Brasil Telegram:** https://telegram.me/dashbrasil
-- **Dash Russia Telegram:** https://telegram.me/Dash_Ru
-- **Dash en Español Telegram:** http://unete.dashespanol.com
-- **Dash Embassy D-A-CH auf Deutsch Telegram:** https://t.me/dashembassydach 
-- **Dash Telegram News Bot:** https://telegram.me/dashnews
-- **QQ 达世币官方群 DASH.China:** 419967021
-- **Freenode IRC:** #dashpay
+- **MarteX general Telegram Group:** https://t.me/martexcoin
 
 
 Social media
 ------------
 
-- **Reddit:** https://www.reddit.com/r/dashpay
-- **Twitter:** https://twitter.com/dashpay
-- **Steemit:** https://steemit.com/@dashpay
-- **LinkedIn:** https://www.linkedin.com/company/10424093
-- **YouTube:** https://www.youtube.com/c/DashOrg
-- **Instagram:** https://www.instagram.com/dashpay
-- **Dailymotion:** http://www.dailymotion.com/dashworld
-- **Youku:** http://i.youku.com/dashpay
-- **Soundcloud:** https://soundcloud.com/dashpay
-- **Google+:** https://plus.google.com/+DashOrg
-- **Minds:** https://www.minds.com/Dashpay
-- **Pinterest:** https://www.pinterest.com/dashdigitalcash
+- **Twitter:** https://twitter.com/martexcoin
+- **Instagram:** https://www.instagram.com/MarteXcoin
 
 
 Facebook
 --------
 
-- **English (Official):** https://www.facebook.com/DashPay
-- **Dash News En Español:** https://www.facebook.com/DashNewsEspanol
-- **Dash Thailand:** https://www.facebook.com/DashDigitalCashTh/
-- **Brazil:** https://www.facebook.com/DashBrazil
-- **Denmark:** https://www.facebook.com/DashDenmark
-- **Germany:** https://www.facebook.com/dashgermany
-- **Greece:** https://www.facebook.com/DashGreece
-- **Poland:** https://www.facebook.com/Dash.Polska
-- **Russia:** https://www.facebook.com/Dash.Russia
-- **Thailand:** https://www.facebook.com/groups/dashembassythailand
-- **Venezuela:** https://www.facebook.com/groups/DarkcoinVenezuela
-- **Vietnam:** https://www.facebook.com/dashvietnam
-
 
 Twitter
 -------
 
-- **Dash Official Account:** https://twitter.com/dashpay
-- **Ryan Taylor, CEO of Dash Core Group:** https://twitter.com/RTaylor05
-- **Dash Force News:** https://twitter.com/DashForceNews
-- **Joël Valenzuela, Chief Editor, Dash Force News:** https://twitter.com/TheDesertLynx
-- **Mark Mason, Director of Media & PR, Dash Force News:** https://twitter.com/StayDashy
-- **Amanda B. Johnson, Dash Superfan and DAO-funded contractor:** https://twitter.com/AmandaB_Johnson
-- **Tao of Satoshi, Dash Nation Founder and DAO-funded contractor:** `https://twitter.com/Dash_Nation <https://twitter.com/Dash_Nation>`__
-- **とみ三（Samurai33）, Dash Japan:** https://twitter.com/samurai3311
-- **Dash Vietnam:** https://twitter.com/dashvietnam
+- **Twitter Official Account:** https://twitter.com/martexcoin
 
 
 News
 ----
-
-- **Dash Force News:** https://www.dashnews.org
-- **Dash News En Español:** https://dashnewsespanol.com
-- **Dash News En Español (YouTube):** https://www.youtube.com/channel/UCG6Cuh8Q2eUt4NlZu4K-u8g
-- **Dash News Korea:** https://dashnewskorea.com
-- **Cointelegraph:** https://cointelegraph.com/tags/dash
-- **巴比特 (8BTC):** http://www.8btc.com/dash
-- **Dash Embassy D-A-CH:** http://www.dash-embassy.org/
-- **Dash News Germany:** https://dash-news.de
-- **Dash Vietnam:** https://dashvn.blogspot.com
-- **Dash France:** https://dashfrance.com/
-- **Dash News China (Wechat):** dashnews (or scan QR below)
-
-.. image:: img/dash-wx.png
-    :width: 100 px
 
 
 
 Blogs
 -----
 
-- **Evan Duffield's blog:** https://medium.com/@eduffield222
-- **Dashdot:** https://dashdot.io/alpha/
 
 
 Wikipedia
 ---------
 
-- `https://en.wikipedia.org/wiki/Dash_(cryptocurrency) <https://en.wikipedia.org/wiki/Dash_(cryptocurrency)>`_
+
 
 
 Inactive
 --------
 
-- **Bitcoin.com forum:** https://forum.bitcoin.com/dash-f67
-- **Crypto-city.com page:** https://www.crypto-city.com/index.php/dash-dash-coin
-- **Bitco.in forum:** https://bitco.in/forum/threads/dash-digitalcash.891
+- **Martexcoin forum:** https://forum.martexcoin.org/
 
 
 Tools
@@ -181,24 +106,12 @@ Block explorers, statistics and visualizations
 Treasury tools
 --------------
 
-- https://www.dashwatch.org
-- https://www.dashcentral.org
-- https://www.dashboost.org
-- https://dashnexus.org
-- https://dashvotetracker.com
-- https://proposal.dash.org
-- https://www.dashninja.pl/governance.html
 
 
 Masternode management
 ---------------------
 
-- http://dashmasternode.org
-- https://dashninja.pl
-- https://stats.masternode.me
-- https://github.com/Bertrand256/dash-masternode-tool
-- http://178.254.23.111/~pub/Dash/Dash_Info.html
-- https://m1.dash-news.de/dashtv/#value=1000
+- https://github.com/martexcoin/mxt-mn
 
 
 Price monitoring and statistics
@@ -216,48 +129,15 @@ Dash Community project
 - http://github.com/dashcommunity
 
 
-DarkNet pages
--------------
-
-- **Dash (Mirror of Main Page):** http://dashorg64cjvj4s3.onion
-- **The Hidden Wiki:** `http://zqktlwi4fecvo6ri.onion/wiki/Dash_-_DigitalCash <http://zqktlwi4fecvo6ri.onion/wiki/Dash_-_DigitalCash>`_
-
 
 Mobile Apps
 ===========
-
-iOS
----
-
-- **Dash Wallet:** https://itunes.apple.com/app/id1206647026
-- **Edge:** https://itunes.apple.com/app/id1344400091
-- **Jaxx:** https://itunes.apple.com/app/id1435383184
-- **Coinomi:** https://itunes.apple.com/app/id1333588809
-- **Exodus:** https://itunes.apple.com/app/id1414384820
-- **Bitnovo:** https://itunes.apple.com/app/id1220883632
-- **CoinCap:** https://itunes.apple.com/app/id1074052280
-- **Blockfolio:** https://itunes.apple.com/app/id1095564685
-- **Cryptonaut:** https://itunes.apple.com/app/id1312756405
-- **Abra:** https://itunes.apple.com/app/id966301394
-- **BitUniverse:** https://itunes.apple.com/app/id1329338902
 
 
 Android
 -------
 
-- **Dash Wallet:** https://play.google.com/store/apps/details?id=hashengineering.darkcoin.wallet
-- **Edge:** https://play.google.com/store/apps/details?id=co.edgesecure.app
-- **Jaxx:** https://play.google.com/store/apps/details?id=com.liberty.jaxx
-- **Coinomi:** https://play.google.com/store/apps/details?id=com.coinomi.wallet
-- **Cryptonator:** https://play.google.com/store/apps/details?id=com.aev.cryptonator
-- **Exodus:** https://play.google.com/store/apps/details?id=exodusmovement.exodus
-- **Bitnovo:** https://play.google.com/store/apps/details?id=com.bitnovo.app
-- **CoinCap:** https://play.google.com/store/apps/details?id=io.coinCap.coinCap
-- **Blockfolio:** https://play.google.com/store/apps/details?id=com.blockfolio.blockfolio
-- **Cryptonaut:** https://play.google.com/store/apps/details?id=org.cryptonaut.app
-- **Abra:** https://play.google.com/store/apps/details?id=com.plutus.wallet
-- **Bitcoin Ticker Widget:** https://play.google.com/store/apps/details?id=st.brothas.mtgoxwidget
-- **BitUniverse:** https://play.google.com/store/apps/details?id=com.bituniverse.portfolio
+- **MarteX Wallet:**  https://play.google.com/store/apps/details?id=com.martexcoin.wallet
 
 
 .. _glossary:
