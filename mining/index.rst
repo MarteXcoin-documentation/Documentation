@@ -19,7 +19,7 @@ secure against brute force attacks on the MarteX blockchain.
 The simplest and most general hardware available for mining is the minimum hardware requirements listed bellow:
 
 - 1 CPU.
-- 1024 MB of free RAM.
+- 1024 MB of free RAM and 1024 of Swap.
 - 4 GB of free storage (The more the blockchain grows, the more storage is needed).
 - A good internet connection (The more transactions are made, the more connection is needed).
 
