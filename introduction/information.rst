@@ -68,7 +68,6 @@ Block explorers, statistics and visualizations
 - https://be.martexcoin.org
 
 
-
 Masternode management
 ---------------------
 
@@ -78,17 +77,10 @@ Masternode management
 Price monitoring and statistics
 -------------------------------
 
-- https://coinmarketcap.com/currencies/dash
-- https://bitinfocharts.com/dash
-- https://www.cryptonator.com/widget
-
-
-Dash Community project
-----------------------
-
-- https://dashcommunity.github.io
-- http://github.com/dashcommunity
-
+- https://coinmarketcap.com/currencies/martexcoin/
+- https://www.coingecko.com/en/coins/martexcoin
+- https://www.worldcoinindex.com/coin/martexcoin
+- https://www.investing.com/crypto/martexcoin
 
 
 Mobile Apps
