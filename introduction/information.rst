@@ -17,20 +17,15 @@ Official sites
 --------------
 
 - **Website:** https://www.dash.org
-- **User documentation:** https://docs.dash.org
-- **Dash Core Documentation:** https://dashcore.readme.io
-- **Dash Platform Documentation:** https://dashplatform.readme.io
-- **Foundation:** https://www.dashfoundation.io
-- **GitHub:** https://github.com/dashpay
-- **GitHub (Evolution):** https://github.com/dashevo
-- **Roadmap:** https://www.dash.org/roadmap
-- **DIPs:** https://github.com/dashpay/dips
+- **User documentation:** https://github.com/MarteXcoin-documentation
+- **GitHub:** https://github.com/martexcoin
+- **MIPs:** https://github.com/martexcoin/mips
 
 
 Community sites
 ---------------
 
-- 
+- **MarteXcoin documentation:** https://github.com/MarteXcoin-documentation
 
 
 Forums
@@ -52,30 +47,10 @@ Social media
 - **Instagram:** https://www.instagram.com/MarteXcoin
 
 
-Facebook
---------
-
-
 Twitter
 -------
 
 - **Twitter Official Account:** https://twitter.com/martexcoin
-
-
-News
-----
-
-
-
-Blogs
------
-
-
-
-Wikipedia
----------
-
-
 
 
 Inactive
@@ -90,21 +65,7 @@ Tools
 Block explorers, statistics and visualizations
 ----------------------------------------------
 
-- https://explorer.dash.org
-- https://insight.dash.org/insight
-- https://blockchair.com/dash
-- https://chainz.cryptoid.info/dash
-- https://www.coinexplorer.net/dash
-- https://bitinfocharts.com/dash/explorer
-- https://dashblockexplorer.com
-- https://live.blockcypher.com/dash
-- https://dashradar.com
-- http://udjinm6.github.io/bitlisten
-- http://insight.dash.crowdnode.io
-
-
-Treasury tools
---------------
+- https://be.martexcoin.org
 
 
 
