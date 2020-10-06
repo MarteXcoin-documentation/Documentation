@@ -107,11 +107,11 @@ Glossary
   attacker’s hashed transaction block.
 
 Address
-  A Dash address is used to :ref:`Send/Receive a Payment 
-  <dashcore-send-receive>` on the Dash network. It contains a string of
+  A MarteX address is used to `
+    <>`_ on the MarteX network. It contains a string of
   alphanumeric characters, but can also be represented as a scannable QR
-  code. A Dash address is also the public key in the pair of keys used 
-  by Dash holders to digitally sign transactions (see Public key).
+  code. A MarteX address is also the public key in the pair of keys used 
+  by MarteX holders to digitally sign transactions (see Public key).
 
 Algorithm
   In mathematics and computer science, an `algorithm 
@@ -128,7 +128,7 @@ AML
   Anti-Money Laundering techniques are used to stop people from making
   illegally obtained funds appear as though they have been earned
   legally. AML mechanisms can be legal or technical in nature.
-  Regulators frequently apply AML techniques to Dash exchanges.
+  Regulators frequently apply AML techniques to MarteX exchanges.
 
 API
   In computer programming, an `application programming interface (API) 
@@ -148,14 +148,14 @@ ASIC
   An application-specific integrated circuit (ASIC), is an integrated
   circuit (IC) customized for a particular use, rather than intended for
   general-purpose use. For example, a chip designed to run in a digital
-  voice recorder or for :ref:`high-efficiency Dash mining <asic-mining>`
+  voice recorder or for `high-efficiency Bitcoin mining <https://en.bitcoin.it/wiki/ASIC>`_
   is an ASIC.
 
 ATM / BTM
-  A Dash ATM is a physical machine that allows a customer to buy Dash
+  A MarteX ATM is a physical machine that allows a customer to buy MarteX
   with cash. There are many manufacturers, some of which enable users to
-  sell Dash for cash. They are also sometimes called 'BTMs' or 'Dash
-  AVMS.' Dash is supported on several :ref:`ATMs <how-to-buy>`.
+  sell MarteX for cash. They are also sometimes called 'BTMs' or 'MarteX
+  AVMS.' MarteX is supported on several `ATMs <./how-to-buy.rst>`_.
 
 Backlog
   Backlog generally refers to an accumulation over time of work waiting
@@ -196,12 +196,12 @@ Blocks
   specifically to create blocks.
 
 Budget System / DGBB
-  The development of Dash and the Dash ecosystem is self-funded by the
+  The development of MarteX and the MarteX ecosystem is self-funded by the
   network. Each time a block is discovered, 45% of the block reward goes
   to miners and 45% goes to masternodes. Ten percent is withheld by the
   network and used to fund projects that are approved by the masternode
-  network. This process is known as :ref:`Decentralized Governance by
-  Blockchain <governance>` (DGBB). For a fee, anybody can submit a
+  network. This process is known as `Decentralized Governance by
+  Blockchain <governance>`_ (DGBB). For a fee, anybody can submit a
   proposal to the network, and will be paid directly by the blockchain
   if approved by the masternodes. The Budget System is sometimes called
   the Treasury System; the two terms are interchangeable.
