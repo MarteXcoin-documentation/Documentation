@@ -16,7 +16,7 @@ Links
 Official sites
 --------------
 
-- **Website:** https://www.dash.org
+- **Website:** https://martexcoin.org/
 - **User documentation:** https://github.com/MarteXcoin-documentation
 - **GitHub:** https://github.com/martexcoin
 - **MIPs:** https://github.com/martexcoin/mips
@@ -31,7 +31,7 @@ Community sites
 Forums
 ------
 
-- **Dash Forum**: https://martexcoin.org/
+- **MarteX Forum**: https://bitcointalk.org/index.php?topic=1354130.0
 
 
 Chat
