@@ -9,11 +9,11 @@ What is MarteX?
 ===============
 
 MarteX aims to be the most user-friendly and scalable payments-focused
-cryptocurrency in the world. The MarteX network features :ref:`instant
-transaction confirmation <instantsend>`, double spend protection,
+cryptocurrency in the world. The MarteX network features `instant
+transaction confirmation <instantsend>`_, double spend protection,
 optional `privacy <privatesend>`_ equal to that of physical cash, a
 `self-governing, self-funding model <decentralized-governance>`_ 
-driven by :`incentivized full nodes <masternode-network>`_ and a 
+driven by `incentivized full nodes <masternode-network>`_ and a 
 `clear roadmap <https://martexcoin.org>`_ for on-chain scaling to
 up to 400MB blocks using custom-developed open source hardware. While
 MarteX is based on Bitcoin and compatible with many key components of the
