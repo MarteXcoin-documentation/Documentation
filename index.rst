@@ -20,7 +20,7 @@ currently also offers instant transactions (:ref:`instantsend`), private
 transactions (:ref:`privatesend`) and operates a self-governing and
 self-funding model that enables the MarteX network to pay individuals and
 businesses for work that adds value to the network. This
-:ref:`decentralized governance and budgeting system <governance>` makes
+`decentralized governance and budgeting system <./governance>`_ makes
 it one of the first ever successful decentralized autonomous
 organizations (DAO).
 
