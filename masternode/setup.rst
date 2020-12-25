@@ -15,14 +15,11 @@ particularly if you are not storing your MarteX on a hardware wallet.
 There are some decisions to be made along the way, and optional extra
 steps to take for increased security.
 
-Commercial :ref:`masternode hosting services <masternode-hosting>` are
+Commercial `masternode hosting services </hosting.rst>`_ are
 available if you prefer to delegate day-to-day operation of your
 masternode to a professional operator. When using these hosting
 services, you retain full control of the 5000 MARTEX collateral and pay an
-agreed percentage of your reward to the operator. It is also possible to
-delegate your voting keys to a representative, see the 
-:ref:`governance documentation <delegating-votes>` for more
-information.
+agreed percentage of your reward to the operator.
 
 
 Before you begin
