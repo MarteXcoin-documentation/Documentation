@@ -31,7 +31,7 @@
   
   Extract wallet to you local folder
 
- `tar- -vzxf nameoffile.tar.gz`
+ `tar -vzxf nameoffile.tar.gz`
 
   Create a sh file to run one masternode instance. For example:
 
@@ -100,7 +100,7 @@ masternode=1
 masternodeaddr=ExternalIPDedicated:51315
 masternodeprivkey=ReturnOfMasternodeGenkey
 externalip=ExternalIPDedicated
-nlogtimestamps=1
+logtimestamps=1
 txindex=1
 mnconflock=1
 stake=0

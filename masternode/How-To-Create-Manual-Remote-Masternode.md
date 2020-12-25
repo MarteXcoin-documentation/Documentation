@@ -76,7 +76,7 @@ For every Masternode you want to create:
   
   Extract wallet to you local folder
 
- `tar- -vzxf nameoffile.tar.gz`
+ `tar -vzxf nameoffile.tar.gz`
 
   Create a sh file to run one masternode instance. For example:
 
@@ -121,7 +121,7 @@ masternode=1
 masternodeaddr=ExternalIPDedicated:51315
 masternodeprivkey=ReturnOfMasternodeGenkey
 externalip=ExternalIPDedicated
-nlogtimestamps=1
+logtimestamps=1
 txindex=1
 mnconflock=1
 stake=0
@@ -133,7 +133,7 @@ maxconnections=500
 rpcuser=(put your user here)
 rpcpassword=put_a_long_password_here
 port=51315
-rpcport=51314 
+rpcport=51314
 rpcallowip=127.0.0.1
 addnode=add.other.noder.here.with:port
 addnode=ip_node:port_node
