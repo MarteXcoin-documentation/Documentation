@@ -23,6 +23,7 @@ Unpack the files into a directory and run:
 
 * See the documentation at the [Documentation](/introduction/)
 for help and more information.
+* For a better command documentation, see this [course](https://github.com/MarteXcoin-documentation/Learning-MarteXcoin-from-the-Command-Line).
 * Ask for help on the [MarteXcooin Telegram group](https://t.me/martexcoin).
 
 ### Pull requests are welcome
