@@ -40,7 +40,7 @@ to constitute “mining”. By analogy, a masternode operator should also
 treat as regular income the fair market value of the block reward.
 
 MarteX Collateral
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 A MarteX user may demonstrate to the network his or her control over 1,000
 DASH in order to run a masternode. These tokens never leave the user’s
