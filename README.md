@@ -4,7 +4,7 @@ MarteXcoin Core
 
 Setup
 ---------------------
-MarteXcoin Core is the original MarteXcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of MarteXcoin transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+MarteX Core is the original MarteXcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of MarteXcoin transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 To download MarteXcoin Core, visit [martexcoin.org](https://martexcoin.org/getstarted.html).
 
@@ -21,7 +21,7 @@ Unpack the files into a directory and run:
 
 ### Need Help?
 
-* See the documentation at the [Documentation](/introduction/)
+* See the documentation at the [Documentation](/index.rst)
 for help and more information.
 * For a better command documentation, see this [course](https://github.com/MarteXcoin-documentation/Learning-MarteXcoin-from-the-Command-Line).
 * Ask for help on the [MarteXcooin Telegram group](https://t.me/martexcoin).
@@ -30,4 +30,4 @@ for help and more information.
 
 License
 ---------------------
-Distributed under the [MIT software license](/COPYING).
+Distributed under the [GPL3 software license](/LICENSE).
