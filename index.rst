@@ -16,8 +16,8 @@ inexpensive, divisible and fast. It can be spent securely both online
 and in person with only minimal transaction fees. Based on the Bitcoin
 project, MarteX aims to be the most user-friendly and scalable payments
 system in the world. In addition to Bitcoin's feature set, MarteX
-currently also offers instant transactions (:ref:`instantsend`), private
-transactions (:ref:`privatesend`) and operates a self-governing and
+currently also offers instant transactions (`fastsend <>`_), anonimous
+transactions (`anonsend <>`_) and operates a self-governing and
 self-funding model that enables the MarteX network to pay individuals and
 businesses for work that adds value to the network. This
 `decentralized governance and budgeting system <./governance>`_ makes
@@ -44,43 +44,33 @@ interest.
 Contents
 ========
 
-.. toctree::
-   :maxdepth: 3
-   :caption: First Steps
 
-   introduction/about
-   introduction/features
-   introduction/how-to-buy
-   introduction/safety
-   introduction/information
+   `introduction/about <introduction/about>`_
 
-.. _user-docs:
+   `introduction/features <introduction/features>`_
+   
+   `introduction/how-to-buy <introduction/how-to-buy>`_
+   
+   `introduction/safety <introduction/safety>`_
+   
+   `introduction/information <introduction/information>`_
 
-.. toctree::
-   :maxdepth: 3
-   :caption: Users
+   `wallets/index <wallets/index>`_
 
-   wallets/index
-   earning-spending
+   `earning-spending <earning-spending>`_
 
-.. _merchant-docs:
+   `merchants/getting-started <merchants/getting-started>`_
 
-.. toctree::
-   :maxdepth: 3
-   :caption: Merchants
+   `merchants/administrative <merchants/administrative>`_
 
-   merchants/getting-started
-   merchants/administrative
+   `governance/index <governance/index.rst>`_
 
-.. _network-docs:
+   `masternodes/index <masternodes/index>`_
 
-.. toctree::
-   :maxdepth: 3
-   :caption: Network
+   `mining/index <mining/index>`_
 
-   governance/index.rst
-   masternodes/index
-   mining/index
-   developers/index
-   marketing.rst
-   legal.rst
+   `developers/index <developers/index>`_
+
+   `marketing <marketing.rst>`_
+
+   `legal<./legal.rst>`_
