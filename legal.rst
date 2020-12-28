@@ -185,8 +185,8 @@ on this difference below:
   identifying counterparties to transactions in other virtual currencies
   when relying on blockchain forensics.
 
-PrivateSend Legal Position
-==========================
+AnonSend Legal Position
+=======================
 
 MarteX’s transaction rules are identical to Bitcoin, and therefore for
 regulatory and compliance purposes MarteX can and should be treated
