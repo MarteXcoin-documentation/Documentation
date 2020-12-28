@@ -1,6 +1,6 @@
 .. meta::
-   :description: Legal and tax information on the Dash cryptocurrency, block rewards, collateral and ATMs.
-   :keywords: dash, marketing, designs, presentations, brochures, logo
+   :description: Legal and tax information on the MarteX cryptocurrency, block rewards, collateral and ATMs.
+   :keywords: martex, marketing, designs, presentations, brochures, logo
 
 .. _legal:
 
@@ -8,14 +8,14 @@
 Legal
 =====
 
-How the Law Applies to Dash
+How the Law Applies to MarteX
 ===========================
 
-The purpose of the Dash DAO is to promote, protect and standardize Dash.
+The purpose of the MarteX DAO is to promote, protect and standardize MarteX.
 In the course of our mission, we have received inquiries into how some
-aspects of Dash are treated under United States law. The purpose of
+aspects of MarteX are treated under United States law. The purpose of
 this document is to address the most common of these inquiries and
-explain how we believe the laws apply to Dash. This is not meant as a
+explain how we believe the laws apply to MarteX. This is not meant as a
 legal opinion, and you should consult your own attorneys before relying
 upon it. However, it is meant to state our position on the law, and how
 the law should be properly interpreted.
@@ -30,7 +30,7 @@ Block rewards
 ^^^^^^^^^^^^^
 
 As many already know, block rewards are paid to masternode operators in
-exchange for validating transactions on the Dash network. The IRS has
+exchange for validating transactions on the MarteX network. The IRS has
 stated unequivocally that “when a taxpayer successfully ‘mines’ virtual
 currency, the fair market value of the virtual currency as of the date
 of receipt is includible in gross income.” To be sure, masternodes do
@@ -39,10 +39,10 @@ Bitcoin transactions and maintain the public Bitcoin transaction ledger
 to constitute “mining”. By analogy, a masternode operator should also
 treat as regular income the fair market value of the block reward.
 
-Dash Collateral
+MarteX Collateral
 ^^^^^^^^^^^^^^^
 
-A Dash user may demonstrate to the network his or her control over 1,000
+A MarteX user may demonstrate to the network his or her control over 1,000
 DASH in order to run a masternode. These tokens never leave the user’s
 control. If at any point during the user’s tenure as a masternode
 operator, the user disposes of any or all of the 1,000 DASH, the network
@@ -53,7 +53,7 @@ transfer of all right, title, and interest in the property transferred.
 A number of factors typically are considered to determine whether a sale
 has occurred, the most important being whether the benefits and burdens
 of ownership of the transferred property have passed from the transferor
-to the transferee. In Dash, the masternode operator retains control of
+to the transferee. In MarteX, the masternode operator retains control of
 the 1,000 DASH and simply demonstrates that control to the network.
 Therefore, the holding of the 1,000 DASH for purposes of qualifying as a
 masternode operator should not cause a taxable event to occur because
@@ -63,14 +63,14 @@ ownership.
 Capital Gains
 ^^^^^^^^^^^^^
 
-Assuming that the 1,000 DASH are sold, whether that Dash is a “capital
+Assuming that the 1,000 DASH are sold, whether that MarteX is a “capital
 asset” will determine the tax treatment of the sale. Stocks, bonds and
 other investment property for example, are generally treated as capital
 assets. Inventory, depreciable property, and stock in trade, though, are
 not. Assuming the masternode operator held the 1,000 DASH either for
 investment purposes or for purposes of qualifying as a masternode
 operator, the IRS would likely treat gain or loss on the sale of those
-Dash tokens as capital in nature. Therefore, Dash held for a long
+MarteX tokens as capital in nature. Therefore, MarteX held for a long
 enough period of time could be subject to the lower “long term capital
 gains” tax rate.
 
@@ -78,7 +78,7 @@ gains” tax rate.
 Legal Liability
 ---------------
 
-As with cash or any other currency system, users may use Dash in
+As with cash or any other currency system, users may use MarteX in
 connection with illegal activity. A common question we receive is
 whether masternode operators can also be liable for criminal activity,
 simply by relaying transactions related to that activity. The
@@ -100,9 +100,9 @@ requires disregard of a substantial risk. Finally, a person acts
 unjustifiable risk of a particular consequence of their actions, but
 were not.
 
-Most masternodes have no awareness, while relaying Dash transactions, of
+Most masternodes have no awareness, while relaying MarteX transactions, of
 the identity of the users involved, the ultimate destination of users’
-funds, or any other circumstances of Dash transactions. As such, it
+funds, or any other circumstances of MarteX transactions. As such, it
 would be difficult for a prosecutor to demonstrate that a masternode
 operator who facilitated an illegal transaction merely by relaying the
 transaction would have a culpable *mens rea*.
@@ -113,25 +113,25 @@ Secondary Liability
 Even if someone is not the principal actor in the commission of a crime,
 that person can be secondarily liable for their involvement in it. As
 such, we are sometimes asked whether masternode operators, by their
-involvement in relaying Dash transactions, could be “aiding and
-abetting” or “conspiring” to commit a crime that might involve Dash.
+involvement in relaying MarteX transactions, could be “aiding and
+abetting” or “conspiring” to commit a crime that might involve MarteX.
 Generally speaking, aiding and abetting requires that the defendant (i)
 seek by his action to make the crime succeed and (ii) act with the same
 *mens rea* as required for the principal offense.
 
 No matter the requisite *mens rea* of a particular principal offense
-committed by a Dash user, it is unlikely that a mere masternode
+committed by a MarteX user, it is unlikely that a mere masternode
 operator, without more, could be found to have “aided and abetted." To
 be sure, the masternodes do provide assistance in the principal offense
-– in that masternode action is required to process all Dash
+– in that masternode action is required to process all MarteX
 transactions. However, the masternodes would not have the requisite
 *mens rea* to satisfy the requirements of aiding and abetting
 liability. Masternode operators have no readily available information
-about the purpose or consequences of users’ Dash transactions, or even
+about the purpose or consequences of users’ MarteX transactions, or even
 the originating identity of the sender of funds. As such, so long as a
-sufficient diversity of non-criminal transactions occur on the Dash
+sufficient diversity of non-criminal transactions occur on the MarteX
 network, they would not harbor even the least culpable *mens rea*
-(i.e. negligence) with respect to a user relaying or receiving Dash in
+(i.e. negligence) with respect to a user relaying or receiving MarteX in
 furtherance of a particular crime.
 
 “Conspiracy” liability is even less likely. Conspiracy generally
@@ -144,15 +144,15 @@ Exchange Liability
 ------------------
 
 Exchanges have asked whether they can be held liable for criminal
-activity connected with Dash PrivateSend transactions.
+activity connected with MarteX PrivateSend transactions.
 
 The Bank Secrecy Act (BSA) is the law that primarily governs exchanges
 in the United States. The BSA does not contain any prohibition on
-supporting Dash transactions. Indeed, the BSA take a flexible, risk-
+supporting MarteX transactions. Indeed, the BSA take a flexible, risk-
 based approach to regulation and contemplate that financial institutions
 will enter into lines of business with new risks. This risk-based
 approach requires, at the outset, an independent risk assessment. By and
-large, the risks faced by exchanges who begin to support Dash will be
+large, the risks faced by exchanges who begin to support MarteX will be
 similar to the risks associated with other virtual currencies. One
 significant difference concerns PrivateSend transactions, and we focus
 on this difference below:
@@ -172,7 +172,7 @@ on this difference below:
   transactions to the level of suspicious activity.
 
 - Exchanges should consider revising their risk assessments and AML
-  policies to account for the unique characteristics of Dash. For
+  policies to account for the unique characteristics of MarteX. For
   example, including blockchain addresses in Suspicious Activity Reports
   (SARs) will be less descriptive and effective for investigations based
   on such addresses. Exchanges might consider adding additional context
@@ -188,13 +188,13 @@ on this difference below:
 PrivateSend Legal Position
 ==========================
 
-Dash’s transaction rules are identical to Bitcoin, and therefore for
-regulatory and compliance purposes Dash can and should be treated
+MarteX’s transaction rules are identical to Bitcoin, and therefore for
+regulatory and compliance purposes MarteX can and should be treated
 identically to Bitcoin. `BlockchainIntel <https://www.blockchainintel.com/>`__ 
 and `Coinfirm <https://www.coinfirm.com/>`__ are KYC/AML service
-providers that offer services covering the Dash blockchain.
+providers that offer services covering the MarteX blockchain.
 
-This PDF document offers a full overview of the `Dash PrivateSend Legal Position <https://media.dash.org/wp-content/uploads/Dash-PrivateSend-Legal-Position-EN.pdf>`__.
+This PDF document offers a full overview of the `MarteX PrivateSend Legal Position <https://media.dash.org/wp-content/uploads/MarteX-PrivateSend-Legal-Position-EN.pdf>`__.
 
 ATM & Fiat Compliance
 =====================
@@ -203,13 +203,13 @@ Introduction
 ------------
 
 An aspect that required legal research is what are the compliance
-requirements to facilitate Dash-fiat exchange. This can be in the form
-of running ATM kiosks or using other mechanisms to personally offer Dash
+requirements to facilitate MarteX-fiat exchange. This can be in the form
+of running ATM kiosks or using other mechanisms to personally offer MarteX
 to fiat exchange services.
 
 For this purpose we hired **Cogent Law**, who have a lot of experience
 working in compliance for digital money services. They have put together
-a compliance program that will be shared with anyone launching a Dash
+a compliance program that will be shared with anyone launching a MarteX
 service if they require it. This includes:
 
 - A finCEN BSA compliant written Principal MSB/KYC AML Program designed
@@ -238,20 +238,20 @@ package includes:
 - Different Reports to file in different situations
 
 The documents have a format as if they were created for the fictional
-company “Initech” and then the interested Dash entrepreneur would have
+company “Initech” and then the interested MarteX entrepreneur would have
 to replace it with their real corporation. We believe that some counsel
 would still be advisable for an investor launching a service but this
 will help provide a solid understanding of the requirements and get them
-80% of the way. This should also be highly educational and help the Dash
+80% of the way. This should also be highly educational and help the MarteX
 investor be more at ease as it enlightens a typically obscure topic for
 most crypto enthusiasts.
 
-This program is directed at Dash investors that are interested in
+This program is directed at MarteX investors that are interested in
 running a compliant service in regulated markets. If some users prefer
 to run services without a compliance program or don't need one, we
 completely respect that too.
 
-Dash ATM Compliance Program
+MarteX ATM Compliance Program
 ---------------------------
 
 #. Please first read the `Quick Guide To Operating a Virtual Currency
@@ -279,7 +279,7 @@ Dash ATM Compliance Program
    operations. In the Quick Guide in Step 1, we go through registration
    on the E - BSA filing system. This step also provides example CTR
    (Currency Transaction Report) and SAR (Suspicious Activity Report)
-   report samples. Dash operators should be familiar with these as they
+   report samples. MarteX operators should be familiar with these as they
    may need to file them as part of operations. Sample reports:
 
    - `Currency Transaction Report <https://github.com/dashpay/docs/raw/master/binary/CTR_job%20aid_DASH.pdf>`_
@@ -287,5 +287,5 @@ Dash ATM Compliance Program
 
 #. If you would now like to move forward with your project, we recommend
    getting in contact with `Cogent Law <https://www.cogentlaw.co>`_, our
-   recommended legal counsel. Preferential rates are available for Dash
+   recommended legal counsel. Preferential rates are available for MarteX
    users. Please email: atoulon@cogentlaw.co
