@@ -49,20 +49,6 @@ This section lists known payment processors supporting MarteX and the
 business platforms they support. Please conduct thorough research before
 choosing a payment provider to ensure your needs will be met.
 
-Anypay
-  .. image:: img/anypay.svg
-     :width: 200px
-     :align: right
-     :target: https://anypayinc.com
-
-  https://anypayinc.com
-
-  Anypay offers easy, professional tools for retail, as well as MarteX
-  rewards for users shopping at your store. Anypay is enjoys broad
-  support from the MarteX community, works to bring you new customers and
-  is cheap and easy to set up.
-
-
 BTCPay Server
   .. image:: img/btcpayserver.svg
      :width: 200px
@@ -73,20 +59,7 @@ BTCPay Server
 
   BTCPay Server is a free, self-hosted and fully open-source
   cryptocurrency payment processor designed with security, privacy and
-  censorship-resistance at its core.
-
-
-CDPay
-  .. image:: img/cdpay.png
-     :width: 120px
-     :align: right
-     :target: https://www.cdpay.eu
-
-  https://www.cdpay.eu
-
-  CDPay offers API to accept MarteX on your website, as well as an
-  automated fiat exchange service to convert the payments you receive to
-  EUR or CZK.
+  censorship-resistance at its core. You can configure it to make it work with martexcoin.
 
 
 Coinify
