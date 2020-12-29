@@ -88,19 +88,7 @@ CoinPayments
   CoinPayments is an integrated payment gateway with a `wide range of
   plugins <https://www.coinpayments.net/merchant-tools>`__ available for
   popular webcarts, as well as fiat settlement in the US and Europe.
-
-
-Coinremitter
-  .. image:: img/coinremitter.png
-     :width: 200px
-     :align: right
-     :target: https://coinremitter.com
-
-  https://coinremitter.com
-
-  Coinremitter is a secure and reliable payment gateway with no monthly
-  fees. Features include built-in exchange, automatic withdrawals and no
-  ID or bank account required.
+  It could accepts martexcoin in the future.
 
 
 CoinsPaid
