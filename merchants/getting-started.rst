@@ -4,8 +4,6 @@
 
 .. _merchants:
 
-.. include:: <isopub.txt>
-
 ===============
 Getting Started
 ===============
@@ -50,19 +48,6 @@ Payment Processors
 This section lists known payment processors supporting MarteX and the
 business platforms they support. Please conduct thorough research before
 choosing a payment provider to ensure your needs will be met.
-
-alt thirty six
-  .. image:: img/alt36.svg
-     :width: 200px
-     :align: right
-     :target: https://www.alt36.com
-
-  https://www.alt36.com
-
-  Alt Thirty Six allows any business (including those involved in
-  cannabis) to accept digital payments at the point of sale and online
-  using MarteX or USD.
-
 
 Anypay
   .. image:: img/anypay.svg
