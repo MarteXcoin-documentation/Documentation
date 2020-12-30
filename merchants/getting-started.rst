@@ -91,44 +91,6 @@ CoinPayments
   It could accepts martexcoin in the future.
 
 
-CoinsPaid
-  .. image:: img/coinspaid.svg
-     :width: 200px
-     :align: right
-     :target: https://coinspaid.com
-
-  https://coinspaid.com
-
-  Coinspaid offers a white label backoffice payments solution with
-  on-the-fly Fiat (EUR) conversion and instant transaction
-  confirmations.
-
-CopPay
-  .. image:: img/coppay.svg
-     :width: 200px
-     :align: right
-     :target: https://coppay.io
-
-  https://coppay.io
-
-  CopPay allows you to accept MarteX and receive EUR, GBP and USD,
-  eliminating volatility risks. CopPay is absolutely free with 0%
-  transaction fee for merchants.
-
-
-EletroPay
-  .. image:: img/eletropay.png
-     :width: 200px
-     :align: right
-     :target: https://eletropay.com
-
-  https://eletropay.com
-
-  EletroPay is a hardware point of sale device with an ePaper display
-  and built-in receipt printer designed to bring businesses into the
-  digital economy in style.
-
-
 ePaymints
   .. image:: img/epaymints.png
      :width: 200px
@@ -142,32 +104,6 @@ ePaymints
   chargebacks.
 
 
-GB CAS
-  .. image:: img/gbcortexpay.png
-     :width: 80px
-     :align: right
-     :target: https://www.generalbytes.com/en/products/cas-server
-
-  https://www.generalbytes.com/en/products/cas-server
-
-  Take the professional approach and start accepting MarteX with a
-  dedicated CortexPay terminal and GB CAS. This software can also be
-  used to sell MarteX to clients visiting your location.
-
-
-GoURL
-  .. image:: img/gourl.png
-     :width: 200px
-     :align: right
-     :target: https://gourl.io
-
-  https://gourl.io
-
-  GoURL offers a range of plugins and APIs to accept MarteX online. White
-  label solutions to process payments with your logo and on your server
-  are also available.
-
-
 iQCashNow
   .. image:: img/iqcashnow.png
      :width: 120px
@@ -179,45 +115,6 @@ iQCashNow
   iQCashNow offers ATMs and mobile POS terminal systems that combine
   traditional payment methods and crypto-payments into a unique complete
   package of software, hardware and services.
-
-
-NOWPayments
-  .. image:: img/nowpayments.png
-     :width: 200px
-     :align: right
-     :target: https://nowpayments.io
-
-  https://nowpayments.io
-
-  NOWPayments is an easy way to accept cryptocurrency payments with
-  native integration into your platform or a neat widget. Auto coin
-  conversion keeps you safe from any dramatic rate fluctuations.
-
-
-Paytomat
-  .. image:: img/paytomat.svg
-     :width: 200px
-     :align: right
-     :target: https://paytomat.com
-
-  https://paytomat.com
-
-  Paytomat provides software for integration into existing merchant
-  systems without the need to purchase additional hardware or install
-  third-party software.
-
-
-PumaPay
-  .. image:: img/pumapay.png
-     :width: 200px
-     :align: right
-     :target: https://pumapay.io
-
-  https://pumapay.io
-
-  PumaPay provides a fast, efficient and inexpensive alternative to
-  credit cards to empower your digital customer. We provide the all the
-  tools enabling you to start accepting cryptopayments today.
 
 
 QR.cr
@@ -246,20 +143,6 @@ Salamantex
   mobile devices.
 
 
-Spark
-  .. image:: img/spark.png
-     :width: 200px
-     :align: right
-     :target: https://get-spark.com
-
-  https://get-spark.com
-
-  Spark is simple, 100% open source software for accepting MarteX
-  payments. Designed from the ground up to be familiar and with wide
-  community support, all keys and funds remain in your control at all
-  times.
-
-
 VegaPay
   .. image:: img/vegapay.png
      :width: 100px
@@ -274,24 +157,12 @@ VegaPay
   business solutions.
 
 
-Xpay
-  .. image:: img/xpay.png
-     :width: 200px
-     :align: right
-     :target: https://xpay.cash
-
-  https://xpay.cash
-
-  Xpay is a popular point of sale device in Venezuela and Colombia,
-  allowing you to quickly accept MarteX using QR codes.
-
-
 Installation Examples
 =====================
 
 This section contains worked examples of how to install, configure and
 process your first payment using the payment processors listed in this
-documentation.
+documentation. Some examples are using Dash cryptocurrency.
 
 WooCommerce and CoinPayments.net
 --------------------------------
