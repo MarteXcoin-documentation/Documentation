@@ -185,10 +185,7 @@ MarteX. Many third party wallets support multiple different
 cryptocurrencies at the same time, or integrate instant cryptocurrency
 exchanges.
 
-.. toctree::
-   :maxdepth: 1
-
-   third-party.rst
+   `Zcore adroid wallet <zcore/README.md>`_
 
 .. figure:: img/edge-wallet.png
    :width: 400 px
