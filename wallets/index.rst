@@ -24,10 +24,10 @@ more than the device you use to store it, you should purchase a
 :ref:`hardware wallet <hardware-wallets>`.
 
 
-.. _dash-core-wallet:
+.. _martex-core-wallet:
 
 MarteX Core Wallet
-================
+==================
 
 MarteX Core Wallet is the full official release of MarteX, and supports all
 MarteX features as they are released, including InstantSend and
