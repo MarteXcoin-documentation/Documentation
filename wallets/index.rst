@@ -55,15 +55,18 @@ Features:
 
 Available documentation:
 
-.. toctree::
-   :maxdepth: 1
-
    dashcore/installation.rst
+
    dashcore/interface.rst
+
    dashcore/send-receive.rst
+
    dashcore/privatesend-instantsend.rst
+
    dashcore/backup.rst
+
    dashcore/cmd-rpc.rst
+
    dashcore/advanced.rst
 
 .. figure:: dashcore/img/windows/106329009.png
@@ -71,45 +74,9 @@ Available documentation:
 
    MarteX Core Wallet
 
-.. _dash-electrum-wallet:
-
-MarteX Electrum Wallet
-====================
-
-MarteX Electrum is a light wallet which uses powerful external servers to
-index the blockchain, while still securing the keys on your personal
-computer. Transactions are verified on the MarteX blockchain using a
-technique called Secure Payment Verification (SPV), which only requires
-the block headers and not the full block. This means that wallet startup
-is almost instant, while still keeping your funds secure and mobile.
-MarteX Electrum also supports advanced InstantSend, PrivateSend and
-masternode features.
-
-MarteX Electrum is a fork of the Electrum wallet for Bitcoin. While this
-documentation focuses on using MarteX Electrum, full documentation of all
-Bitcoin Electrum features (mostly identical in MarteX Electrum) is
-available at the `official documentation site
-<https://docs.electrum.org>`_.
-
-.. toctree::
-   :includehidden:
-   :maxdepth: 1
-
-   electrum/installation.rst
-   electrum/send-receive.rst
-   electrum/security.rst
-   electrum/faq.rst
-   electrum/advanced.rst
-
-.. figure:: electrum/img/electrum.png
-   :width: 400 px
-
-   MarteX Electrum Wallet
-
-.. _dash-android-wallet:
 
 MarteX Android Wallet
-===================
+=====================
 
 MarteX offers a standalone wallet for Android, with development supported 
 by the MarteX budget. The MarteX Android Wallet supports advanced MarteX 
@@ -137,7 +104,7 @@ paper wallets and more.
 .. _dash-ios-wallet:
 
 MarteX iOS Wallet
-===============
+=================
 
 MarteX offers a standalone wallet for iOS, with development supported by
 the MarteX budget. The official MarteX Wallet supports advanced MarteX
@@ -164,9 +131,9 @@ secure recovery phrase.
 .. _paper-wallets:
 
 MarteX Paper Wallet
-=================
+===================
 
-The `MarteX Paper Wallet generator <https://paper.dash.org>`_ allows you
+The `MarteX Paper Wallet generator <https://martexcoin.org/paperwallet/>`_ allows you
 to generate, encrypt and secure the keys to a single MarteX address on a
 clean computer without ever connecting to the internet. Perfect for long
 term secure storage.
@@ -204,20 +171,11 @@ such as your computer or smartphone. Most hardware wallets feature a
 screen which allows you to independently confirm the address you are
 sending to is correct.
 
+At the moment
 This section lists the most common commercial hardware wallets supporting
 MarteX, although some other enthusiast projects may also be available.
 
-.. toctree::
-   :maxdepth: 1
 
-   hardware.rst
-
-.. figure:: img/trezor-balance.png
-   :width: 400 px
-
-   Trezor Web Wallet
-
-.. _third-party-wallets:
 
 Third Party Wallets
 ===================
