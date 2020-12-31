@@ -200,38 +200,11 @@ Web Wallets
 
 Web wallets are services which keep a MarteX balance for you, while
 maintaining control of the private keys on your behalf. Any MarteX stored
-on :ref:`exchanges <exchanges>` falls under this category, but there are
+on `exchanges <exchanges>`_ falls under this category, but there are
 also some services able to store MarteX for you through simple
 Google/Facebook login systems. Be extremely careful with web storage, as
 your MarteX is only as secure as the reputation of the company storing it
-for you. A particular exception is MyDashWallet.org, which provides a
-secure web interface to the MarteX blockchain while leaving you with full
-control of your private keys.
-
-.. toctree::
-   :maxdepth: 1
-
-   web.rst
-
-.. figure:: img/mydashwallet-opened.png
-   :width: 400 px
-
-   My MarteX Wallet
-
-
-Text Wallets
-============
-
-Text wallets (or SMS wallets) allow users without smartphones or
-internet access to transact in MarteX using text messages on simple
-feature phones. Innovative shortcodes, usually in collaboration with
-national mobile service providers, make it relatively simple to create
-transactions to both send and receive MarteX.
-
-.. toctree::
-   :maxdepth: 1
-
-   text.rst
+for you.
 
 
 Wallet Guides
@@ -240,8 +213,6 @@ Wallet Guides
 Documentation in this section describes common tasks and questions
 relating to all wallets.
 
-.. toctree::
-   :maxdepth: 1
-
    recovery.rst
+
    signing.rst
