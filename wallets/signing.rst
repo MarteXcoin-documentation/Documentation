@@ -1,14 +1,14 @@
 .. meta::
-   :description: Guides and screenshots on how to sign and verify messages using the Dash cryptocurrency
-   :keywords: dash, sign, verify, message, trezor, dash core
+   :description: Guides and screenshots on how to sign and verify messages using the MarteX cryptocurrency
+   :keywords: martex, sign, verify, message, trezor, martex core
 
-.. _dashcore-signing:
+.. _martexcore-signing:
 
 ==============================
 Signing and Verifying Messages
 ==============================
 
-Dash wallets function by securely storing the private keys used to
+MarteX wallets function by securely storing the private keys used to
 create transactions using publicly visible addresses on a distributed
 ledger called a blockchain. In some cases, it may be necessary to verify
 an address to demonstrate control of the funds that it holds, that you
@@ -38,31 +38,28 @@ given address::
 Signing a Message
 =================
 
-The following screenshots show how to sign a message using the Dash Core
-wallet (**File > Sign message**), Trezor web wallet (Sign & Verify >
-Sign message) and DMT (**Tools > Sign message with HW for current
-masternode's address**):
+The following screenshots show how to sign a message using the MarteX Core
+wallet (**File > Sign message**):
 
-.. image:: img/sign-dashcore.png
+.. image:: img/sign-martexcore.png
    :width: 200px
 .. image:: img/sign-trezor.png
    :width: 200px
 .. image:: img/sign-dmt.png
    :width: 200px
 
-*Signing messages in Dash Core, Trezor web wallet and DMT*
+*Signing messages in MarteX Core, Trezor web wallet and DMT*
 
 Verifying a Message
 ===================
 
-The following screenshots show how to verify a message using the Dash
-Core wallet (**File > Sign message**) and Trezor web wallet (**Sign &
-Verify > Sign message**):
+The following screenshots show how to verify a message using the MarteX
+Core wallet (**File > Sign message**):
 
-.. image:: img/verify-dashcore.png
+.. image:: img/verify-martexcore.png
    :width: 200px
 .. image:: img/verify-trezor.png
    :width: 200px
 
-*Verifying messages in Dash Core and Trezor web wallet. Notice that the
-message verified by Dash Core was generated in Trezor, and vice versa*
+*Verifying messages in MarteX Core and Trezor web wallet. Notice that the
+message verified by MarteX Core was generated in Trezor, and vice versa*

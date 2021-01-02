@@ -52,7 +52,7 @@ Features:
 -  Masternode commands and voting
 -  Automated backup
 -  Debug console
-- All MarteX Core functions
+-  All MarteX Core functions
 
 Available documentation:
 
