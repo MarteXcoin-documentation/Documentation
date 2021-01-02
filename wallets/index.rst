@@ -44,30 +44,31 @@ and Windows.
 
 Features:
 
--  PrivateSend
--  InstantSend
+-  AnonSend
+-  FastSend
 -  Wallet encryption
 -  Coin control and fee control
 -  QR code generation and address book
 -  Masternode commands and voting
 -  Automated backup
 -  Debug console
+- All MarteX Core functions
 
 Available documentation:
 
-   dashcore/installation.rst
+   `MarteXcore installation <MarteXcore/installation.rst>`_
 
-   dashcore/interface.rst
+   `MarteXcore interface <MarteXcore/interface.rst>`_
 
-   dashcore/send-receive.rst
+   MarteXcore/send-receive.rst` <>`_
 
-   dashcore/privatesend-instantsend.rst
+   MarteXcore/anonsend-fastsend.rst` <>`_
 
-   dashcore/backup.rst
+   MarteXcore/backup.rst` <>`_
 
-   dashcore/cmd-rpc.rst
+   MarteXcore/cmd-rpc.rst` <>`_
 
-   dashcore/advanced.rst
+   MarteXcore/advanced.rst` <>`_
 
 .. figure:: dashcore/img/windows/106329009.png
    :width: 400 px
