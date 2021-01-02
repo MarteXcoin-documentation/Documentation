@@ -49,12 +49,12 @@ a self-operated masternode.
 
 
 
-   understanding.rst
+   `understanding.rst <./understanding.rst>`_
 
-   hosting.rst
+   `hosting.rst <./hosting.rst>`_
 
-   setup.rst
+   `setup.rst <./setup.rst>`_
 
-   maintenance.rst
+   `maintenance.rst <./maintenance.rst>`_
 
-   advanced.rst
+   `advanced.rst <./advanced.rst>`_
