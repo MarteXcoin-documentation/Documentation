@@ -25,9 +25,16 @@ Unpack the files into a directory and run:
 for help and more information.
 * For a better command documentation, see this [course](https://github.com/MarteXcoin-documentation/Learning-MarteXcoin-from-the-Command-Line).
 * Ask for help on the [MarteXcooin Telegram group](https://t.me/martexcoin).
+* Ask for help on the [MarteXcooin Bitcoin Talk Forum](https://bitcointalk.org/index.php?topic=1354130.620).
+* Ask for help on the [Open a Issue Here](https://github.com/MarteXcoin-documentation/Documentation/issues).
+* Ask for help on the [Open a Issue MarteXcoin Github](https://github.com/martexcoin/martexcoin/issues).
 
 ### Pull requests are welcome
 
 License
----------------------
+-------
 Distributed under the [GPL3 software license](/LICENSE).
+
+Previous developers
+-------------------
+This documentation was a fork of [dashpay/docs](https://github.com/dashpay/docs).

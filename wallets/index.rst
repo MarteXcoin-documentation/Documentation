@@ -112,9 +112,11 @@ features such as InstantSend sending and receiving. You can also scan
 and display QR codes for quick transfers and backup your wallet using a
 secure recovery phrase.
 
-   ios/installation.rst` <>`_
-   ios/getting-started.rst` <>`_
-   ios/advanced-functions.rst` <>`_
+   `ios installation <ios/installation.rst>`_
+
+   `ios getting-started <ios/getting-started.rst>`_
+
+   `ios advanced-functions <ios/advanced-functions.rst>`_
 
 .. image:: ios/img/ios1.png
     :width: 160 px
@@ -134,15 +136,12 @@ to generate, encrypt and secure the keys to a single MarteX address on a
 clean computer without ever connecting to the internet. Perfect for long
 term secure storage.
 
-.. toctree::
-   :maxdepth: 1
-
    `parper wallet <paper.rst>`_
 
 .. figure:: img/paper-addresses.png
    :width: 400 px
 
-   MarteX Paper Wallet` <>`_
+   `MarteX Paper Wallet <paper.rst>`_
 
 
 .. _hardware-wallets:

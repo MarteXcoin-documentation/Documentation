@@ -27,11 +27,11 @@ to restore your wallet in order of probability.
 
 - Backup is stored in an older version of MarteX Core that no longer works
 
-  - Follow instructions for restoring wallet files using :ref:`MarteX Core <dashcore-restore>`
+  - Follow instructions for restoring wallet files using `MarteX Core <./MarteXcore#restore>`_
 
 - Backup is a file
 
-  - If file name is similar to wallet.dat, try to restore using :ref:`MarteX Core <dashcore-restore>`
+  - If file name is similar to wallet.dat, try to restore using `MarteX Core <./MarteXcore#restore>`_
   - If file name is similar to martex-wallet-backup or includes the word 'mobile', try to restore using :ref:`MarteX Wallet for Android <martex-android-file-restore>`
 
 - Backup is a phrase of words
@@ -54,10 +54,10 @@ the restore guide for that format.
 File Backups
 ============
 
-.. _dashcore-restore:
+.. _martexcore-restore:
 
 MarteX Core
----------
+-----------
 
 One of the most common wallet backup formats is a *wallet.dat* file from
 MarteX Core wallet. Before you begin, make absolutely sure that you have a
@@ -144,10 +144,10 @@ using **File > Backup Wallet** or following the instructions :ref:`here
 #martex-support-desk channel at `MarteX Nation Discord
 <http://dashchat.org/>`_.
 
-.. _dash-android-file-restore:
+.. _martex-android-file-restore:
 
 MarteX Android
-------------
+--------------
 
 Similar to MarteX Core wallet, MarteX Wallet for Android can back up your
 wallet to a file. To restore this wallet on another device, simply copy

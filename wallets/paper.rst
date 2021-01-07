@@ -76,9 +76,9 @@ Tools
 A MarteX paper wallet can be generated in several ways.
 
 - Using the generator at https://martexcoin.org/paperwallet/
-- Using the generator at https://walletgenerator.net/?currency=Dash
+- Using the generator at https://walletgenerator.net/?currency=MarteXcoin
 - Offline using the MarteX Paper Wallet source code from GitHub at 
-  https://github.com/dashpay/paper.dash.org/releases/latest
+  https://github.com/martexcoin/paperwallet
 - Offline using the same code which powers both sites, by viewing the
   `GitHub project <https://github.com/MichaelMure/WalletGenerator.net>`_
   or `downloading directly <https://github.com/MichaelMure/WalletGenerator.net/archive/master.zip>`_
