@@ -180,7 +180,7 @@ MarteX. Many third party wallets support multiple different
 cryptocurrencies at the same time, or integrate instant cryptocurrency
 exchanges.
 
-   `Zcore adroid wallet <zcore/README.md>`_
+   `Zcore adroid wallet <Zcore/README.md>`_
 
 
 .. _web-wallets:

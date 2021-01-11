@@ -100,7 +100,7 @@ replacing or renaming the existing file.
 If your existing version of MarteX Core is older than v0.12.1.x, you may
 need to rename your data folder from ``MarteX`` to ``DashCore``.
 
-To repair a broken installation, navigate to the DashCore folder and
+To repair a broken installation, navigate to the MarteXCore folder and
 delete all *.log* and *.dat* files except *wallet.dat*. The following
 files can be safely deleted:
 
