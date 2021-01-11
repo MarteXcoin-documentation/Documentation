@@ -1,4 +1,4 @@
-MarteX Core RPC client version v4.0.3.3-ff60810-dirty
+MarteX Core RPC client version
 
 Usage:
   martex-cli [options] <command> [params]  Send command to MarteX Core
