@@ -1,4 +1,4 @@
-MarteX Core Daemon version v4.0.3.3-ff60810-dirty
+MarteX Core Daemon version 
 
 Usage:
   martexd [options]                     Start MarteX Core Daemon
