@@ -70,7 +70,7 @@ Available documentation:
 
    `MarteXcore advanced <MarteXcore/advanced.rst>`_
 
-.. figure:: martexcore/img/windows/106329009.png
+.. figure:: martexcore/images/windows/106329009.png
    :width: 400 px
 
    MarteX Core Wallet
@@ -93,9 +93,9 @@ paper wallets and more.
    `android advanced-functions <android/advanced-functions.rst>`_
 
 
-.. image:: android/img/android1.png
+.. image:: android/images/android1.png
     :width: 160 px
-.. image:: android/img/android2.png
+.. image:: android/images/android2.png
     :width: 160 px
 
 *MarteX Android Wallet*
@@ -118,9 +118,9 @@ secure recovery phrase.
 
    `ios advanced-functions <ios/advanced-functions.rst>`_
 
-.. image:: ios/img/ios1.png
+.. image:: ios/images/ios1.png
     :width: 160 px
-.. image:: ios/img/ios2.png
+.. image:: ios/images/ios2.png
     :width: 160 px
 
 *MarteX iOS Wallet*
@@ -138,7 +138,7 @@ term secure storage.
 
    `parper wallet <paper.rst>`_
 
-.. figure:: img/paper-addresses.png
+.. figure:: images/paper-addresses.png
    :width: 400 px
 
    `MarteX Paper Wallet <paper.rst>`_
