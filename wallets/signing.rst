@@ -30,9 +30,9 @@ communication channel, such as email. As an example, you can test the
 following message and signature and verify that it was signed by the
 given address::
 
-  Message: Documentation test signature
-  Address: XwHihwiQzheVKbT76e7ZhPkujDCQGEZC6P
-  Signature: IKaEt7MTb4Y57WIde5TLUkm1vbVsjk/L9eG+TE2tdQhMeK9vGgTsqcVOTmXXQ6QA0/WQtxqPURH2qZG27YR2VE0=
+  Message: This address is https://github.com/Jetro-Costa, and https://gitlab.com/Jetro-Costa, in case anyone doubts.
+  Address: MNnzoRdPP6wrQbAUZ9SUnRi1VkcAhzmuhn
+  Signature: IC4EVxgqxFLx0nRkmQ5kBUuI9/pNLG5L6hbe/MxOt9trCNHEuiURMSj14MnDKAG8l9l9kFYURsyXsFcHQTJYV84=
 
 
 Signing a Message
@@ -41,14 +41,10 @@ Signing a Message
 The following screenshots show how to sign a message using the MarteX Core
 wallet (**File > Sign message**):
 
-.. image:: img/sign-martexcore.png
-   :width: 200px
-.. image:: img/sign-trezor.png
-   :width: 200px
-.. image:: img/sign-dmt.png
+.. image:: images/sign-martexcore.png
    :width: 200px
 
-*Signing messages in MarteX Core, Trezor web wallet and DMT*
+*Signing messages in MarteX Core wallet*
 
 Verifying a Message
 ===================
@@ -56,10 +52,7 @@ Verifying a Message
 The following screenshots show how to verify a message using the MarteX
 Core wallet (**File > Sign message**):
 
-.. image:: img/verify-martexcore.png
-   :width: 200px
-.. image:: img/verify-trezor.png
+.. image:: images/verify-martexcore.png
    :width: 200px
 
-*Verifying messages in MarteX Core and Trezor web wallet. Notice that the
-message verified by MarteX Core was generated in Trezor, and vice versa*
+*Verifying messages in MarteX Core wallet.*
