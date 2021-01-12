@@ -25,7 +25,7 @@
 
 > Donwload the wallet core:
 
-  Example: `~wget https://martexcoin.org/releases/martexcore-3.0.6-x86_64-linux-gnu.tar.gz`
+  Example: `~wget https://last-release.tar.gz`
   
   Extract wallet to you local folder
 
@@ -56,7 +56,7 @@
  ```
 ### 1) Make sure you know where is your MarteX data folder:
 
-https://github.com/martexcoin/martexcoin/blob/master/mxt-docs/Home.md#martex-data-folder
+https://github.com/martexcoin/martexcoin/blob/master/doc/files.md
 
 #### In this folder you will find all .conf files required in this guide.
 

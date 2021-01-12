@@ -4,6 +4,10 @@
 
 .. _marketing:
 
+========================
+This page must be update
+========================
+
 =========
 Marketing
 =========
@@ -96,21 +100,6 @@ ratios and 2 formats.
 MarteX 101 Presentation
 ^^^^^^^^^^^^^^^^^^^^^
 
-Prepared by community member Essra in 2017 following proposal
-sponsorship for the German `MarteX Embassy D-A-CH 
-<https://www.martex-embassy.org>`__.
-
-+----------+---------------------------------------------------------------------------------------------+
-| Language | Download                                                                                    |
-+==========+=============================================================================================+
-| English  | `PPTX <https://github.com/martexpay/docs/raw/master/binary/presentations/MarteX-101-EN.pptx>`__ |
-+----------+---------------------------------------------------------------------------------------------+
-| French   | `PPTX <https://github.com/martexpay/docs/raw/master/binary/presentations/MarteX-101-FR.pptx>`__ |
-+----------+---------------------------------------------------------------------------------------------+
-| German   | `PPTX <https://github.com/martexpay/docs/raw/master/binary/presentations/MarteX-101-DE.pptx>`__ |
-+----------+---------------------------------------------------------------------------------------------+
-| Spanish  | `PPTX <https://github.com/martexpay/docs/raw/master/binary/presentations/MarteX-101-ES.pptx>`__ |
-+----------+---------------------------------------------------------------------------------------------+
 
 
 Business Templates
