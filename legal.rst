@@ -9,7 +9,7 @@ Legal
 =====
 
 How the Law Applies to MarteX
-===========================
+=============================
 
 The purpose of the MarteX DAO is to promote, protect and standardize MarteX.
 In the course of our mission, we have received inquiries into how some
@@ -42,8 +42,8 @@ treat as regular income the fair market value of the block reward.
 MarteX Collateral
 ^^^^^^^^^^^^^^^^^
 
-A MarteX user may demonstrate to the network his or her control over 1,000
-DASH in order to run a masternode. These tokens never leave the user’s
+A MarteX user may demonstrate to the network his or her control over 5,000
+MXT in order to run a masternode. These tokens never leave the user’s
 control. If at any point during the user’s tenure as a masternode
 operator, the user disposes of any or all of the 1,000 DASH, the network
 automatically strips the user of his or her status as a masternode.
@@ -252,7 +252,7 @@ to run services without a compliance program or don't need one, we
 completely respect that too.
 
 MarteX ATM Compliance Program
----------------------------
+-----------------------------
 
 #. Please first read the `Quick Guide To Operating a Virtual Currency
    Kiosk <https://github.com/dashpay/docs/blob/master/binary
