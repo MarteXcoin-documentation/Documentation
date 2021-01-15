@@ -50,7 +50,11 @@ example:
 
 inside masternode\_cliente.sh put:
 
-``#!/bin/bash  cd /root/Downloads/martexcore/bin  ./martex-cli --datadir="/root/.MXT" $1 $2 $3 $4``
+::
+
+    #!/bin/bash
+    cd /root/Downloads/martexcore/bin
+    ./martex-cli --datadir="/root/.MXT" $1 $2 $3 $4
 
 1) Make sure you know where is your MarteX data folder:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
