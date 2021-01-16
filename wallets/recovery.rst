@@ -27,11 +27,11 @@ to restore your wallet in order of probability.
 
 - Backup is stored in an older version of MarteX Core that no longer works
 
-  - Follow instructions for restoring wallet files using :ref:`MarteX Core <dashcore-restore>`
+  - Follow instructions for restoring wallet files using `MarteX Core <./MarteXcore#restore>`_
 
 - Backup is a file
 
-  - If file name is similar to wallet.dat, try to restore using :ref:`MarteX Core <dashcore-restore>`
+  - If file name is similar to wallet.dat, try to restore using `MarteX Core <./MarteXcore#restore>`_
   - If file name is similar to martex-wallet-backup or includes the word 'mobile', try to restore using :ref:`MarteX Wallet for Android <martex-android-file-restore>`
 
 - Backup is a phrase of words
@@ -54,10 +54,10 @@ the restore guide for that format.
 File Backups
 ============
 
-.. _dashcore-restore:
+.. _martexcore-restore:
 
 MarteX Core
----------
+-----------
 
 One of the most common wallet backup formats is a *wallet.dat* file from
 MarteX Core wallet. Before you begin, make absolutely sure that you have a
@@ -70,46 +70,46 @@ clicking **Help > About MarteX Core**. Compare this with the latest
 available version of `MarteX Core on the website
 <https://www.martex.org/downloads/>`_ as follows:
 
-.. image:: img/recovery-dashcore-version.png
+.. image:: images/recovery-dashcore-version.png
    :width: 300px
-.. figure:: img/recovery-website-version.png
+.. figure:: images/recovery-website-version.png
    :width: 400px
 
    Comparing the installed version of MarteX Core with the latest version
    available on the website
 
 Update MarteX Core to the latest version according to the
-:ref:`installation instructions <dashcore-installation>`. If you have
+`installation instructions <./MarteXcore/installation.rst>`_. If you have
 only a wallet file and no existing installation of MarteX Core, simply
-install MarteX Core according to the :ref:`installation instructions
-<dashcore-installation>` and start it once to create the DashCore
+install MarteX Core according to the `installation instructions <./MarteXcore/installation.rst>`_ 
+and start it once to create the MarteXCore
 folder. Then close MarteX Core and copy the *wallet.dat* file you want to
-restore to the DashCore folder in the location specified below,
+restore to the MarteXCore folder in the location specified below,
 replacing or renaming the existing file.
 
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
 | Platform | Path to data folder            | How to navigate                                                                               |
 +==========+================================+===============================================================================================+
-| Linux    | ~/                             | Go to your home folder and press **Ctrl+H** to show hidden files, then open ``.dashcore``     |
+| Linux    | ~/                             | Go to your home folder and press **Ctrl+H** to show hidden files, then open ``.MXT``          |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
-| macOS    | ~/Library/Application Support/ | Press **Shift + Command + G**, type ``~/Library/Application Support``, then open ``DashCore`` |
+| macOS    | ~/Library/Application Support/ | Press **Shift + Command + G**, type ``~/Library/Application Support``, then open ``MXT``      |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
-| Windows  | %APPDATA%                      | Press **Windows Key + R** and type ``%APPDATA%``, then open ``DashCore``                      |
+| Windows  | %APPDATA%                      | Press **Windows Key + R** and type ``%APPDATA%``, then open ``MXT``                           |
 +----------+--------------------------------+-----------------------------------------------------------------------------------------------+
 
 If your existing version of MarteX Core is older than v0.12.1.x, you may
 need to rename your data folder from ``MarteX`` to ``DashCore``.
 
-To repair a broken installation, navigate to the DashCore folder and
+To repair a broken installation, navigate to the MarteXCore folder and
 delete all *.log* and *.dat* files except *wallet.dat*. The following
-files can be safely deleted:
+files and folders can be safely deleted:
 
 - *banlist.dat*
-- *budget.dat*
 - *db.log*
 - *debug.log*
 - *fee_estimates.dat*
 - *governance.dat*
+- *mempool.dat*
 - *mncache.dat*
 - *mnpayments.dat*
 - *netfulfilled.dat*
@@ -118,6 +118,9 @@ files can be safely deleted:
 Leave ``.conf`` files and the folders (such as ``backups``, ``blocks``,
 ``chainstate``, etc.) intact, since they will help you get started
 faster by providing a copy of the blockchain and your settings.
+
+Or (optionally) you can safely deleted *blocks* and *chainstate* folders, however
+it will synchronize the full blockchain at begining.
 
 Now open MarteX Core and wait for blockchain synchronization to complete.
 Your wallet will be restored/upgraded and all balances should be
@@ -129,25 +132,23 @@ blockchain by going to **Tools > Wallet Repair** and selecting **Rescan
 blockchain files**. **Rebuild index** may also help. MarteX Core will
 restart and perform a full scan of the blockchain.
 
-.. image:: img/recovery-rescan.png
+.. image:: images/recovery-rescan.png
    :width: 400px
-.. figure:: img/recovery-rescanning.png
+.. figure:: images/recovery-rescanning.png
    :width: 300px
 
    Forcing MarteX Core to rescan the blockchain
 
 At this stage, recovery is complete and you should make another backup
-using **File > Backup Wallet** or following the instructions :ref:`here
-<dashcore-backup>`. If you have any further problems, try asking on the
-`forum <https://www.martex.org/forum/topic/daemon-and-qt-wallet-support.64/>`_, 
-`Reddit <https://www.reddit.com/r/dashpay/>`_ or the
-#martex-support-desk channel at `MarteX Nation Discord
-<http://dashchat.org/>`_.
+using **File > Backup Wallet** or following the instructions `here
+<./MarteXcore/backup.rst>`_. If you have any further problems, try asking on the
+`forum <https://bitcointalk.org/index.php?topic=1354130.620>`_ or in the
+`MarteXcoin Telegram group <https://t.me/martexcoin>`_.
 
-.. _dash-android-file-restore:
+.. _martex-android-file-restore:
 
 MarteX Android
-------------
+--------------
 
 Similar to MarteX Core wallet, MarteX Wallet for Android can back up your
 wallet to a file. To restore this wallet on another device, simply copy
@@ -163,11 +164,11 @@ Restore** wallet and select the appropriate file from the list. Enter
 your password and click **Restore**. This may take some time, and your
 balance will be displayed when complete.
 
-.. image:: img/recovery-android1.png
+.. image:: images/recovery-android1.png
    :width: 200px
-.. image:: img/recovery-android2.png
+.. image:: images/recovery-android2.png
    :width: 200px
-.. image:: img/recovery-android3.png
+.. image:: images/recovery-android3.png
    :width: 200px
 
 *Restoring a file backup using MarteX Wallet for Android*
@@ -190,11 +191,11 @@ replace your existing wallet! Click the menu button in the top left
 corner, select **Safety > Restore from recovery phrase** and enter your
 12-word phrase.
 
-.. image:: img/recovery-android1.png
+.. image:: images/recovery-android1.png
    :width: 200px
-.. image:: img/recovery-android4.png
+.. image:: images/recovery-android4.png
    :width: 200px
-.. image:: img/recovery-android5.png
+.. image:: images/recovery-android5.png
    :width: 200px
 
 *Restoring a 12-word recovery phrase using MarteX wallet for Android*
@@ -216,15 +217,15 @@ Start/recover another wallet**. Enter your current wallet recovery
 phrase, then the app will reset and you will see the option to **Recover
 wallet** again.
 
-.. image:: img/recovery-ios1.png
+.. image:: images/recovery-ios1.png
    :width: 200px
-.. image:: img/recovery-ios2.png
+.. image:: images/recovery-ios2.png
    :width: 200px
-.. image:: img/recovery-ios3.png
+.. image:: images/recovery-ios3.png
    :width: 200px
-.. image:: img/recovery-ios4.png
+.. image:: images/recovery-ios4.png
    :width: 200px
-.. image:: img/recovery-ios5.png
+.. image:: images/recovery-ios5.png
    :width: 200px
 
 *Restoring a 12-word recovery phrase using MarteX wallet for iOS*
@@ -232,7 +233,7 @@ wallet** again.
 .. _dash-electrum-phrase-restore:
 
 12/13-word phrase on MarteX Electrum
-----------------------------------
+------------------------------------
 
 Ensure you are using the latest version of MarteX Electrum according to
 the installation instructions :ref:`here <electrum-installation>`. MarteX
@@ -243,32 +244,20 @@ Then select **I already have a seed** and enter your 12/13-word recovery
 phrase. Enter a new password for your wallet and click **Next** to
 recover your addresses from the recovery phrase.
 
-.. image:: img/recovery-electrum1.png
+.. image:: images/recovery-electrum1.png
    :width: 300px
-.. image:: img/recovery-electrum2.png
+.. image:: images/recovery-electrum2.png
    :width: 300px
-.. image:: img/recovery-electrum3.png
+.. image:: images/recovery-electrum3.png
    :width: 300px
-.. image:: img/recovery-electrum4.png
+.. image:: images/recovery-electrum4.png
    :width: 300px
-.. image:: img/recovery-electrum5.png
+.. image:: images/recovery-electrum5.png
    :width: 300px
-.. image:: img/recovery-electrum6.png
+.. image:: images/recovery-electrum6.png
    :width: 300px
 
 *Restoring a 12-word recovery phrase using MarteX Electrum*
-
-.. _hardware-phrase-restore:
-
-Hardware wallet recovery phrases
---------------------------------
-
-If your 12, 18 or 24-word recovery phrase was generated by a hardware
-wallet, follow these instructions:
-
-- `KeepKey <https://shapeshift.zendesk.com/hc/en-us/articles/360014555779-How-Do-I-Recover-On-My-KeepKey->`_
-- `Ledger Nano S <https://support.ledger.com/hc/en-us/articles/360005434914-Restore-from-recovery-phrase>`_
-- `Trezor <https://doc.satoshilabs.com/trezor-user/recovery.html>`_
 
 .. _dash-ios-restore-electrum:
 
@@ -291,7 +280,7 @@ recovery phrase into an xprv key. In the second step, we will import the
 xprv key into MarteX Electrum.
 
 Retrieving the correct MarteX iOS xprv key
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Go to the `BIP39 Mnemonic Code Converter
 <https://iancoleman.io/bip39/>`_ page. This is a useful tool for
@@ -308,7 +297,7 @@ the tool is loaded in your browser, complete the following steps:
 5. Copy the value shown in **Account Extended Private Key**.
 
 Importing the xprv key into MarteX Electrum
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Open MarteX Electrum and click **File** -> **New/Restore**.
 2. Type a name for your wallet.
@@ -354,7 +343,7 @@ replacing the example private key with your key::
 
   importprivkey 7rPQWnMrh3oWLtZrzt1zLRSCVyuBbwnt7fRBXPp2EwcPhtzXSzp
 
-.. figure:: img/recovery-dashcore-privkey.png
+.. figure:: images/recovery-dashcore-privkey.png
    :width: 400px
 
    Importing a private key using the debug console in MarteX Core wallet
@@ -373,9 +362,9 @@ key named **Private Key WIF** and import this into your wallet.
 
 
 
-.. image:: img/recovery-paper-decrypt.png
+.. image:: images/recovery-paper-decrypt.png
    :width: 300px
-.. image:: img/recovery-paper-wif.png
+.. image:: images/recovery-paper-wif.png
    :width: 300px
 
 *Decrypting a BIP38 encrypted key to WIF for import in MarteX Core wallet*

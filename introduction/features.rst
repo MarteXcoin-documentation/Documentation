@@ -663,7 +663,7 @@ P2P
   transaction deal with each other through a single mediation point.
 
 Paper Wallet
-  :ref:`Paper wallets <dash-paper-wallet>` are offline wallets, printed
+  `Paper wallets </wallets/paper.rst>`_ are offline wallets, printed
   on paper for safety. If properly secured and stored they are 
   considered the safest way to store cryptocurrency.
 
@@ -790,8 +790,8 @@ Tainted Coins
   Taint is a measure of correlation between two (wallet) addresses. It
   is only important if the user is trying to remain anonymous.
 
-tDash
-  Test Dash, used on :ref:`testnet <testnet>`.
+tMarteX
+  Test MarteX, used on :ref:`testnet <testnet>`.
 
 Testnet
   :ref:`Testnet <testnet>` is a network only for testing (parallel to
@@ -853,14 +853,18 @@ X11
   :ref:`X11 <x11-hash-algorithm>` is a hashing algorithm created by Dash 
   Core developer Evan Duffield.
 
+X13
+  is a hashing algorithm created by Dash 
+  Core developer Evan Duffield.
+
 Zero Confirmations  
   This is a transaction without any confirmations from the blockchain.
-  It is technically reversible (unless InstantSend was used).
+  It is technically reversible (unless FastSend was used).
 
 vin
   A transaction (tx) consists of one or more inputs and one or more
   outputs. The vin is the list of inputs to the transaction, and vout is
-  the list of outputs. Masternodes require a 1000 DASH vin (exactly that
+  the list of outputs. Masternodes require a 5000 MXT vin (exactly that
   amount) in order to work.
 
 VMN

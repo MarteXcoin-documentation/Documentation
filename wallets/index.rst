@@ -70,7 +70,7 @@ Available documentation:
 
    `MarteXcore advanced <MarteXcore/advanced.rst>`_
 
-.. figure:: martexcore/img/windows/106329009.png
+.. figure:: martexcore/images/windows/106329009.png
    :width: 400 px
 
    MarteX Core Wallet
@@ -93,9 +93,9 @@ paper wallets and more.
    `android advanced-functions <android/advanced-functions.rst>`_
 
 
-.. image:: android/img/android1.png
+.. image:: android/images/android1.png
     :width: 160 px
-.. image:: android/img/android2.png
+.. image:: android/images/android2.png
     :width: 160 px
 
 *MarteX Android Wallet*
@@ -112,13 +112,15 @@ features such as InstantSend sending and receiving. You can also scan
 and display QR codes for quick transfers and backup your wallet using a
 secure recovery phrase.
 
-   ios/installation.rst` <>`_
-   ios/getting-started.rst` <>`_
-   ios/advanced-functions.rst` <>`_
+   `ios installation <ios/installation.rst>`_
 
-.. image:: ios/img/ios1.png
+   `ios getting-started <ios/getting-started.rst>`_
+
+   `ios advanced-functions <ios/advanced-functions.rst>`_
+
+.. image:: ios/images/ios1.png
     :width: 160 px
-.. image:: ios/img/ios2.png
+.. image:: ios/images/ios2.png
     :width: 160 px
 
 *MarteX iOS Wallet*
@@ -134,15 +136,12 @@ to generate, encrypt and secure the keys to a single MarteX address on a
 clean computer without ever connecting to the internet. Perfect for long
 term secure storage.
 
-.. toctree::
-   :maxdepth: 1
-
    `parper wallet <paper.rst>`_
 
-.. figure:: img/paper-addresses.png
+.. figure:: images/paper-addresses.png
    :width: 400 px
 
-   MarteX Paper Wallet` <>`_
+   `MarteX Paper Wallet <paper.rst>`_
 
 
 .. _hardware-wallets:
@@ -181,7 +180,7 @@ MarteX. Many third party wallets support multiple different
 cryptocurrencies at the same time, or integrate instant cryptocurrency
 exchanges.
 
-   `Zcore adroid wallet <zcore/README.md>`_
+   `Zcore adroid wallet <Zcore/README.md>`_
 
 
 .. _web-wallets:
