@@ -805,28 +805,12 @@ State View
   transitions have been applied. Used in Evolution to determine what
   should be displayed in a given social wallet, for example.
 
-Spork
-  The Dash development team created a mechanism known as a ":ref:`spork
-  <sporks>`" by which updated code is released to the network, but not
-  immediately made active (or “enforced”). Communication is sent out to
-  users informing them of the change and the need for them to update
-  their clients. Those who update their clients run the new code, but in
-  the event of errors occurring with that new code, the client’s blocks
-  are not rejected by the network and unintended forks are avoided. Data
-  about the error can then be collected and forwarded to the development
-  team. Once the development team is satisfied with the new code’s
-  stability in the mainnet environment – and once acceptable network
-  consensus is attained – enforcement of the updated code can be
-  activated remotely. Should problems arise, the code can be deactivated
-  in the same manner, without the need for a network-wide rollback or
-  client update.
-
 Tainted Coins
   Taint is a measure of correlation between two (wallet) addresses. It
   is only important if the user is trying to remain anonymous.
 
-tDash
-  Test Dash, used on :ref:`testnet <testnet>`.
+tMarteX
+  Test MarteX, used on :ref:`testnet <testnet>`.
 
 Testnet
   :ref:`Testnet <testnet>` is a network only for testing (parallel to
@@ -852,8 +836,8 @@ Transaction Block
   block that can then be hashed and added to the blockchain.
 
 Transaction Fee
-  A :ref:`small fee <fees>` imposed on some transactions sent across the
-  Dash network. The transaction fee is awarded to the miner that
+  A :`small fee <./features.rst#Fees>`_ imposed on some transactions sent across the
+  MarteX network. The transaction fee is awarded to the miner that
   successfully hashes the block containing the relevant transaction.
 
 Unconfirmed Transactions
@@ -862,20 +846,20 @@ Unconfirmed Transactions
   transactions can be reversed and should not be considered as "final."
 
 Vanity Address
-  A Dash address with a desirable pattern, such as a name.
+  A MarteX address with a desirable pattern, such as a name.
 
-Virgin Dash
-  Dash received as a reward for mining a block or running a masternode.
+Virgin MarteX
+  MarteX received as a reward for mining a block or running a masternode.
   These have not yet been spent anywhere and are "virgin."
 
 Volatility
   The measurement of price movements over time for a traded financial
-  asset (including Dash).
+  asset (including MarteX).
 
 Wallet
-  A method of storing Dash for later use. A wallet holds the private
-  keys associated with Dash addresses. The blockchain is the record of
-  the Dash balances (and transactions) associated with those addresses.
+  A method of storing MarteX for later use. A wallet holds the private
+  keys associated with MarteX addresses. The blockchain is the record of
+  the MarteX balances (and transactions) associated with those addresses.
 
 Whitepaper
   A `white paper <https://en.wikipedia.org/wiki/White_paper>`_ is an
@@ -885,12 +869,11 @@ Whitepaper
   problem, or make a decision.
 
 X11
-  `X11 <x11-hash-algorithm>`_ is a hashing algorithm created by Dash 
+  `X11 <https://github.com/dashpay/dash_hash>`_ is a hashing algorithm created by Dash 
   Core developer Evan Duffield.
 
 X13
-  `X13 <x11-hash-algorithm>`_ is a hashing algorithm created by Dash 
-  Core developer Evan Duffield.
+  `X13 <https://github.com/martexcoin/x13-hash>`_ is a hashing algorithm based in X11.
 
 Zero Confirmations  
   This is a transaction without any confirmations from the blockchain.

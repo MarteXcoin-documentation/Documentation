@@ -41,7 +41,7 @@ Masternodes are used to power AnonSend, FastSend, and the
 governance and treasury system. Users are rewarded for running
 masternodes; 45% of the block reward is allocated to pay the masternode
 network. You can view practical guides on all topics relating to
-masternodes `here </Documentation/tree/master/masternode>`_.
+masternodes `here <../masternode>`_.
 
 Masternodes enable the following services:
 
@@ -159,7 +159,7 @@ revolutionize cryptocurrency by shortening the delay in confirmation of
 transactions from as long as an hour (with Bitcoin) to as little as a 
 few seconds.
 
-You can view a practical guide to use FastSend `here <>`_.
+You can view a practical guide to use FastSend `here <../wallets/MarteXcore/anonsend-fastsend.rst#FastSend>`_.
 FastSend was introduced in a whitepaper called `Transaction Locking and Masternode 
 Consensus: A Mechanism for Mitigating Double Spending Attacks <https://github.com/dashpay/docs/blob/master/binary/Dash%20Whitepaper%20-%20Transaction%20Locking%20and%20Masternode%20Consensus.pdf>`_, 
 and further improved through the introduction of `LLMQ-based InstantSend
@@ -169,7 +169,7 @@ MarteXcore uses the same systems above.
 
 
 **How MarteX 'FastSend' Protects Merchants from Double Spends**,
-MarteXcoin uses the same principle in `Dash Detailed by Amanda B. Johnson, 16 September 2016<www.youtube.com/embed/HJx82On8jig>`_
+MarteXcoin uses the same principle in `Dash Detailed by Amanda B. Johnson, 16 September 2016 <www.youtube.com/embed/HJx82On8jig>`_
 
 .. _chainlocks:
 
@@ -178,7 +178,7 @@ ChainLocks
 
 ChainLocks are a feature provided by the MarteX Network which provides
 certainty when accepting payments. This technology, particularly when
-used in parallel with `FastSend <>`_, creates an
+used in parallel with `FastSend <#FastSend>`_, creates an
 environment in which payments can be accepted immediately and without
 the risk of “Blockchain Reorganization Events”.
 
@@ -267,7 +267,7 @@ have not resulted in the level of centralization present in Bitcoin.
 Information on mining with X11 can be found in the `Mining
 <./Documentation/tree/master/mining>`_ section of this documentation.
 
-X11 is the name of the chained proof-of-work (**PoW**) algorithm that
+X13 is the name of the chained proof-of-work (**PoW**) algorithm that
 was introduced in Dash (launched January 2014 as "Xcoin"). It was 
 partially inspired by the chained-hashing approach of Quark, adding
 further "depth" and complexity by increasing the number of hashes, yet
@@ -469,7 +469,7 @@ Triggers. Class inheritance has been utilized to extend this generic
 object into a "Proposal" object to supplant the current Dash budget
 system.
 
-.. figure:: img/sentinel.png
+.. figure:: images/sentinel.png
    :width: 500px
 
    Diagram highlighting the relationship between MarteX Sentinel and Core
@@ -501,7 +501,7 @@ The release of MarteX 2.7  saw a
 simultaneous reduction of fees by a factor of 10, while the block size
 was increased a adaptive size to promote continued growth of low-cost
 transactions even as the cost of MarteX rises. MarteX also supports
-`Fastsend <./features.rst#fastsend>`_ and `anonsend<./features.rst#anonsend>`_ transactions, which operate on
+`Fastsend <#FastSend>`_ and `anonsend <#AnonSend>`_ transactions, which operate on
 a different and mandatory fee schedule, FastSend autolocks, which causes
  masternodes to automatically attempt
 to lock any transaction with 4 or fewer inputs — which are referred to
