@@ -256,7 +256,7 @@ X13 Hash Algorithm
 ==================
 
 X13 is a widely used hashing algorithm based on X11. X13’s chained hashing algorithm utilizes a sequence of
-eleven scientific hashing algorithms for the proof-of-stake. This is so
+thirteen scientific hashing algorithms for the proof-of-stake. This is so
 that the processing distribution is fair and coins will be distributed
 in much the same way Bitcoin’s were originally. X13 was intended to make
 ASICs much more difficult to create, thus giving the currency plenty of
@@ -267,7 +267,7 @@ have not resulted in the level of centralization present in Bitcoin.
 Information on mining with X11 can be found in the `Mining
 <./Documentation/tree/master/mining>`_ section of this documentation.
 
-X13 is the name of the chained proof-of-work (**PoW**) algorithm that
+X11 is the name of the chained proof-of-work (**PoW**) algorithm that
 was introduced in Dash (launched January 2014 as "Xcoin"). It was 
 partially inspired by the chained-hashing approach of Quark, adding
 further "depth" and complexity by increasing the number of hashes, yet
@@ -280,6 +280,9 @@ thus making it one of the safest and more sophisticated cryptographic
 hashes in use by modern cryptocurrencies. The name X11 is not related to
 the open source X11 windowing system common on UNIX-like operating 
 systems.
+
+Otherwise, the X13 algorithm uses multiple rounds of 13 different hashes (Blake,
+ Bmw, Groestl, Jh, Keccak, Skein, Luffa, Cubehash, Shavite, Simd, Echo, Hamsi, Fugue).
 
 Advantages of X13
 -----------------
@@ -449,7 +452,7 @@ not paid out (10% of each block) will be used to fund approved
 proposals. The network thus funds itself by reserving 10% of the block
 reward for budget projects.
 
-You can read more about MarteX governance in the `governance <./Documentation/tree/master/governance>`_ section
+You can read more about MarteX governance in the `governance </governance>`_ section
 of this documentation.
 
 

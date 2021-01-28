@@ -208,11 +208,12 @@ Budget System / DGBB
 
 ChainLock
   Defined in `DIP8
-  <https://github.com/dashpay/dips/blob/master/dip-0008.md>`__,
+  <https://github.com/dashpay/dips/blob/master/dip-0008.md>`_,
   ChainLocks are a method of using an LLMQ to threshold sign a block
   immediately after it is propogated by the miner in order to enforce
   the first-seen rule. This is a powerful method of mitigating 51%
   mining attacks, which are associated with double spending.
+  This technology is present in MarteX.
 
 Cloud Wallet
   Third parties that will store your MarteX on their servers for you, so
@@ -380,8 +381,7 @@ Decentralized
 Desktop Wallet
   A wallet is a piece of software that stores your MarteX. There are many
   different wallet options, but it is imperative to choose a secure one.
-  We recommend any of the following: `MarteX Core Wallet
-  <../wallets/README.md>`_ .
+  We recommend any of the following: `MarteX Core Wallet <../wallets/README.md>`_.
 
 
 Difficulty
@@ -453,16 +453,6 @@ Digital Wallet
     which can be hacked. NOTE: USB sticks are not safe for long-term 
     (multi-year) storage because they degrade over time.
 
-DKG
-  Defined in `DIP6
-  <https://github.com/dashpay/dips/blob/master/dip-0006.md>`__,
-  Distributed Key Generation (`DKG
-  <https://github.com/dashpay/dips/blob/master/dip-0006.md#llmq-dkg-network-protocol>`__) 
-  is a method of generating a BLS key pair for use in an LLMQ to perform
-  threshold signing on network messages. It is based on BLS M-of-N
-  Threshold Scheme and Distributed Key Generation, which is an
-  implementation of Shamir’s Secret Sharing.
-
 Digital Signature
   A digital signature is a mathematical mechanism that allows someone to
   prove their identity or ownership of a digital asset. When your
@@ -525,7 +515,7 @@ Evan Duffield
 Exchange
   The current price of one MarteX compared to the price of other
   currencies, like the US dollar, Yen, Euro, or Bitcoin. Because most
-  trading volume takes place on the BTC/DASH markets, price is often
+  trading volume takes place on the BTC/MARTEX markets, price is often
   quoted in fractions of a bitcoin. An excellent
   site for following the exchange rate of MarteX is `CoinMarketCap
   <https://coinmarketcap.com/>`_. Businesses wishing to reduce the risk
@@ -535,7 +525,7 @@ Exchange
 
 Faucet
   Faucets are a reward system, in the form of a website or app, that
-  dispenses rewards in the form of a microdash or Duff, which is a
+  dispenses rewards in the form of a micromartex or Duff, which is a
   hundredth of a millionth MarteX, for visitors to claim in exchange for
   completing a captcha or task as described by the website.
 
@@ -656,13 +646,13 @@ LLMQ
 Masternode
   A `masternode <../masternode`_ is special type of full node
   that performs services for the network and is paid a portion of the
-  block reward. Masternodes require proof of ownership of 1000 DASH.
+  block reward. Masternodes require proof of ownership of 5000 MARTEX.
 
   Masternodes serve as the second tier of the MarteX network, and power
   InstantSend, PrivateSend, the Budget System.
 
 Mining
-  `Miners <../mining>`_ process transactions on the Dash network and
+  `Miners <../mining>`_ process transactions on the Martex network and
   publish them on the blockchain. As a reward for doing this, miners are
   paid 45% of the block reward.
 
@@ -682,7 +672,7 @@ MultiSig
 Node
   A node is any device running MarteX wallet software. Full nodes are
   software clients that have downloaded the entire blockchain and serve
-  it to other clients on Dash's peer-to-peer network.
+  it to other clients on Martex's peer-to-peer network.
 
 OTC
   Over the counter (OTC) trades are trades that occur off exchanges. In
@@ -711,16 +701,16 @@ Privacy
   person, it usually means that something is inherently special or
   sensitive to them. The domain of privacy partially overlaps security
   (confidentiality), which can include the concepts of appropriate use,
-  as well as protection of information. Dash includes PrivateSend, which
+  as well as protection of information. MarteX includes AnonSend, which
   allows users to maintain financial privacy.
 
 Private Key
-  A `private key <https://en.wikipedia.org/wiki/Public-
-  key_cryptography>`_ is a long alphanumeric passcode that allows Dash
-  to be spent. Every Dash wallet contains one or more private keys which
+  A `private key <https://en.wikipedia.org/wiki/Public-key_cryptography>`_ 
+  is a long alphanumeric passcode that allows MarteX
+  to be spent. Every MarteX wallet contains one or more private keys which
   are saved in the wallet file. The private keys are mathematically
-  related to all Dash addresses generated for the wallet. Because the
-  private key is the "ticket" that allows someone to spend Dash, it is
+  related to all MarteX addresses generated for the wallet. Because the
+  private key is the "ticket" that allows someone to spend MarteX, it is
   important that these are kept secure and secret.
 
 AnonSend
@@ -729,7 +719,7 @@ AnonSend
   off at the users' discretion.
 
 Proof of Service - PoSe  
-  Consensus mechanism used in Dash to verify that a masternode has
+  Consensus mechanism used in Martex to verify that a masternode has
   provided uninterrupted service meeting a minimum quality level to the
   network. Maintaining this service allows a masternode to enter and
   move up through the global list and eventually into the selection pool
@@ -781,7 +771,7 @@ QR Code
   A two-dimensional graphical block containing a monochromatic pattern
   representing a sequence of data. QR codes are designed to be scanned
   by cameras, including those found in mobile phones, and are frequently
-  used to encode Dash addresses.
+  used to encode Martex addresses.
 
 Satoshi Nakamoto
   `Satoshi Nakamoto <https://en.wikipedia.org/wiki/Satoshi_Nakamoto>`_
@@ -810,10 +800,10 @@ Tainted Coins
   is only important if the user is trying to remain anonymous.
 
 tMarteX
-  Test MarteX, used on :ref:`testnet <testnet>`.
+  Test MarteX, used on `Testnet </developers/testnet.rst>`_.
 
 Testnet
-  :ref:`Testnet <testnet>` is a network only for testing (parallel to
+  `Testnet </developers/testnet.rst>`_ is a network only for testing (parallel to
   the mainnet), test wallets, test coins, test masternodes, test miners,
   and test users all simulate their mainnet counterparts in a safe
   environment where errors or forks are not harmful.
@@ -832,7 +822,7 @@ Transaction
   be used to manage blockchain users, for example.
 
 Transaction Block
-  A collection of transactions on the Dash network, gathered into a
+  A collection of transactions on the Martex network, gathered into a
   block that can then be hashed and added to the blockchain.
 
 Transaction Fee
@@ -882,7 +872,7 @@ Zero Confirmations
 vin
   A transaction (tx) consists of one or more inputs and one or more
   outputs. The vin is the list of inputs to the transaction, and vout is
-  the list of outputs. Masternodes require a 1000 DASH vin (exactly that
+  the list of outputs. Masternodes require a 5000 MARTEX vin (exactly that
   amount) in order to work.
 
 VMN
